@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8631919608b8e54090f2daf1dfd0b17, type: 3}
+  m_Name: 5_Jacob's Coat
+  m_EditorClassIdentifier: 
+  plantName: Jacob's Coat
+  prestigePoint: 130
+  prestigeLevelRequirement: 5
+  ingredientList:
+  - atomEnum: 0
+    level: 5
+    count: 2
+  - atomEnum: 1
+    level: 5
+    count: 2
+  - atomEnum: 3
+    level: 5
+    count: 2
+  plantSprite: {fileID: 21300000, guid: d377fa9120215764f853cc9250729e46, type: 3}

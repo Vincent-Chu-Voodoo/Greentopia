@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930b352c897178d4b814ac3bde9c4005, type: 3}
+  m_Name: Level_5
+  m_EditorClassIdentifier: 
+  level: 5
+  prestigeLevel: 7
+  row: 5
+  column: 5
+  boardSize: 1
+  spawnerDetailList:
+  - atomEnum: 1000
+    totalCoolDown: 2.5
+    atomLevel: 1
+    rowIndex: 0
+    columnIndex: 0
+  - atomEnum: 1002
+    totalCoolDown: 3
+    atomLevel: 1
+    rowIndex: 4
+    columnIndex: 4
+  - atomEnum: 1004
+    totalCoolDown: 4
+    atomLevel: 1
+    rowIndex: 2
+    columnIndex: 2

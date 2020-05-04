@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: LoadingScreen
+  m_EditorClassIdentifier: 
+  m_GroupName: LoadingScreen
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9ba748fae0a4ddd42a3106c463f2deec
+  m_SerializeEntries:
+  - m_GUID: 14e52184e79fb324792c586e0a8759ca
+    m_Address: LoadingScreen
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 384685501947320331, guid: 14e52184e79fb324792c586e0a8759ca,
+      type: 3}
+    m_TargetAsset: {fileID: 384685501947320331, guid: 14e52184e79fb324792c586e0a8759ca,
+      type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b3c8ba0d33298eb4eb50ad3ad1a34fec, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 29b444d9a0521eb46845073002ab8e25, type: 2}
+    - {fileID: 11400000, guid: b50c79da4e6e90f44b398cc518399580, type: 2}

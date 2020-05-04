@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8631919608b8e54090f2daf1dfd0b17, type: 3}
+  m_Name: 3_Glossy Abelia
+  m_EditorClassIdentifier: 
+  plantName: Glossy Abelia
+  prestigePoint: 90
+  prestigeLevelRequirement: 3
+  ingredientList:
+  - atomEnum: 0
+    level: 6
+    count: 1
+  - atomEnum: 1
+    level: 4
+    count: 3
+  - atomEnum: 2
+    level: 5
+    count: 1
+  plantSprite: {fileID: 21300000, guid: 1c01835cff0ad8a42a00f718d39bff64, type: 3}

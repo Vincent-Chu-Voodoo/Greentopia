@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Scene
+  m_EditorClassIdentifier: 
+  m_GroupName: Scene
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 58902c19e6d968247834fad9186dd26a
+  m_SerializeEntries:
+  - m_GUID: 039e0ffc3b356e646acf837bb8cecd43
+    m_Address: BootstrapScene
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 0d8f9b566455334408baf73971f7654b
+    m_Address: ShopScene
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3016b3a0f3dfed3478744ab1de917674
+    m_Address: PlayPanelScene
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9fc0d4010bbf28b4594072e72b8655ab
+    m_Address: MainGameScene
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: a7b27e673a691d1489094d65e84ba0ec
+    m_Address: GardenScene
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: cfe0b93fd2c90f5459effca80424317f
+    m_Address: CraftScene
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b3c8ba0d33298eb4eb50ad3ad1a34fec, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: db95dfe3d4f1ef444b7910efcc6839e0, type: 2}
+    - {fileID: 11400000, guid: a156a19d83dc5c948993bbeb27498171, type: 2}

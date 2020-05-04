@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: PlantSprite
+  m_EditorClassIdentifier: 
+  m_GroupName: PlantSprite
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 3d3d02a78d6aa644ba59cdf55d570716
+  m_SerializeEntries:
+  - m_GUID: 1c01835cff0ad8a42a00f718d39bff64
+    m_Address: Glossy Abelia
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 2800000, guid: 1c01835cff0ad8a42a00f718d39bff64, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 1c01835cff0ad8a42a00f718d39bff64, type: 3}
+  - m_GUID: 2cd150c0a6300e946bfb1e8873ea69ed
+    m_Address: Helen Johnson
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 2800000, guid: 2cd150c0a6300e946bfb1e8873ea69ed, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 2cd150c0a6300e946bfb1e8873ea69ed, type: 3}
+  - m_GUID: 55989910619055f4c8fe9b0d731f618b
+    m_Address: Achillea Moonshine
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 2800000, guid: 55989910619055f4c8fe9b0d731f618b, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 55989910619055f4c8fe9b0d731f618b, type: 3}
+  - m_GUID: 649ceb74380e3154cbc70f9363693743
+    m_Address: Angel's Trumpet
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 2800000, guid: 649ceb74380e3154cbc70f9363693743, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 649ceb74380e3154cbc70f9363693743, type: 3}
+  - m_GUID: 6f84f7ca97a5cb24d9e09c5ba6233b30
+    m_Address: California Gold
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 2800000, guid: 6f84f7ca97a5cb24d9e09c5ba6233b30, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 6f84f7ca97a5cb24d9e09c5ba6233b30, type: 3}
+  - m_GUID: 77422fed9acde9243a870f526fb5e1c3
+    m_Address: Aconitum
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 2800000, guid: 77422fed9acde9243a870f526fb5e1c3, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: 77422fed9acde9243a870f526fb5e1c3, type: 3}
+  - m_GUID: b7d60dcb0a39f6344ab2fc26232aa08e
+    m_Address: La Paloma
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 2800000, guid: b7d60dcb0a39f6344ab2fc26232aa08e, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: b7d60dcb0a39f6344ab2fc26232aa08e, type: 3}
+  - m_GUID: b7f5884c24c15c24ababa07ce13c7cf3
+    m_Address: Flowering Maple
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 2800000, guid: b7f5884c24c15c24ababa07ce13c7cf3, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: b7f5884c24c15c24ababa07ce13c7cf3, type: 3}
+  - m_GUID: c2724174cc6a46249a557477058f1c3e
+    m_Address: Cootamundra Wattle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 2800000, guid: c2724174cc6a46249a557477058f1c3e, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: c2724174cc6a46249a557477058f1c3e, type: 3}
+  - m_GUID: d377fa9120215764f853cc9250729e46
+    m_Address: Jacob's Coat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 2800000, guid: d377fa9120215764f853cc9250729e46, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: d377fa9120215764f853cc9250729e46, type: 3}
+  - m_GUID: d8df085fcd02bed439be0914a9272e09
+    m_Address: Water Lettuce
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 2800000, guid: d8df085fcd02bed439be0914a9272e09, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: d8df085fcd02bed439be0914a9272e09, type: 3}
+  - m_GUID: e16c60777d75c164d88d222f56c7fd94
+    m_Address: Cardinal Flower
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 2800000, guid: e16c60777d75c164d88d222f56c7fd94, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: e16c60777d75c164d88d222f56c7fd94, type: 3}
+  - m_GUID: e8842ec4664dcd240a7daaee5f30befe
+    m_Address: Beni Maiko
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 2800000, guid: e8842ec4664dcd240a7daaee5f30befe, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: e8842ec4664dcd240a7daaee5f30befe, type: 3}
+  - m_GUID: f286f8aae5c07cd4787ca541ae82d295
+    m_Address: Ponytail Palm
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 2800000, guid: f286f8aae5c07cd4787ca541ae82d295, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: f286f8aae5c07cd4787ca541ae82d295, type: 3}
+  - m_GUID: f2df97c3710c95143a8cdd0c0ad9adc7
+    m_Address: Water Lilly
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 2800000, guid: f2df97c3710c95143a8cdd0c0ad9adc7, type: 3}
+    m_TargetAsset: {fileID: 2800000, guid: f2df97c3710c95143a8cdd0c0ad9adc7, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b3c8ba0d33298eb4eb50ad3ad1a34fec, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 04105dd5a0650c2499d0b1a82c5387e3, type: 2}
+    - {fileID: 11400000, guid: 17d7ce789a885f84c81e23597477147a, type: 2}

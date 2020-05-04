@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: PlantSData
+  m_EditorClassIdentifier: 
+  m_GroupName: PlantSData
+  m_Data:
+    m_SerializedData: []
+  m_GUID: cec5315379068d54b8676ecd75ef7846
+  m_SerializeEntries:
+  - m_GUID: 06b0bfabace9c4a4986a4f1baff99394
+    m_Address: Assets/RemoteAssets/SData/PlantSData/4_Cootamundra Wattle.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: PlantSData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 11400000, guid: 06b0bfabace9c4a4986a4f1baff99394, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 06b0bfabace9c4a4986a4f1baff99394, type: 2}
+  - m_GUID: 2afba5e49214249b18883cd2781794fc
+    m_Address: Assets/RemoteAssets/SData/PlantSData/1_Water Lilly.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: PlantSData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 11400000, guid: 2afba5e49214249b18883cd2781794fc, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 2afba5e49214249b18883cd2781794fc, type: 2}
+  - m_GUID: 2ede3ea4453354b7fafe7be73f8926e9
+    m_Address: Assets/RemoteAssets/SData/PlantSData/9_Achillea Moonshine.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: PlantSData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 11400000, guid: 2ede3ea4453354b7fafe7be73f8926e9, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 2ede3ea4453354b7fafe7be73f8926e9, type: 2}
+  - m_GUID: 494dec611c967406181d16dec037c6bc
+    m_Address: Assets/RemoteAssets/SData/PlantSData/7_Beni Maiko.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: PlantSData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 11400000, guid: 494dec611c967406181d16dec037c6bc, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 494dec611c967406181d16dec037c6bc, type: 2}
+  - m_GUID: 5fa2fba9c817a47a3a361e8a275d8289
+    m_Address: Assets/RemoteAssets/SData/PlantSData/5_Jacob's Coat.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: PlantSData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 11400000, guid: 5fa2fba9c817a47a3a361e8a275d8289, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 5fa2fba9c817a47a3a361e8a275d8289, type: 2}
+  - m_GUID: 6611b965af3de4839b24c8e41af0943b
+    m_Address: Assets/RemoteAssets/SData/PlantSData/2_Cardinal Flower.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: PlantSData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 11400000, guid: 6611b965af3de4839b24c8e41af0943b, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 6611b965af3de4839b24c8e41af0943b, type: 2}
+  - m_GUID: 806d445b58fb24be9b71d95144b68ee9
+    m_Address: Assets/RemoteAssets/SData/PlantSData/0_Water Lettuce.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: PlantSData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 11400000, guid: 806d445b58fb24be9b71d95144b68ee9, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 806d445b58fb24be9b71d95144b68ee9, type: 2}
+  - m_GUID: 8f02e2fe265314536b68e8098d4c058e
+    m_Address: Assets/RemoteAssets/SData/PlantSData/10_La Paloma.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: PlantSData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 11400000, guid: 8f02e2fe265314536b68e8098d4c058e, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 8f02e2fe265314536b68e8098d4c058e, type: 2}
+  - m_GUID: c9bbe8da66e4b4beab89fbef1381f0cb
+    m_Address: Assets/RemoteAssets/SData/PlantSData/14_Angel's Trumpet.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: PlantSData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 11400000, guid: c9bbe8da66e4b4beab89fbef1381f0cb, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: c9bbe8da66e4b4beab89fbef1381f0cb, type: 2}
+  - m_GUID: cdac9d89d17694387a4f52acdb261a94
+    m_Address: Assets/RemoteAssets/SData/PlantSData/12_California Gold.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: PlantSData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 11400000, guid: cdac9d89d17694387a4f52acdb261a94, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: cdac9d89d17694387a4f52acdb261a94, type: 2}
+  - m_GUID: d1ce2480345cf49119c0ca1eabe8bb06
+    m_Address: Assets/RemoteAssets/SData/PlantSData/11_Ponytail Palm.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: PlantSData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 11400000, guid: d1ce2480345cf49119c0ca1eabe8bb06, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: d1ce2480345cf49119c0ca1eabe8bb06, type: 2}
+  - m_GUID: db4d8497aa9ff432e821478e87cb7c19
+    m_Address: Assets/RemoteAssets/SData/PlantSData/6_Flowering Maple.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: PlantSData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 11400000, guid: db4d8497aa9ff432e821478e87cb7c19, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: db4d8497aa9ff432e821478e87cb7c19, type: 2}
+  - m_GUID: dfbd2ca715f564b79ab862d17955ec69
+    m_Address: Assets/RemoteAssets/SData/PlantSData/13_Helen Johnson.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: PlantSData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 11400000, guid: dfbd2ca715f564b79ab862d17955ec69, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: dfbd2ca715f564b79ab862d17955ec69, type: 2}
+  - m_GUID: e17d6f40561d84f02b1492c708375495
+    m_Address: Assets/RemoteAssets/SData/PlantSData/3_Glossy Abelia.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: PlantSData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 11400000, guid: e17d6f40561d84f02b1492c708375495, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: e17d6f40561d84f02b1492c708375495, type: 2}
+  - m_GUID: fc58f098c65a445bb8ab20e1543f343b
+    m_Address: Assets/RemoteAssets/SData/PlantSData/8_Aconitum.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: PlantSData, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 11400000, guid: fc58f098c65a445bb8ab20e1543f343b, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: fc58f098c65a445bb8ab20e1543f343b, type: 2}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b3c8ba0d33298eb4eb50ad3ad1a34fec, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: c9e9755072664bb4f880d3c61d1b9d21, type: 2}
+    - {fileID: 11400000, guid: 8a7b078b1803e5843a651e4051c2487a, type: 2}

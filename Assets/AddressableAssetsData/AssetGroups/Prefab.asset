@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Prefab
+  m_EditorClassIdentifier: 
+  m_GroupName: Prefab
+  m_Data:
+    m_SerializedData: []
+  m_GUID: fc7e3374131aa524bac9298fa4ab1e39
+  m_SerializeEntries:
+  - m_GUID: 4bd008ae65c19ba41a2e310d925453f6
+    m_Address: AtomIconDisplay
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 51f98042715364d4993ac0769a7356b7
+    m_Address: PlantIngredientPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 52a68373bc8bc3f4988528cd3bd1f2d1
+    m_Address: SubGrid
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8a9bacc9e3d2e6145b1e75c90052704d
+    m_Address: PlantPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8e427516e47f57040947567ba863a2fd
+    m_Address: PlantPreview
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8fdecd3dfb75da14dbec53f0889f3385
+    m_Address: IngredientCollectorPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 927b632bf6353a343ac7673323f1977b
+    m_Address: IngredientsPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 93eabe4f54502fe409b1a8446045cc66
+    m_Address: LevelPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ab0626fbdd928ea4db55885ca00bd272
+    m_Address: LevelPreviewIngredient
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: d03750e7b2a161246bc17e9694d0fc1b
+    m_Address: MainGamePlantPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: d28c0fd794906c442bfa6ba7edd25bf1
+    m_Address: Atom
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: dbf670c8c1d44ba44a33bccc5e57a72e
+    m_Address: PlantInventoryPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ddddc464ff2e0f14c829a497781f8a7d
+    m_Address: LevelPreview
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b3c8ba0d33298eb4eb50ad3ad1a34fec, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 00118de3c7036ac42ad388c580210d2c, type: 2}
+    - {fileID: 11400000, guid: 33aed944ebde62349a6ff9ae3da44949, type: 2}

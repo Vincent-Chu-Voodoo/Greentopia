@@ -8,6 +8,7 @@ public class FTUENewGardenController : MonoBehaviour
 
     public GameEvent OnFirstEnter;
     public GameEvent OnSecondEnter;
+    public GameEvent OnPlantTree;
 
     // Start is called before the first frame update
     void Start()
@@ -29,5 +30,10 @@ public class FTUENewGardenController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void PlantTree()
+    {
+        OnPlantTree.Invoke(this);
     }
 }

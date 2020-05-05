@@ -73,6 +73,22 @@ MonoBehaviour:
       PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: e6641af4bac408a46bb673aaf16b1ffb
+    m_Address: NeighbourScene
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: fefa035ed6a7f184c8870be492901ee7
+    m_Address: ToolShedScene
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: b3c8ba0d33298eb4eb50ad3ad1a34fec, type: 2}
   m_SchemaSet:

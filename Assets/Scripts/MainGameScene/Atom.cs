@@ -29,7 +29,8 @@ public class Atom : MonoBehaviour, IAtom
     #region Monobehaviour
     void Start()
     {
-        name = $"Atom {atomType.ToString()}";
+        name = $"Atom {atomType}";
+        atomDisplay.UpdateDisplay(this);
     }
 
     void Update()

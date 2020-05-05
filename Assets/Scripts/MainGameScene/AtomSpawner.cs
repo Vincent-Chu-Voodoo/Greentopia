@@ -27,7 +27,7 @@ public class AtomSpawner : MonoBehaviour
         for (var i = 0; i < spawner.spawnableSubGridList.Count; i++)
         {
             var subGrid = spawner.spawnableSubGridList[i];
-            if (subGrid.isEmpty)
+            if (subGrid != null && subGrid.isEmpty)
             {
                 var newAtomGO = Instantiate(atomPrefab, subGrid.transform);
                 newAtomGO.transform.position = spawner.transform.position;

@@ -29,10 +29,6 @@ public class MainGameController : MonoBehaviour
     public MainGrid mainGrid;
     public AtomSpawner atomSpawner;
     public SceneTransition sceneTransition;
-    public Transform cameraTrans;
-    public Transform cameraAnchor1;
-    public Transform cameraAnchor2;
-    //public IngredientCollectorController ingredientCollectorController;
 
     [Header("Event")]
     public GameEvent OnInitialized;
@@ -52,30 +48,17 @@ public class MainGameController : MonoBehaviour
         if (GameDataManager.instance.sceneParam is MainGameParam)
             mainGameParam = GameDataManager.instance.sceneParam as MainGameParam;
         GameDataManager.instance.sceneParam = null;
-        levelText.SetText($"BOARD {mainGameParam.levelSData.level}");
+        //levelText.SetText($"BOARD {mainGameParam.levelSData.level}");
         InitiateGrids();
         InitiateGameSession();
         InitiateIngredientCollector();
-        InitiateCamera();
         OnInitialized.Invoke(this);
-    }
-
-    public void InitiateCamera()
-    {
-        try
-        {
-            var dirVector = cameraAnchor2.position - cameraAnchor1.position;
-            cameraTrans.position = cameraAnchor1.position + dirVector / mainGameParam.levelSData.boardSize;
-        } catch(Exception e)
-        {
-            Debug.LogError($"Our game almost crash in first production: {e}");
-        }
     }
 
     public void InitiateGrids()
     {
-        mainGrid.rowColumn = new Vector2(mainGameParam.levelSData.row, mainGameParam.levelSData.column);
-        mainGrid.SpawnGrids();
+        //mainGrid.rowColumn = new Vector2(mainGameParam.levelSData.row, mainGameParam.levelSData.column);
+        //mainGrid.SpawnGrids();
     }
 
     public void InitiateGameSession()

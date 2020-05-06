@@ -6,6 +6,7 @@ public class FTUENurseryController : MonoBehaviour
 {
     public int combineCount;
 
+    public FTUEHandAnimation tUEHandAnimation;
     public AtomController atomController;
 
     public GameEvent OnEnterNursery;
@@ -22,6 +23,14 @@ public class FTUENurseryController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void AtomSpawn(object atomObj)
+    {
+        if (tUEHandAnimation.anchorFrom == null)
+            tUEHandAnimation.anchorFrom = (atomObj as Atom).transform;
+        else
+            tUEHandAnimation.anchorTo = (atomObj as Atom).transform;
     }
 
     public void ClickCotton()

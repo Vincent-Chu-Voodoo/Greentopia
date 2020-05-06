@@ -24,7 +24,8 @@ public class MergeHighlightHelper : MonoBehaviour
 
     public void OnPointerDown()
     {
-        ResetHelper();
+        if (enabled)
+            ResetHelper();
     }
 
     private void ResetHelper()

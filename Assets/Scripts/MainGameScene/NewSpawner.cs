@@ -8,6 +8,7 @@ public class NewSpawner : MonoBehaviour
     public GameObject atomPrefab;
     public MainGrid mainGrid;
     public List<SubGrid> spawnableSubGridList;
+    public FTUEHandAnimation mergeCottonAnimation;
 
     public GameEvent OnClick;
     public GameEvent OnSpawnNewAtom;
@@ -20,7 +21,7 @@ public class NewSpawner : MonoBehaviour
         OnClick.Invoke(this);
     }
 
-    public void SpawnAtom()
+    public virtual void SpawnAtom()
     {
         for (var i = 0; i < spawnableSubGridList.Count; i++)
         {
@@ -30,6 +31,10 @@ public class NewSpawner : MonoBehaviour
                 var newAtomGO = Instantiate(atomPrefab, subGrid.transform);
                 newAtomGO.transform.position = transform.position;
                 var newAtom = newAtomGO.GetComponent<Atom>();
+                if (mergeCottonAnimation.anchorFrom == null)
+                    mergeCottonAnimation.anchorFrom = newAtom.transform;
+                else
+                    mergeCottonAnimation.anchorTo = newAtom.transform;
                 newAtom.Setup(atomType, mainGrid);
                 newAtom.SubGridLinked(subGrid);
                 subGrid.AtomLinked(newAtom);

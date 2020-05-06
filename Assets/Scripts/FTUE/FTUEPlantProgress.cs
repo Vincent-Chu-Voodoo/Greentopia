@@ -19,7 +19,7 @@ public class FTUEPlantProgress : MonoBehaviour
     {
         currentTime = Mathf.MoveTowards(currentTime, totalTime, Time.deltaTime);
         var remainTime = totalTime - currentTime;
-        timeText.SetText($"{remainTime:0} sec left");
+        timeText.SetText($"{remainTime / 3600:0} hr {remainTime % 60:0} min left");
         growingBarImage.fillAmount = currentTime / totalTime;
         if (Mathf.Approximately(currentTime, totalTime))
             OnGrown.Invoke(this);

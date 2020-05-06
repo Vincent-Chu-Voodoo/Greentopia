@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class FTUEHandDinAnimation : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float showDelay;
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator Start()
     {
-        
+        transform.GetChild(0).gameObject.SetActive(false);
+        yield return new WaitForSeconds(showDelay);
+        transform.GetChild(0).gameObject.SetActive(true);
     }
 }

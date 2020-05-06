@@ -58,7 +58,7 @@ MonoBehaviour:
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: c7ab1d645e9af4749abcdbaac63a61a0
-    m_Address: cotton_2
+    m_Address: cotton_3
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -71,6 +71,14 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e20aaf8e62c74e1449e40c4f9ae64d1c
+    m_Address: cotton_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: e6641af4bac408a46bb673aaf16b1ffb

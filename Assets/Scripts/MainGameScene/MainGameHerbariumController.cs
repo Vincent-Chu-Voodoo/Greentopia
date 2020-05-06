@@ -84,7 +84,13 @@ public class MainGameHerbariumController : MonoBehaviour
                 });
         }
         UpdateIngredient();
-        newAtom.SetCanCraft(GameDataManager.instance.plantSDataList.Exists(i => GameDataManager.instance.GetPrestigeLevel() >= i.prestigeLevelRequirement && i.ingredientList.Exists(j => j.atomEnum == newAtom.atomType && Mathf.Abs(j.level - newAtom.atomLevel) < 0.1f)));
+        if (newAtom.atomType == AtomEnum.water && newAtom.atomLevel == 4)
+            newAtom.SetCanCraft(true);
+        if (newAtom.atomType == AtomEnum.cotton && newAtom.atomLevel == 3)
+            newAtom.SetCanCraft(true);
+        if (newAtom.atomType == AtomEnum.log && newAtom.atomLevel == 3)
+            newAtom.SetCanCraft(true);
+        //newAtom.SetCanCraft(GameDataManager.instance.plantSDataList.Exists(i => GameDataManager.instance.GetPrestigeLevel() >= i.prestigeLevelRequirement && i.ingredientList.Exists(j => j.atomEnum == newAtom.atomType && Mathf.Abs(j.level - newAtom.atomLevel) < 0.1f)));
     }
 
     public void UpdateIngredient()

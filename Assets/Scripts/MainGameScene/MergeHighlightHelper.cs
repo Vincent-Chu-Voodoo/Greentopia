@@ -30,6 +30,8 @@ public class MergeHighlightHelper : MonoBehaviour
 
     private void ResetHelper()
     {
+        if (!gameObject.activeSelf)
+            return;
         ResetHelp();
         if (helperRoutine != null)
             StopCoroutine(helperRoutine);

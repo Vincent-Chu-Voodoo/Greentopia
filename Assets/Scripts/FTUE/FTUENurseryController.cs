@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class FTUENurseryController : MonoBehaviour
@@ -19,12 +20,6 @@ public class FTUENurseryController : MonoBehaviour
         OnEnterNursery.Invoke(this);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void AtomSpawn(object atomObj)
     {
         if (tUEHandAnimation.anchorFrom == null)
@@ -40,11 +35,19 @@ public class FTUENurseryController : MonoBehaviour
 
     public void OnAtomCombined(object obj)
     {
+        if (atomController.allAtomList.Where(i => i.atomType == AtomEnum.cotton).Count() > 1)
+            return;
+
         if (combineCount == 0)
             OnMergeCotton.Invoke(this);
-        if (combineCount == 1)
-            OnMergeLog.Invoke(this);
         combineCount++;
+
+        if (atomController.allAtomList.Where(i => i.atomType == AtomEnum.log).Count() > 1)
+            return;
+
+        if (combineCount < 10)
+            OnMergeLog.Invoke(this);
+        combineCount += 10;
     }
 
     public void ActivateAllAtom()

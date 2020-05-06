@@ -8,6 +8,8 @@ public class FTUEShedSpawner : NewSpawner
     public int maxCount;
     public int spawnCount;
 
+    public GameEvent OnExhausted;
+
     public override void SpawnAtom()
     {
         var emptyGridList = spawnableSubGridList.Where(i => i.isEmpty).ToList();
@@ -26,9 +28,10 @@ public class FTUEShedSpawner : NewSpawner
             targetGrid.AtomLinked(newAtom);
             newAtom.AtomComplete();
             OnSpawnNewAtom.Invoke(newAtom);
-
+            atomController.SpawnNewAtom(newAtom);
             emptyGridList.RemoveAt(ranIndex);
-            maxCount--;
+            if (--maxCount == 0)
+                OnExhausted.Invoke(this);
         }
     }
 }

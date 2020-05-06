@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class FTUEHandAnimation : MonoBehaviour
 {
+    public float startDelay;
     public float speed;
     public float stayTime;
+
+    public GameObject rootGO;
     public Transform anchorFrom;
     public Transform anchorTo;
 
     IEnumerator Start()
     {
+        rootGO.SetActive(false);
+        yield return new WaitForSeconds(startDelay);
         while (anchorFrom == null || anchorTo == null)
             yield return null;
+        transform.position = anchorFrom.position;
+        rootGO.SetActive(true);
         while (true)
         {
             transform.position = Vector3.MoveTowards(transform.position, anchorTo.position, speed * Time.deltaTime);

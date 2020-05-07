@@ -11,9 +11,9 @@ public class FTUENurseryController : MonoBehaviour
     public AtomController atomController;
 
     public GameEvent OnEnterNursery;
+    public GameEvent OnMergeLog;
     public GameEvent OnClickCotton;
     public GameEvent OnMergeCotton;
-    public GameEvent OnMergeLog;
 
     void Start()
     {
@@ -35,18 +35,17 @@ public class FTUENurseryController : MonoBehaviour
 
     public void OnAtomCombined(object obj)
     {
-        if (atomController.allAtomList.Where(i => i.atomType == AtomEnum.cotton).Count() > 1)
+        if (atomController.allAtomList.Where(i => i.atomType == AtomEnum.log && i.atomLevel == 2).Count() > 1)
             return;
 
-        if (combineCount == 0)
-            OnMergeCotton.Invoke(this);
-        combineCount++;
+        if (combineCount++ == 0)
+            OnMergeLog.Invoke(this);
 
-        if (atomController.allAtomList.Where(i => i.atomType == AtomEnum.log).Count() > 1)
+        if (atomController.allAtomList.Where(i => i.atomType == AtomEnum.cotton && i.atomLevel == 2).Count() != 1)
             return;
 
         if (combineCount < 10)
-            OnMergeLog.Invoke(this);
+            OnMergeCotton.Invoke(this);
         combineCount += 10;
     }
 

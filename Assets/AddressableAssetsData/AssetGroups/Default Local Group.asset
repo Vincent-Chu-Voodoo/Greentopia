@@ -17,8 +17,24 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 13d8799aff5278e4391b971036e559e8
   m_SerializeEntries:
-  - m_GUID: 6b0000cfa534c2e4dacb64480a5bda56
-    m_Address: log_2
+  - m_GUID: 065ad2ad0609ab947ae6f2313dd0ebf4
+    m_Address: cotton_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 0eafe6e29fd5bec46bf0c953197cb974
+    m_Address: cotton_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8347d405fa7aa17478105773375712d9
+    m_Address: Assets/RemoteAssets/Sprites/FTUE/Cotton_Plant.png
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -41,24 +57,8 @@ MonoBehaviour:
       PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: 9a006e68e03b52c48a6c2c1958bfc6f9
-    m_Address: cotton_1
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: a771db2e03cd9304398f3c20d5cd626e
+  - m_GUID: 95e368d93ca7b164297d58fe93606f5c
     m_Address: log_1
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: c7ab1d645e9af4749abcdbaac63a61a0
-    m_Address: cotton_3
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -71,14 +71,6 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: e20aaf8e62c74e1449e40c4f9ae64d1c
-    m_Address: cotton_2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: e6641af4bac408a46bb673aaf16b1ffb

@@ -27,7 +27,8 @@ public class FTUEHandAnimation : MonoBehaviour
             if (Vector3.Distance(transform.position, anchorTo.position) < 0.1f)
             {
                 yield return new WaitForSeconds(stayTime);
-                transform.position = anchorFrom.position;
+                if (!(anchorFrom is null))
+                    transform.position = anchorFrom.position;
             }
         }
     }

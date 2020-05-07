@@ -25,8 +25,8 @@ public class MainGrid : MonoBehaviour
     {
         ClearSubGrids();
         var startingPosition = transform.position
-            - new Vector3(subGridSize.x * rowColumn.y / 2f, 0f, subGridSize.y * rowColumn.x / 2f)
-            + new Vector3(subGridSize.x / 2f, 0f, subGridSize.y / 2f);
+            - new Vector3(subGridSize.y * rowColumn.x / 2f, 0f, subGridSize.x * rowColumn.y / 2f)
+            + new Vector3(subGridSize.y / 2f, 0f, subGridSize.x / 2f);
         for (var i = 0; i < rowColumn.x; i++)
         {
             for (var j = 0; j < rowColumn.y; j++)
@@ -35,7 +35,7 @@ public class MainGrid : MonoBehaviour
                 newGridGO.name = $"SubGrid [{i},{j}]";
                 var subGrid = newGridGO.GetComponent<SubGrid>();
                 subGrid.id = new Vector2(i, j);
-                newGridGO.transform.position = startingPosition + new Vector3(j * subGrid.gridSize.y, 0f, i * subGrid.gridSize.x);
+                newGridGO.transform.position = startingPosition + new Vector3(j * subGridSize.y, 0f, i * subGridSize.x);
                 subGrids.Add(subGrid);
             }
         }

@@ -18,6 +18,7 @@ public class Atom : MonoBehaviour, IAtom
     [Header("Config")]
     public AtomDisplay atomDisplay;
     public GameObject canCraftDisplay;
+    public GameObject canCraftDisplay2;
     public GameObject mergeHelpDisplay;
 
     [Header("Event")]
@@ -115,7 +116,14 @@ public class Atom : MonoBehaviour, IAtom
 
     public void SetCanCraft(bool _canCraft)
     {
+        print($"SetCanCraft {_canCraft}");
         isCanCraft = _canCraft;
         canCraftDisplay.SetActive(_canCraft);
+        canCraftDisplay2?.SetActive(_canCraft);
+    }
+
+    public void SetFTUEGreen()
+    {
+        atomDisplay.SetFTUEGreen();
     }
 }

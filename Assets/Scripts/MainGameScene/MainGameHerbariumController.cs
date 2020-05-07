@@ -61,7 +61,7 @@ public class MainGameHerbariumController : MonoBehaviour
 
     public void AtomSpawned(Atom atom)
     {
-        atom.SetCanCraft(GameDataManager.instance.plantSDataList.Exists(i => GameDataManager.instance.GetPrestigeLevel() >= i.prestigeLevelRequirement && i.ingredientList.Exists(j => j.atomEnum == atom.atomType && Mathf.Abs(j.level - atom.atomLevel) < 0.1f)));
+        //atom.SetCanCraft(GameDataManager.instance.plantSDataList.Exists(i => GameDataManager.instance.GetPrestigeLevel() >= i.prestigeLevelRequirement && i.ingredientList.Exists(j => j.atomEnum == atom.atomType && Mathf.Abs(j.level - atom.atomLevel) < 0.1f)));
     }
 
     public void AtomCombined(Atom newAtom)
@@ -86,9 +86,9 @@ public class MainGameHerbariumController : MonoBehaviour
         UpdateIngredient();
         if (newAtom.atomType == AtomEnum.water && newAtom.atomLevel == 4)
             newAtom.SetCanCraft(true);
-        if (newAtom.atomType == AtomEnum.cotton && newAtom.atomLevel == 3)
+        if (newAtom.atomType == AtomEnum.cotton && newAtom.atomLevel == 2)
             newAtom.SetCanCraft(true);
-        if (newAtom.atomType == AtomEnum.log && newAtom.atomLevel == 3)
+        if (newAtom.atomType == AtomEnum.log && newAtom.atomLevel == 2)
             newAtom.SetCanCraft(true);
         //newAtom.SetCanCraft(GameDataManager.instance.plantSDataList.Exists(i => GameDataManager.instance.GetPrestigeLevel() >= i.prestigeLevelRequirement && i.ingredientList.Exists(j => j.atomEnum == newAtom.atomType && Mathf.Abs(j.level - newAtom.atomLevel) < 0.1f)));
     }

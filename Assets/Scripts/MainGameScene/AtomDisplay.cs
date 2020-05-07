@@ -14,6 +14,7 @@ public class AtomDisplay : MonoBehaviour
     public SpriteRenderer spriteRendererFG;
     public SpriteRenderer spriteRendererBG;
     public List<AtomDisplaySData> atomDisplayDataList;
+    public GameObject fTUEGreen;
 
     [ContextMenu("SortAtomDisplayDataList")]
     public void SortAtomDisplayDataList()
@@ -64,5 +65,10 @@ public class AtomDisplay : MonoBehaviour
             if (spriteRendererFG != null)
                 spriteRendererFG.sprite = aoh.Result as Sprite;
         };
+    }
+
+    public void SetFTUEGreen()
+    {
+        fTUEGreen.SetActive(true);
     }
 }

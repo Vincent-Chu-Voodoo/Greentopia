@@ -4946,7 +4946,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910685079}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.22, y: -1.42, z: 0}
+  m_LocalPosition: {x: -0.48, y: -2.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1491844874}
@@ -6379,7 +6379,7 @@ MonoBehaviour:
   plantPrefab: {fileID: 1576177688583457005, guid: a3ea8e191cab630429d9f9636d90a7fc,
     type: 3}
   shopSceneAR:
-    m_AssetGUID: fefa035ed6a7f184c8870be492901ee7
+    m_AssetGUID: c3fc38ed66f13b943a2cfcb6746061e3
     m_SubObjectName: 
   playPanelSceneAR:
     m_AssetGUID: d99ab9ba20bcffd42970586aa16a2e6e
@@ -9799,7 +9799,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1900065053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.85, y: 1.8, z: 0}
+  m_LocalPosition: {x: -1.64, y: 2.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1491844874}
@@ -10432,6 +10432,29 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1265315317}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 138648461}
+        m_MethodName: ShowText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Let's Plant It!;So cute and small. Let's make sure it
+            has enough nutrients to grow. Let's visit the Tool Shed!
           m_BoolArgument: 1
         m_CallState: 2
   OnHadNutrition:

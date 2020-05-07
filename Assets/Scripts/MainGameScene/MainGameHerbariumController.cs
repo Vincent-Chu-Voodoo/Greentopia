@@ -84,7 +84,7 @@ public class MainGameHerbariumController : MonoBehaviour
                 });
         }
         UpdateIngredient();
-        if (newAtom.atomType == AtomEnum.water && newAtom.atomLevel == 4)
+        if (newAtom.atomType == AtomEnum.nutrient && newAtom.atomLevel == 2)
             newAtom.SetCanCraft(true);
         if (newAtom.atomType == AtomEnum.cotton && newAtom.atomLevel == 2)
             newAtom.SetCanCraft(true);

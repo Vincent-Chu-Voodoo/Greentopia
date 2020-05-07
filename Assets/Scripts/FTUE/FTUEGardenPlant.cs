@@ -25,6 +25,7 @@ public class FTUEGardenPlant : MonoBehaviour
     public GameEvent OnGrown;
     public GameEvent OnCollectApple;
     public GameEvent OnMoveApple;
+    public GameEvent OnTap;
 
     private void Start()
     {
@@ -76,6 +77,7 @@ public class FTUEGardenPlant : MonoBehaviour
         {
             CollectApple();
         }
+        OnTap.Invoke(this);
     }
 
     public void Grown()
@@ -86,7 +88,6 @@ public class FTUEGardenPlant : MonoBehaviour
 
     public void SpeedUp()
     {
-        print($"SpeedUp");
         OnSpeededUp.Invoke(this);
     }
 

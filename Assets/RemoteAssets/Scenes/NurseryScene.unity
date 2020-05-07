@@ -945,7 +945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6daa31a7a8fcb8044b99878c85c3d8bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDelay: 2
+  startDelay: 5
   speed: 10
   stayTime: 0.8
   rootGO: {fileID: 361198754}
@@ -1402,6 +1402,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620836444295569389, guid: 3e5da79d8b581f843ba5425ce0ed5ba2,
+        type: 3}
+      propertyPath: showDelay
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3620836444295569391, guid: 3e5da79d8b581f843ba5425ce0ed5ba2,
         type: 3}
@@ -2245,7 +2250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6daa31a7a8fcb8044b99878c85c3d8bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDelay: 2
+  startDelay: 5
   speed: 10
   stayTime: 0.8
   rootGO: {fileID: 580205038}
@@ -11775,7 +11780,7 @@ PrefabInstance:
     - target: {fileID: 3620836444295569389, guid: 3e5da79d8b581f843ba5425ce0ed5ba2,
         type: 3}
       propertyPath: showDelay
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3620836444295569391, guid: 3e5da79d8b581f843ba5425ce0ed5ba2,
         type: 3}

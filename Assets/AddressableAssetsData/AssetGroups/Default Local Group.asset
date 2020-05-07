@@ -33,8 +33,15 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: 4fb61ca787c493847b9f30419ebfc25c
+  - m_GUID: 43fce68e5a33edd47a1613c2034c4f43
     m_Address: nutrient_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: 
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6d87fdcfaa81c884b9c1749f2204d0e4
+    m_Address: nutrient_2
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: 
@@ -76,7 +83,8 @@ MonoBehaviour:
     m_Address: ToolShedScene
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_mainAssetType: 
+    m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: d99ab9ba20bcffd42970586aa16a2e6e
@@ -101,13 +109,6 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: ec87c46d997e34d4ba70ad9776a425d9
-    m_Address: nutrient_2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: 
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0

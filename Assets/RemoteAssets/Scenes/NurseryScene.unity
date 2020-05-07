@@ -753,7 +753,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Our First Plant;Great! Sapling need cotton to sprout,
+          m_StringArgument: Our First Plant;Great! Saplings need cotton to sprout,
             tap the cotton flower to create it.
           m_BoolArgument: 1
         m_CallState: 2
@@ -6308,7 +6308,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -213.2, y: 44.5}
+  m_AnchoredPosition: {x: -225, y: 32}
   m_SizeDelta: {x: 128, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1128428790

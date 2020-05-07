@@ -86,6 +86,7 @@ public class FTUEGardenPlant : MonoBehaviour
 
     public void SpeedUp()
     {
+        print($"SpeedUp");
         OnSpeededUp.Invoke(this);
     }
 

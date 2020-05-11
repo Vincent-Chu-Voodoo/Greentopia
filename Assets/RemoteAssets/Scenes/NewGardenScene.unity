@@ -1957,6 +1957,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 259389873}
+  - component: {fileID: 259389874}
   m_Layer: 0
   m_Name: Anchor
   m_TagString: Untagged
@@ -1978,6 +1979,28 @@ Transform:
   m_Father: {fileID: 1268769250}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &259389874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259389872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9080047ff00e68544a9ed07ab826b463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxRadius: 1.5
+  movedWithAnchorList:
+  - {fileID: 644975533}
+  - {fileID: 1476025725}
+  - {fileID: 2125114758}
+  movedWithAnchorList2:
+  - {fileID: 650062828}
+  - {fileID: 1265315318}
+  - {fileID: 1406019216}
+  - {fileID: 1349054188}
 --- !u!1 &274799268
 GameObject:
   m_ObjectHideFlags: 0
@@ -2898,7 +2921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c63f8514ca1d404f8aa1c292bd213f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8
+  moveSpeed: 4
   targetAnchor: {fileID: 2104901248}
   OnConsumedNutrition:
     m_PersistentCalls:
@@ -12129,7 +12152,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Sell the Fruits!;Then, let's go back to the store.
+          m_StringArgument: Sell the Fruits!;Now, let's go back to the store.
           m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1998245564
@@ -12516,6 +12539,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 259389874}
+        m_MethodName: OnMoved
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   OnHadNutrition:
     m_PersistentCalls:
       m_Calls:
@@ -12820,6 +12854,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2104901250}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnCollectApple:
     m_PersistentCalls:
       m_Calls:
@@ -12891,6 +12936,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2104901250}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
   OnTap:
     m_PersistentCalls:

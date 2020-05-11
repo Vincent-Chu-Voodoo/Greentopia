@@ -37,14 +37,16 @@ MonoBehaviour:
     m_Address: nutrient_1
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_mainAssetType: 
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 6d87fdcfaa81c884b9c1749f2204d0e4
     m_Address: nutrient_2
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_mainAssetType: 
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 8347d405fa7aa17478105773375712d9
@@ -63,44 +65,12 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: 9395dd976e60ae44095af48f950b21a8
-    m_Address: NewGardenScene
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
   - m_GUID: 95e368d93ca7b164297d58fe93606f5c
     m_Address: log_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: c3fc38ed66f13b943a2cfcb6746061e3
-    m_Address: ToolShedScene
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: d99ab9ba20bcffd42970586aa16a2e6e
-    m_Address: NurseryScene
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: e6641af4bac408a46bb673aaf16b1ffb
-    m_Address: NeighbourScene
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: e99b737e0e2550240877f7b719d55c7d

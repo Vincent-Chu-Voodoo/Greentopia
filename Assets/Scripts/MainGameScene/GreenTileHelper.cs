@@ -21,6 +21,8 @@ public class GreenTileHelper : MonoBehaviour
 
     public void AtomCombine(object atomObj)
     {
+        if (!gameObject.activeSelf)
+            return;
         AtomCombine(atomObj as Atom);
     }
 
@@ -30,6 +32,7 @@ public class GreenTileHelper : MonoBehaviour
         {
             whatIsGreenTileIngredientImage.sprite = atom.atomDisplay.spriteRendererBG.sprite;
             var target = GameDataManager.instance.plantSDataList.Find(i => GameDataManager.instance.GetPrestigeLevel() >= i.prestigeLevelRequirement && i.ingredientList.Exists(j => j.atomEnum == atom.atomType && Mathf.Abs(j.level - atom.atomLevel) < 0.1f));
+            print($"akaCK1 {target} {target is null}");
             explainText.SetText(string.Format(explainText.text, target.plantName));
             whatIsGreenTilePanel.SetActive(true);
             GameDataManager.instance.gameData.tutorialData.iKnowWhatIsGreenTile = true;

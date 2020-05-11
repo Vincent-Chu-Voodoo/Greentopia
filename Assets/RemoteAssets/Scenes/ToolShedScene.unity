@@ -5440,13 +5440,43 @@ MonoBehaviour:
     - atomEnum: 8
       totalCoolDown: 0
       atomLevel: 1
-      rowIndex: 3
+      rowIndex: 1
       columnIndex: 0
     - atomEnum: 8
       totalCoolDown: 0
       atomLevel: 1
       rowIndex: 1
+      columnIndex: 1
+    - atomEnum: 8
+      totalCoolDown: 0
+      atomLevel: 1
+      rowIndex: 1
       columnIndex: 2
+    - atomEnum: 8
+      totalCoolDown: 0
+      atomLevel: 1
+      rowIndex: 1
+      columnIndex: 3
+    - atomEnum: 8
+      totalCoolDown: 0
+      atomLevel: 1
+      rowIndex: 2
+      columnIndex: 0
+    - atomEnum: 8
+      totalCoolDown: 0
+      atomLevel: 1
+      rowIndex: 2
+      columnIndex: 1
+    - atomEnum: 8
+      totalCoolDown: 0
+      atomLevel: 1
+      rowIndex: 2
+      columnIndex: 2
+    - atomEnum: 8
+      totalCoolDown: 0
+      atomLevel: 1
+      rowIndex: 2
+      columnIndex: 3
   useSavedGameSession: 0
   levelText: {fileID: 678508108}
   closeTargetSceneAR:
@@ -9627,7 +9657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e618591009033b4ead29d1146a382d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetAtomLevel: 2
+  targetAtomLevel: 4
   OnEnterToolShed:
     m_PersistentCalls:
       m_Calls:

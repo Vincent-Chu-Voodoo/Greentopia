@@ -2250,7 +2250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6daa31a7a8fcb8044b99878c85c3d8bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDelay: 8
+  startDelay: 4
   speed: 10
   stayTime: 0.8
   rootGO: {fileID: 580205038}

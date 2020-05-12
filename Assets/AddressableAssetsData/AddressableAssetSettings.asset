@@ -166,6 +166,20 @@ MonoBehaviour:
         m_Value: ServerData/[BuildTarget]
       - m_Id: b26a161c60403384599816fecfd2506a
         m_Value: https://plantopia.s3.us-east-2.amazonaws.com/v2.0.0/[BuildTarget]
+    - m_InheritedParent: 
+      m_Id: 7135d79e72c3c1847b02aea2ffab0b89
+      m_ProfileName: v2.0.1
+      m_Values:
+      - m_Id: cbf41fbbe4b393e4caa88cc535a86044
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 46f57bffcc639364dbb53b4a87cddf56
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: 679bb17bd91c6614087c27ef3c2492cd
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: c0e0b85564c484f4e9dd214100d50dfc
+        m_Value: ServerData/[BuildTarget]
+      - m_Id: b26a161c60403384599816fecfd2506a
+        m_Value: https://plantopia.s3.us-east-2.amazonaws.com/v2.0.1/[BuildTarget]
     m_ProfileEntryNames:
     - m_Id: cbf41fbbe4b393e4caa88cc535a86044
       m_Name: BuildTarget
@@ -199,7 +213,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 90c7272c69273524483e5a70bd194499, type: 2}
   - {fileID: 11400000, guid: 127af75ef442c3e488d1738a1ef7ca48, type: 2}
   - {fileID: 11400000, guid: 623c8302761c09f4aabb676e798f1de2, type: 2}
-  m_ActiveProfileId: b08752ec66d712d4f8c7783c44c20295
+  m_ActiveProfileId: 7135d79e72c3c1847b02aea2ffab0b89
   m_HostingServicesManager:
     m_HostingServiceInfos: []
     m_Settings: {fileID: 11400000}

@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class PlantController : MonoBehaviour
 {
     [Header("Display")]
-    //public bool uIBlock;
     public GameObject activeObject;
 
     [Header("Param")]
@@ -28,8 +27,10 @@ public class PlantController : MonoBehaviour
 
     void Update()
     {
-        var pointerEventData = new PointerEventData(eventSystem);
-        pointerEventData.position = Input.mousePosition;
+        var pointerEventData = new PointerEventData(eventSystem)
+        {
+            position = Input.mousePosition
+        };
         var results = new List<RaycastResult>();
         graphicRaycaster.Raycast(pointerEventData, results);
         if (results.Count > 0)
@@ -42,7 +43,7 @@ public class PlantController : MonoBehaviour
             if (Physics.Raycast(ray, out hitInfo, float.PositiveInfinity, LayerMask.GetMask(LayerEnum.Plant.ToString())))
             {
                 activeObject = hitInfo.collider.gameObject;
-                activeObject.GetComponent<Plant>().PointerDown();
+                activeObject.GetComponent<Plant>()?.PointerDown();
             }
             else
                 activeObject = null;
@@ -60,8 +61,8 @@ public class PlantController : MonoBehaviour
         {
             if (activeObject)
             {
-                activeObject.GetComponent<Plant>().PointerUp();
-                GameDataManager.instance.gameData.gardentPlantList.Find(i => i.id == activeObject.GetComponent<Plant>().plantId).localPosition = activeObject.transform.localPosition;
+                activeObject.GetComponent<Plant>()?.PointerUp();
+                //GameDataManager.instance.gameData.gardentPlantList.Find(i => i.id == activeObject.GetComponent<Plant>().plantId).localPosition = activeObject.transform.localPosition;
             }
         }
     }

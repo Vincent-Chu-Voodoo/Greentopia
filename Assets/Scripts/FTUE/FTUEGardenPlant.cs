@@ -11,11 +11,14 @@ public class FTUEGardenPlant : MonoBehaviour
 {
     public static FTUEGardenPlantStatus fTUEGardenPlantStatus;
     public static bool haveNutrition;
-    public bool isDragging;
-    public bool isMoved;
+    public static Vector3 currentPosition;
+    public bool useMI;
     public float anchorSpeed;
     public Camera refCam;
     public Transform targetAnchor;
+
+    public Vector3 grownBoxPos;
+    public Vector3 grownBoxScale;
 
     public GameEvent OnMoved;
     public GameEvent OnHadNutrition;
@@ -29,11 +32,19 @@ public class FTUEGardenPlant : MonoBehaviour
 
     private void Start()
     {
-        print($"haveNutrition: {haveNutrition} {fTUEGardenPlantStatus}");
         if (haveNutrition && fTUEGardenPlantStatus == FTUEGardenPlantStatus.NeedNutrition)
         {
             fTUEGardenPlantStatus = FTUEGardenPlantStatus.HaveNutrition;
             OnHadNutrition.Invoke(this);
+        }
+        if (fTUEGardenPlantStatus != FTUEGardenPlantStatus.NotPlanted && fTUEGardenPlantStatus != FTUEGardenPlantStatus.NeedNutrition)
+        {
+            transform.position = currentPosition;
+        }
+        if (fTUEGardenPlantStatus == FTUEGardenPlantStatus.CanCollectApple)
+        {
+            GetComponent<BoxCollider>().center = grownBoxPos;
+            GetComponent<BoxCollider>().size = grownBoxScale;
         }
     }
 
@@ -41,9 +52,7 @@ public class FTUEGardenPlant : MonoBehaviour
     {
         if (fTUEGardenPlantStatus == FTUEGardenPlantStatus.NeedNutrition)
             transform.position = Vector3.MoveTowards(transform.position, targetAnchor.position, anchorSpeed * Time.deltaTime);
-        if (fTUEGardenPlantStatus != FTUEGardenPlantStatus.NotPlanted && fTUEGardenPlantStatus != FTUEGardenPlantStatus.NeedNutrition)
-            transform.position = targetAnchor.position;
-
+        currentPosition = transform.position;
     }
 
     public void FedNutrition()
@@ -51,6 +60,11 @@ public class FTUEGardenPlant : MonoBehaviour
         if (fTUEGardenPlantStatus == FTUEGardenPlantStatus.HaveNutrition)
             fTUEGardenPlantStatus = FTUEGardenPlantStatus.Growing;
         OnFedNutrition.Invoke(this);
+    }
+
+    public void DisableMI()
+    {
+        useMI = false;
     }
 
     private void OnMouseDrag()
@@ -71,18 +85,24 @@ public class FTUEGardenPlant : MonoBehaviour
         if (fTUEGardenPlantStatus == FTUEGardenPlantStatus.NotPlanted)
         {
             fTUEGardenPlantStatus = FTUEGardenPlantStatus.NeedNutrition;
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (!Physics.Raycast(ray, out var hitInfo, float.PositiveInfinity, LayerMask.GetMask(LayerEnum.PlantBase.ToString())))
+                transform.position = targetAnchor.position;
             OnMoved.Invoke(this);
         }
         if (fTUEGardenPlantStatus == FTUEGardenPlantStatus.CanCollectApple)
         {
             CollectApple();
         }
-        OnTap.Invoke(this);
+        if (useMI)
+            OnTap.Invoke(this);
     }
 
     public void Grown()
     {
         fTUEGardenPlantStatus = FTUEGardenPlantStatus.Grown;
+        GetComponent<BoxCollider>().center = grownBoxPos;
+        GetComponent<BoxCollider>().size = grownBoxScale;
         OnGrown.Invoke(this);
     }
 

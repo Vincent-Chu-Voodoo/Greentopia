@@ -34,6 +34,7 @@ public class SceneTransition : MonoBehaviour
 
     public void FadeIn(SceneInstance sceneInstance)
     {
+        gameObject.SetActive(true);
         OnFinishFadeIn.AddListener(_ =>
         {
             sceneInstance.ActivateAsync();
@@ -43,6 +44,7 @@ public class SceneTransition : MonoBehaviour
 
     public void FadeIn(AssetReference sceneAR)
     {
+        gameObject.SetActive(true);
         sceneAoh = Addressables.LoadSceneAsync(sceneAR, UnityEngine.SceneManagement.LoadSceneMode.Single, false);
         OnFinishFadeIn.AddListener(_ =>
         {
@@ -56,6 +58,7 @@ public class SceneTransition : MonoBehaviour
 
     public void FadeIn(Action _callBack)
     {
+        gameObject.SetActive(true);
         OnFinishFadeIn.AddListener(_ => _callBack?.Invoke());
         OnFadeIn.Invoke(this);
     }

@@ -152,6 +152,20 @@ MonoBehaviour:
         m_Value: ServerData/[BuildTarget]
       - m_Id: b26a161c60403384599816fecfd2506a
         m_Value: https://plantopia.s3.us-east-2.amazonaws.com/v1.0.1/[BuildTarget]
+    - m_InheritedParent: 
+      m_Id: 7ebf383458e67574c95465cfce4f4b0a
+      m_ProfileName: v1.0.2
+      m_Values:
+      - m_Id: cbf41fbbe4b393e4caa88cc535a86044
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 46f57bffcc639364dbb53b4a87cddf56
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: 679bb17bd91c6614087c27ef3c2492cd
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: c0e0b85564c484f4e9dd214100d50dfc
+        m_Value: ServerData/[BuildTarget]
+      - m_Id: b26a161c60403384599816fecfd2506a
+        m_Value: https://greentopia.s3.eu-west-2.amazonaws.com/v1.0.2/[BuildTarget]
     m_ProfileEntryNames:
     - m_Id: cbf41fbbe4b393e4caa88cc535a86044
       m_Name: BuildTarget

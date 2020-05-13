@@ -5740,7 +5740,7 @@ MonoBehaviour:
       atomLevel: 1
       rowIndex: 2
       columnIndex: 2
-  useSavedGameSession: 0
+  useSavedGameSession: 1
   levelText: {fileID: 678508108}
   closeTargetSceneAR:
     m_AssetGUID: a7b27e673a691d1489094d65e84ba0ec

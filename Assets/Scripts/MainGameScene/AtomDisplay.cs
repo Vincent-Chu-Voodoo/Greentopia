@@ -64,6 +64,8 @@ public class AtomDisplay : MonoBehaviour
                 spriteRendererBG.sprite = aoh.Result as Sprite;
             if (spriteRendererFG != null)
                 spriteRendererFG.sprite = aoh.Result as Sprite;
+            if (atom.isDusty)
+                spriteRendererFG.color = new Color(0.2f, 0.2f, 0.2f);
         };
     }
 

@@ -8,6 +8,7 @@ public class Atom : MonoBehaviour, IAtom
     [Header("Display")]
     public AtomEnum atomType;
     public int atomLevel;
+    public bool isDusty;
     public bool isAnchorToSubGrid;
     public bool isCanCraft;
     public SubGrid subGrid;
@@ -50,8 +51,9 @@ public class Atom : MonoBehaviour, IAtom
     }
     #endregion
 
-    public void Setup(AtomEnum _atomType, MainGrid mainGrid, float coolDown = 0f, int level = 1)
+    public void Setup(AtomEnum _atomType, MainGrid mainGrid, float coolDown = 0f, int level = 1, bool _isDusty = false)
     {
+        isDusty = _isDusty;
         atomLevel = level;
         atomType = _atomType;
         GetComponent<Spawner>()?.Setup(mainGrid, coolDown);

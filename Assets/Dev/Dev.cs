@@ -21,7 +21,7 @@ public class Dev : MonoBehaviour
 
     public void M1(Vector3 screenPosition)
     {
-        SnapTo();
+        
     }
 
     public void SnapTo()
@@ -45,5 +45,10 @@ public class Dev : MonoBehaviour
         //        print($"{gd.atomEnum} {gd.atomLevel}");
         //    }
         //}
+    }
+
+    public void OnClick()
+    {
+        print($"OnClick");
     }
 }

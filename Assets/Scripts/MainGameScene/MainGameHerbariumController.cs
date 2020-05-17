@@ -88,7 +88,7 @@ public class MainGameHerbariumController : MonoBehaviour
             newAtom.SetCanCraft(true);
         if (newAtom.atomType == AtomEnum.cotton && newAtom.atomLevel == 2)
             newAtom.SetCanCraft(true);
-        if (newAtom.atomType == AtomEnum.log && newAtom.atomLevel == 2)
+        if (newAtom.atomType == AtomEnum.sapling && newAtom.atomLevel == 2)
             newAtom.SetCanCraft(true);
         //newAtom.SetCanCraft(GameDataManager.instance.plantSDataList.Exists(i => GameDataManager.instance.GetPrestigeLevel() >= i.prestigeLevelRequirement && i.ingredientList.Exists(j => j.atomEnum == newAtom.atomType && Mathf.Abs(j.level - newAtom.atomLevel) < 0.1f)));
     }

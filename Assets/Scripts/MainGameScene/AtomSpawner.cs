@@ -50,7 +50,7 @@ public class AtomSpawner : MonoBehaviour
         aoh.Completed += _ =>
         {
             var newAtom = _.Result.GetComponent<Atom>();
-            newAtom.Setup(gridData.atomEnum, mainGrid, gridData.totalCoolDown, gridData.atomLevel);
+            newAtom.Setup(gridData.atomEnum, mainGrid, gridData.totalCoolDown, gridData.atomLevel, gridData.isDusty);
             newAtom.SubGridLinked(subGrid);
             subGrid.AtomLinked(newAtom);
             newAtom.AtomComplete();

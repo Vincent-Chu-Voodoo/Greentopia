@@ -42,11 +42,15 @@ public class GardenPlantData
 [Serializable]
 public class GameData
 {
+    public PlantSData pinnedPlant;
     public float prestigePoint;
+    public float diamond;
+    public float coin;
     public TutorialData tutorialData = new TutorialData();
+    public LevelSessionData nurserySessionData = new LevelSessionData();
+    public LevelSessionData toolShedSessionData = new LevelSessionData();
     public List<LevelSessionData> levelSessionDataList = new List<LevelSessionData>();
     //public List<IngredientData> ingredientList = new List<IngredientData>();
     //public List<PlantData> inventoryPlantList = new List<PlantData>();
     public List<GardenPlantData> gardentPlantList = new List<GardenPlantData>();
-    
 }

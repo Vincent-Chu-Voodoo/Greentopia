@@ -11,6 +11,7 @@ public class GridData
     public int atomLevel;
     public int rowIndex;
     public int columnIndex;
+    public bool isDusty;
 }
 
 [Serializable]

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8631919608b8e54090f2daf1dfd0b17, type: 3}
+  m_Name: 1_Tomato Tree
+  m_EditorClassIdentifier: 
+  plantName: Tomato Tree
+  prestigePoint: 30
+  prestigeLevelRequirement: 1
+  ingredientList:
+  - atomEnum: 9
+    level: 1
+    count: 1
+  - atomEnum: 6
+    level: 2
+    count: 1
+  - atomEnum: 4
+    level: 2
+    count: 1

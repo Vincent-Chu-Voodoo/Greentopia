@@ -10,7 +10,6 @@ public class FTUEReanchor : MonoBehaviour
     void Update()
     {
         var sp = targetCamera.WorldToScreenPoint(plantTransform.position);
-        print(sp);
         transform.position = targetCamera.ScreenToWorldPoint(new Vector3(sp.x, sp.y, transform.position.z));
     }
 }

@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockCount: 0
   targetScene:
-    m_AssetGUID: 9395dd976e60ae44095af48f950b21a8
+    m_AssetGUID: 77cffef6fd20cf6468c48a41d3a44ab1
     m_SubObjectName: 
   OnLoadStart:
     m_PersistentCalls:
@@ -395,6 +395,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneTransition
       objectReference: {fileID: 0}
+    - target: {fileID: 2244583420170027351, guid: 3daf2eb5536ea3746b344f6af914afaa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3daf2eb5536ea3746b344f6af914afaa, type: 3}
 --- !u!1 &1124807346
@@ -442,35 +447,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bootstrapSceneController: {fileID: 35461701}
   plantSDataListARList:
-  - m_AssetGUID: 806d445b58fb24be9b71d95144b68ee9
+  - m_AssetGUID: 9df71a349ed9798468716fdbbf8d2bed
     m_SubObjectName: 
-  - m_AssetGUID: 2afba5e49214249b18883cd2781794fc
-    m_SubObjectName: 
-  - m_AssetGUID: 6611b965af3de4839b24c8e41af0943b
-    m_SubObjectName: 
-  - m_AssetGUID: e17d6f40561d84f02b1492c708375495
-    m_SubObjectName: 
-  - m_AssetGUID: 06b0bfabace9c4a4986a4f1baff99394
-    m_SubObjectName: 
-  - m_AssetGUID: 5fa2fba9c817a47a3a361e8a275d8289
-    m_SubObjectName: 
-  - m_AssetGUID: db4d8497aa9ff432e821478e87cb7c19
-    m_SubObjectName: 
-  - m_AssetGUID: 494dec611c967406181d16dec037c6bc
-    m_SubObjectName: 
-  - m_AssetGUID: fc58f098c65a445bb8ab20e1543f343b
-    m_SubObjectName: 
-  - m_AssetGUID: 2ede3ea4453354b7fafe7be73f8926e9
-    m_SubObjectName: 
-  - m_AssetGUID: 8f02e2fe265314536b68e8098d4c058e
-    m_SubObjectName: 
-  - m_AssetGUID: d1ce2480345cf49119c0ca1eabe8bb06
-    m_SubObjectName: 
-  - m_AssetGUID: cdac9d89d17694387a4f52acdb261a94
-    m_SubObjectName: 
-  - m_AssetGUID: dfbd2ca715f564b79ab862d17955ec69
-    m_SubObjectName: 
-  - m_AssetGUID: c9bbe8da66e4b4beab89fbef1381f0cb
+  - m_AssetGUID: 8c5c57eb984176a4eab78ecc40fb380b
     m_SubObjectName: 
 --- !u!1001 &1386758117
 PrefabInstance:

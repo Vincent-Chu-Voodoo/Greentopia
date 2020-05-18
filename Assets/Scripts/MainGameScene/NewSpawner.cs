@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NewSpawner : MonoBehaviour
 {
+    public float currentCooldown;
+
     public AtomEnum atomType;
     public GameObject atomPrefab;
     public MainGrid mainGrid;
@@ -16,6 +18,9 @@ public class NewSpawner : MonoBehaviour
     public void OnMouseUpAsButton()
     {
         if (!enabled)
+            return;
+        currentCooldown = Mathf.MoveTowards(currentCooldown, 0f, Time.deltaTime);
+        if (currentCooldown > 0f)
             return;
         print($"OnMouseUpAsButton");
         OnClick.Invoke(this);

@@ -12,8 +12,6 @@ public class FTUE2NurseryScene : MonoBehaviour
     {
         var crateList = GameDataManager.instance.gameData.crateList.Where(i => i.targetBoard == FTUE2BoardEnum.NurseryBoard).ToList();
         
-        print($"akaCK1: {crateList == null}");
-        print($"akaCK2: {crateList.Count}");
         if (crateList != null && crateList.Count > 0)
         {
             var targetCrate = crateList.First();

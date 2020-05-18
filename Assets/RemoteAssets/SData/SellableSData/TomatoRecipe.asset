@@ -9,24 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7a2c7e5a682a264788689bef8be2fa8, type: 3}
-  m_Name: PrestigePointSData
+  m_Script: {fileID: 11500000, guid: e998a21877d996742868e920a2b6ceb0, type: 3}
+  m_Name: TomatoRecipe
   m_EditorClassIdentifier: 
-  accumulatedPrestigePointList:
-  - 0
-  - 0
-  - 200
-  - 400
-  - 600
-  - 800
-  - 1000
-  - 1200
-  - 1400
-  - 1600
-  - 1800
-  - 2000
-  - 2200
-  - 2400
-  - 2600
-  - 8000
-  - 80000
+  sellPrice: 200

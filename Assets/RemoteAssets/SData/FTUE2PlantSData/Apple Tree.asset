@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8631919608b8e54090f2daf1dfd0b17, type: 3}
+  m_Name: Apple Tree
+  m_EditorClassIdentifier: 
+  plantName: Apple Tree
+  prestigePoint: 0
+  prestigeLevelRequirement: 0
+  growningTimeInSecond: 0
+  speedUpDiamond: 0
+  sellable: {fileID: 11400000, guid: 94aa9f7f8663bd245bbbe0c8149e8ce9, type: 2}
+  ingredientList: []

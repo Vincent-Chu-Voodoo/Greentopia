@@ -86,7 +86,7 @@ public class FTUEGardenPlant : MonoBehaviour
         {
             fTUEGardenPlantStatus = FTUEGardenPlantStatus.NeedNutrition;
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (!Physics.Raycast(ray, out var hitInfo, float.PositiveInfinity, LayerMask.GetMask(LayerEnum.PlantBase.ToString())))
+            if (!Physics.Raycast(ray, out _, float.PositiveInfinity, LayerMask.GetMask(LayerEnum.PlantBase.ToString())))
                 transform.position = targetAnchor.position;
             OnMoved.Invoke(this);
         }

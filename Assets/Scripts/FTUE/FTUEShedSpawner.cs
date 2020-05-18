@@ -15,7 +15,9 @@ public class FTUEShedSpawner : NewSpawner
         var emptyGridList = spawnableSubGridList.Where(i => i.isEmpty).ToList();
         for (var i = 0; i < spawnCount; i++)
         {
-            if (emptyGridList.Count() < 1 || maxCount < 1)
+            if (maxCount < 1)
+
+            if (emptyGridList.Count() < 1)
                 break;
             var ranIndex = Random.Range(0, emptyGridList.Count());
             var targetGrid = emptyGridList[ranIndex];

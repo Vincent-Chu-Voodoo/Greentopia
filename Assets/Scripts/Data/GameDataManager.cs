@@ -86,6 +86,11 @@ public class GameDataManager : Singleton<GameDataManager>
         return clpr - clpm;
     }
 
+    public float GetLevelPercent()
+    {
+        return GetLevelPercent(GetLevelF(gameData.prestigePoint));
+    }
+
     public float GetLevelPercent(float levelF)
     {
         return levelF % 1f;

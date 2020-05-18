@@ -60,16 +60,28 @@ public class AtomController : MonoBehaviour
 
     public void PointerDown(Atom atom)
     {
+        if (atom.isDusty)
+            return;
         atom.isAnchorToSubGrid = false;
     }
 
     public void PointerDrag(PointMoveParam pointMoveParam)
     {
+        if (pointMoveParam.atom.isDusty)
+            return;
         pointMoveParam.atom.transform.position = pointMoveParam.newWorldPoint + atomDragOffset;
     }
 
     public void PointerUp(Atom atom)
     {
+        atom.isAnchorToSubGrid = true;
+        if (atom.isDusty || (GetAtomCurrentGrid(atom)?.currentAtom?.isDusty ?? false))
+        {
+            if (!atom.CanCombine(GetAtomCurrentGrid(atom).currentAtom))
+                return;
+        }
+        if (GetAtomCurrentGrid(atom) == atom.subGrid)
+            atom.Tap();
         DropAtomToSubGrid(atom, GetAtomCurrentGrid(atom));
     }
 
@@ -123,6 +135,7 @@ public class AtomController : MonoBehaviour
         OnAtomDestroy.Invoke(fromAtom);
         RemoveAtom(fromAtom);
         Destroy(fromAtom.gameObject);
+        toAtom.isDusty = false;
         toAtom.CombineAtom();
         OnAtomCombined.Invoke(toAtom);
     }

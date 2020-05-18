@@ -21,7 +21,7 @@ public class LevelPanel : MonoBehaviour
     [Header("Event")]
     public GameEvent OnClickPlay;
 
-    public void Setup(LevelSData _levelSData, List<AtomDisplaySData> _atomDisplaySDataList, int prestigeLevel)
+    public void Setup(LevelSData _levelSData, int prestigeLevel)
     {
         prestigeUnlockPanelText.SetText($"Prestige level {_levelSData.prestigeLevel}");
         prestigeUnlockPanel.SetActive(prestigeLevel < _levelSData.prestigeLevel);

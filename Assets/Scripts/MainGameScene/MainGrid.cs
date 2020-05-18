@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class MainGrid : MonoBehaviour
@@ -68,6 +69,11 @@ public class MainGrid : MonoBehaviour
     public SubGrid GetGridAt(int i, int j)
     {
         return subGrids[(int) (i * rowColumn.y + j)];
+    }
+
+    public SubGrid GetFreeGrid()
+    {
+        return subGrids.Find(i => i.isEmpty);
     }
 
     public SubGrid FindCloestSubGrid(Vector3 worldPosition)

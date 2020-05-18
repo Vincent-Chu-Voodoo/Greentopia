@@ -6,5 +6,5 @@ using UnityEngine;
 public class AtomDisplaySData : ScriptableObject
 {
     public AtomEnum type;
-    public List<Sprite> spriteList;
+    //public List<Sprite> spriteList;
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5062,7 +5062,7 @@ MonoBehaviour:
   useSavedGameSession: 0
   levelText: {fileID: 678508108}
   closeTargetSceneAR:
-    m_AssetGUID: 9395dd976e60ae44095af48f950b21a8
+    m_AssetGUID: 77cffef6fd20cf6468c48a41d3a44ab1
     m_SubObjectName: 
   craftTargetSceneAR:
     m_AssetGUID: cfe0b93fd2c90f5459effca80424317f
@@ -8669,6 +8669,66 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1653599070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1653599072}
+  - component: {fileID: 1653599071}
+  m_Layer: 0
+  m_Name: FTUE2NurseryScene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1653599071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653599070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c63bcdf217b4454fb0e7b0903339769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atomSpawner: {fileID: 1129884056}
+  subGridList:
+  - {fileID: 39583335}
+  - {fileID: 261571753}
+  - {fileID: 1163662364}
+  - {fileID: 1831092376}
+  - {fileID: 1616845025}
+  - {fileID: 205158890}
+  - {fileID: 1969890372}
+  - {fileID: 1130309583}
+  - {fileID: 1972223850}
+  - {fileID: 269372832}
+  - {fileID: 1023332866}
+  - {fileID: 971770017}
+  - {fileID: 78544212}
+  - {fileID: 2004808585}
+  - {fileID: 1857393485}
+--- !u!4 &1653599072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653599070}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1661096466
 GameObject:
   m_ObjectHideFlags: 0
@@ -10676,7 +10736,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2131770559
 RectTransform:
   m_ObjectHideFlags: 0

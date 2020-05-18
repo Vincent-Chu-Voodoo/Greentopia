@@ -42,6 +42,7 @@ public class GardenPlantData
 [Serializable]
 public class GameData
 {
+    public List<FTUE2CrateSData> crateList = new List<FTUE2CrateSData>();
     public PlantSData pinnedPlant;
     public float prestigePoint;
     public float diamond;

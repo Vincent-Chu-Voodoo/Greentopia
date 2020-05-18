@@ -21,6 +21,7 @@ public class GardenSceneController : MonoBehaviour
     public AssetReference shopSceneAR;
     public AssetReference playPanelSceneAR;
     public AssetReference neighbourSceneAR;
+    public AssetReference crateSceneAR;
     public Transform plantRoot;
     public PrestigePointController prestigePointController;
     public SceneTransition sceneTransition;
@@ -111,5 +112,10 @@ public class GardenSceneController : MonoBehaviour
     public void Neighbour()
     {
         sceneTransition.FadeIn(neighbourSceneAR);
+    }
+
+    public void Crate()
+    {
+        sceneTransition.FadeIn(crateSceneAR);
     }
 }

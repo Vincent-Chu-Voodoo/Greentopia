@@ -13,13 +13,13 @@ public class AtomDisplay : MonoBehaviour
     public Transform percentTrans;
     public SpriteRenderer spriteRendererFG;
     public SpriteRenderer spriteRendererBG;
-    public List<AtomDisplaySData> atomDisplayDataList;
+    //public List<AtomDisplaySData> atomDisplayDataList;
     public GameObject fTUEGreen;
 
     [ContextMenu("SortAtomDisplayDataList")]
     public void SortAtomDisplayDataList()
     {
-        atomDisplayDataList.Sort((i, j) => j.type.CompareTo(i.type));
+        //atomDisplayDataList.Sort((i, j) => j.type.CompareTo(i.type));
     }
 
     public void SetShowPercent(bool value)
@@ -64,8 +64,11 @@ public class AtomDisplay : MonoBehaviour
                 spriteRendererBG.sprite = aoh.Result as Sprite;
             if (spriteRendererFG != null)
                 spriteRendererFG.sprite = aoh.Result as Sprite;
+            //print($"UpdateDisplay {atom.isDusty} {atom.atomType} {atom.atomLevel}");
             if (atom.isDusty)
-                spriteRendererFG.color = new Color(0.2f, 0.2f, 0.2f);
+                spriteRendererFG.color = new Color(0.1f, 0.1f, 0.1f);
+            else
+                spriteRendererFG.color = new Color(1f, 1f, 1f);
         };
     }
 

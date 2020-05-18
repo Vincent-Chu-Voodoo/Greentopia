@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -11,7 +12,10 @@ public class Atom : MonoBehaviour, IAtom
     public bool isDusty;
     public bool isAnchorToSubGrid;
     public bool isCanCraft;
+    public bool isCrate;
     public SubGrid subGrid;
+    public AtomSpawner atomSpawner;
+    public List<FTUE2IngredientBaseSData> ingredientSDataList;
 
     [Header("Param")]
     public float anchoringSpeed;
@@ -32,7 +36,7 @@ public class Atom : MonoBehaviour, IAtom
     void Start()
     {
         name = $"Atom {atomType}";
-        atomDisplay.UpdateDisplay(this);
+        //atomDisplay.UpdateDisplay(this);
     }
 
     void Update()
@@ -59,6 +63,30 @@ public class Atom : MonoBehaviour, IAtom
         GetComponent<Spawner>()?.Setup(mainGrid, coolDown);
     }
 
+    public void SetupAsCrate(FTUE2CrateSData fTUE2CrateSData, AtomSpawner _atomSpawner)
+    {
+        atomSpawner = _atomSpawner;
+        isCrate = true;
+        atomType = fTUE2CrateSData.atomEnum;
+        ingredientSDataList = new List<FTUE2IngredientBaseSData>();
+        var tempList = new List<FTUE2IngredientBaseSData>();
+        for (var i = 0; i < fTUE2CrateSData.fTUE2IngredientBaseSDataList.Count; i++) {
+            tempList.Add(fTUE2CrateSData.fTUE2IngredientBaseSDataList[i]);
+        }
+        if (fTUE2CrateSData.randomize)
+        {
+            while (tempList.Count > 0)
+            {
+                var index = Random.Range(0, tempList.Count);
+                ingredientSDataList.Add(tempList[index]);
+                tempList.RemoveAt(index);
+            }
+        }
+        else
+            ingredientSDataList = tempList;
+        Destroy(GetComponent<Spawner>());
+    }
+
     public void AtomComplete()
     {
         OnAtomComplete.Invoke(this);
@@ -79,7 +107,7 @@ public class Atom : MonoBehaviour, IAtom
 
     public bool CanCombine(Atom atom)
     {
-        return !ReferenceEquals(atom, this) && atom.atomLevel < 6 && atom == this;
+        return !ReferenceEquals(atom, this) && (!atom.isDusty || !isDusty) && atom.atomLevel < 6 && atom == this && !isCrate;
     }
 
     private void UpdateAnchoring()
@@ -127,5 +155,20 @@ public class Atom : MonoBehaviour, IAtom
     public void SetFTUEGreen()
     {
         atomDisplay.SetFTUEGreen();
+    }
+
+    public void Tap()
+    {
+        print($"Tap");
+        if (isCrate)
+        {
+            if (ingredientSDataList.Count > 0)
+            {
+                var ingredient = ingredientSDataList.First();
+                ingredientSDataList.RemoveAt(0);
+                ingredient.Reset();
+                atomSpawner.SpawnAtom(ingredient.atomEnum, ingredient.atomLevel, ingredient.isDusty);
+            }
+        }
     }
 }

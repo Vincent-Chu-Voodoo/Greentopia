@@ -57,4 +57,35 @@ public class AtomSpawner : MonoBehaviour
             OnSpawnNewAtom.Invoke(newAtom);
         };
     }
+
+    public bool SpawnAtom(AtomEnum atomEnum, int atomLevel, bool isDusty = false)
+    {
+        var subGrid = mainGrid.GetFreeGrid();
+        if (subGrid is null)
+            return false;
+        var aoh = atomAR.InstantiateAsync(subGrid.transform);
+        aoh.Completed += _ =>
+        {
+            var newAtom = _.Result.GetComponent<Atom>();
+            newAtom.Setup(atomEnum, mainGrid, 0f, atomLevel, isDusty);
+            newAtom.SubGridLinked(subGrid);
+            subGrid.AtomLinked(newAtom);
+            newAtom.AtomComplete();
+            OnSpawnNewAtom.Invoke(newAtom);
+        };
+        return true;
+    }
+
+    public void SpawnCrate(FTUE2CrateSData fTUE2CrateSData, SubGrid subGrid)
+    {
+        atomAR.InstantiateAsync(subGrid.transform).Completed += aoh =>
+        {
+            var newAtom = aoh.Result.GetComponent<Atom>();
+            newAtom.SetupAsCrate(fTUE2CrateSData, this);
+            newAtom.SubGridLinked(subGrid);
+            subGrid.AtomLinked(newAtom);
+            newAtom.AtomComplete();
+            OnSpawnNewAtom.Invoke(newAtom);
+        };
+    }
 }

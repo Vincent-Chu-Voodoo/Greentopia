@@ -16,7 +16,7 @@ public class PlayerPanelSceneController : MonoBehaviour
     [Header("Config")]
     public AssetReference closeTargetSceneAR;
     public AssetReference playTargetSceneAR;
-    public List<AtomDisplaySData> atomDisplaySDataList;
+    //public List<AtomDisplaySData> atomDisplaySDataList;
     public AssetReference levelPanelAR;
     public Transform levelPanelRoot;
     public SceneTransition sceneTransition;
@@ -40,7 +40,7 @@ public class PlayerPanelSceneController : MonoBehaviour
             aoh.Completed += _ =>
             {
                 var levelPanel = aoh.Result;
-                levelPanel.GetComponent<LevelPanel>().Setup(levelData, atomDisplaySDataList, playerPanelSceneParam.prestigeLevel);
+                levelPanel.GetComponent<LevelPanel>().Setup(levelData, playerPanelSceneParam.prestigeLevel);
                 levelPanel.GetComponent<LevelPanel>().OnClickPlay.AddListener(Play);
             };
         }

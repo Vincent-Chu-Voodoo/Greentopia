@@ -17,7 +17,7 @@ public class SubGrid : MonoBehaviour
     public GameEvent OnAtomLinked;
     public GameEvent OnAtomUnLinked;
 
-    public bool isEmpty { get { return currentAtom == null; } }
+    public bool isEmpty { get { return gameObject.activeSelf && currentAtom == null; } }
 
     void Update()
     {

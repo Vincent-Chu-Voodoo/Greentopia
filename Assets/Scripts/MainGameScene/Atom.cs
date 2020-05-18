@@ -84,6 +84,7 @@ public class Atom : MonoBehaviour, IAtom
         }
         else
             ingredientSDataList = tempList;
+        
         Destroy(GetComponent<Spawner>());
     }
 

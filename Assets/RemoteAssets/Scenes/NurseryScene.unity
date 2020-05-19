@@ -5868,8 +5868,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9368a3cd4c5ba084891940125c54f443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainGameParam:
-    levelSData: {fileID: 11400000, guid: dfd9d2416d9e24e43a0f2b93e7816549, type: 2}
   levelSessionData:
     level: 1
     gridDataList:
@@ -5878,12 +5876,15 @@ MonoBehaviour:
       atomLevel: 1
       rowIndex: 0
       columnIndex: 2
+      isDusty: 0
     - atomEnum: 7
       totalCoolDown: 0
       atomLevel: 1
       rowIndex: 2
       columnIndex: 3
+      isDusty: 0
   useSavedGameSession: 0
+  boardEnum: 0
   levelText: {fileID: 678508108}
   closeTargetSceneAR:
     m_AssetGUID: 9395dd976e60ae44095af48f950b21a8
@@ -7794,6 +7795,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c946935207bb27409b19493dfa0cdf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentCoolDown: 0
+  coolDown: 0
   atomType: 6
   atomPrefab: {fileID: 973223762918422330, guid: d28c0fd794906c442bfa6ba7edd25bf1,
     type: 3}
@@ -7854,6 +7857,7 @@ MonoBehaviour:
   OnSpawnNewAtom:
     m_PersistentCalls:
       m_Calls: []
+  remainCount: 0
   maxCount: 2
   spawnCount: 1
   OnExhausted:
@@ -9637,7 +9641,7 @@ PrefabInstance:
     - target: {fileID: 2244583420170027351, guid: 3daf2eb5536ea3746b344f6af914afaa,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3daf2eb5536ea3746b344f6af914afaa, type: 3}

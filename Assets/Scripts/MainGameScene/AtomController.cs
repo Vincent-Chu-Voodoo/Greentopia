@@ -77,7 +77,7 @@ public class AtomController : MonoBehaviour
         atom.isAnchorToSubGrid = true;
         if (atom.isDusty || (GetAtomCurrentGrid(atom)?.currentAtom?.isDusty ?? false))
         {
-            if (!atom.CanCombine(GetAtomCurrentGrid(atom).currentAtom))
+            if (!atom.CanCombine(GetAtomCurrentGrid(atom)?.currentAtom))
                 return;
         }
         if (GetAtomCurrentGrid(atom) == atom.subGrid)

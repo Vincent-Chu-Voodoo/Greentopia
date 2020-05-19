@@ -5,6 +5,7 @@ using UnityEngine;
 public class FTUE2Plant : MonoBehaviour
 {
     public PlantSData plantSData;
+    public FTUE2PlantDisplay plantDisplay;
 
     public void Setup(PlantSData _plantSData)
     {

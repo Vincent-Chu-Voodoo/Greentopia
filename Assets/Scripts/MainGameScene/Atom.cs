@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using GameAnalyticsSDK.Setup;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -108,7 +109,8 @@ public class Atom : MonoBehaviour, IAtom
 
     public bool CanCombine(Atom atom)
     {
-        return !ReferenceEquals(atom, this) && (!atom.isDusty || !isDusty) && atom.atomLevel < 6 && atom == this && !isCrate;
+        return 
+            !(atom is null) && !ReferenceEquals(atom, this) && (!atom.isDusty || !isDusty) && atom.atomLevel < 6 && atom == this && !isCrate;
     }
 
     private void UpdateAnchoring()
@@ -160,7 +162,6 @@ public class Atom : MonoBehaviour, IAtom
 
     public void Tap()
     {
-        print($"Tap");
         if (isCrate)
         {
             if (ingredientSDataList.Count > 0)
@@ -169,6 +170,11 @@ public class Atom : MonoBehaviour, IAtom
                 ingredientSDataList.RemoveAt(0);
                 ingredient.Reset();
                 atomSpawner.SpawnAtom(ingredient.atomEnum, ingredient.atomLevel, ingredient.isDusty);
+            }
+            else
+            {
+                FindObjectOfType<AtomController>().RemoveAtom(this);
+                Destroy(gameObject);
             }
         }
     }

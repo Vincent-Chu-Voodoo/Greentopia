@@ -12,9 +12,9 @@ public class PlantSData : ScriptableObject
     public float prestigeLevelRequirement;
     public float growningTimeInSecond;
     public float speedUpDiamond;
+    public int sellableCapacity;
     public FTUE2SellableSData sellable;
+    public float sellableSpawnTime;
     public List<IngredientData> nutrientRequiredList;
     public List<IngredientData> ingredientList;
-    //public Sprite plantSprite;
-    //public AssetReference plantAR;
 }

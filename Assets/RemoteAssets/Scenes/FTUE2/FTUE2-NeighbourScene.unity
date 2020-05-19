@@ -175,7 +175,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4b1c38af20f786644919f098d51e044a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0fd65dde4b0425a45ab54eea88875777, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -361,6 +361,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Footer
       objectReference: {fileID: 0}
+    - target: {fileID: 8854332804870207584, guid: c8ef54999849bb848918230d50fdb04a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8854332804870207591, guid: c8ef54999849bb848918230d50fdb04a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -541,7 +546,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 300
+  m_text: 200
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 34388366f5c1ad44e8f85d0768861374, type: 2}
   m_sharedMaterial: {fileID: -3480107239788241554, guid: 34388366f5c1ad44e8f85d0768861374,
@@ -1092,7 +1097,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Those apples look tasty! Can I have some? I'll pay ya for it
+  m_text: Those tomato look tasty! Can I have some? I'll pay ya for it
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5e44df17e1be24542815705920744f5e, type: 2}
   m_sharedMaterial: {fileID: -3480107239788241554, guid: 5e44df17e1be24542815705920744f5e,
@@ -2336,7 +2341,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 07590bcc990c52e428966ebe8c7cb4c8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a3302836d9efc12499ba404f6b2073c9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

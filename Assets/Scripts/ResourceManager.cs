@@ -17,6 +17,12 @@ public class ResourceManager : Singleton<ResourceManager>
         return Addressables.LoadAssetAsync<Sprite>(target);
     }
 
+    public AsyncOperationHandle<Sprite> GetPlantSprite(string plantName, int grownStage)
+    {
+        var target = $"{plantName}_{grownStage}";
+        return Addressables.LoadAssetAsync<Sprite>(target);
+    }
+
     //public AsyncOperationHandle GetPlantSData(string sDataName)
     //{
     //    return Addressables.LoadAssetAsync<PlantSData>(sDataName);

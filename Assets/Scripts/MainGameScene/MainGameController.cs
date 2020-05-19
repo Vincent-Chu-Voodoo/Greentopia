@@ -14,11 +14,12 @@ public class MainGameParam
 public class MainGameController : MonoBehaviour
 {
     [Header("Display")]
-    public MainGameParam mainGameParam;
+    //public MainGameParam mainGameParam;
     public LevelSessionData levelSessionData;
 
     [Header("Param")]
     public bool useSavedGameSession;
+    public FTUE2BoardEnum boardEnum;
     //public VictoryConditionSData victoryCondition;
 
     [Header("Config")]
@@ -45,8 +46,8 @@ public class MainGameController : MonoBehaviour
 
     public void Init()
     {
-        if (GameDataManager.instance.sceneParam is MainGameParam)
-            mainGameParam = GameDataManager.instance.sceneParam as MainGameParam;
+        //if (GameDataManager.instance.sceneParam is MainGameParam)
+        //    mainGameParam = GameDataManager.instance.sceneParam as MainGameParam;
         GameDataManager.instance.sceneParam = null;
         //levelText.SetText($"BOARD {mainGameParam.levelSData.level}");
         InitiateGrids();
@@ -64,9 +65,21 @@ public class MainGameController : MonoBehaviour
     public void InitiateGameSession()
     {
         if (useSavedGameSession)
-            levelSessionData = GameDataManager.instance.gameData.levelSessionDataList.Find(i => i.level == mainGameParam.levelSData.level);
-        if (ReferenceEquals(levelSessionData.gridDataList, null))
-            levelSessionData = new LevelSessionData(mainGameParam.levelSData);
+        {
+            switch (boardEnum)
+            {
+                case FTUE2BoardEnum.NurseryBoard:
+                    levelSessionData = GameDataManager.instance.gameData.nurserySessionData;
+                    break;
+                case FTUE2BoardEnum.ToolShedBoard:
+                    levelSessionData = GameDataManager.instance.gameData.toolShedSessionData;
+                    break;
+                default:
+                    break;
+            }
+        }
+        //if (ReferenceEquals(levelSessionData.gridDataList, null))
+        //    levelSessionData = new LevelSessionData(mainGameParam.levelSData);
         InitiateGameSession(levelSessionData);
     }
 

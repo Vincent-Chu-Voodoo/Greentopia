@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FTUE2PinnedPlantController : MonoBehaviour
 {
+    public PlantSData pinnedPlant;
     public FTUE2PlantPanel fTUE2PlantPanel;
 
     private void Start()
@@ -14,7 +15,7 @@ public class FTUE2PinnedPlantController : MonoBehaviour
     public void PinPlant()
     {
         gameObject.SetActive(true);
-        var pinnedPlant = GameDataManager.instance.gameData.pinnedPlant;
+        pinnedPlant = GameDataManager.instance.gameData.pinnedPlant;
         if (pinnedPlant is null)
         {
             gameObject.SetActive(false);

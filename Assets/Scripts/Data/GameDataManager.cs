@@ -134,7 +134,41 @@ public class GameDataManager : Singleton<GameDataManager>
 
     public List<IngredientData> GenerateIngredientList()
     {
-        return GenerateIngredientList(gameData.levelSessionDataList);
+        var resultIngredientDataList = new List<IngredientData>();
+        for (var i = 0; i < gameData.nurserySessionData.gridDataList.Count; i++)
+        {
+            var gridData = gameData.nurserySessionData.gridDataList[i];
+            var index = resultIngredientDataList.FindIndex(k => k.atomEnum == gridData.atomEnum && Mathf.Abs(k.level - gridData.atomLevel) < 0.1f);
+            if (index < 0)
+            {
+                resultIngredientDataList.Add(new IngredientData()
+                {
+                    atomEnum = gridData.atomEnum,
+                    level = gridData.atomLevel,
+                    count = 1
+                });
+            }
+            else
+                resultIngredientDataList[index].count++;
+        }
+        for (var i = 0; i < gameData.toolShedSessionData.gridDataList.Count; i++)
+        {
+            var gridData = gameData.toolShedSessionData.gridDataList[i];
+            var index = resultIngredientDataList.FindIndex(k => k.atomEnum == gridData.atomEnum && Mathf.Abs(k.level - gridData.atomLevel) < 0.1f);
+            if (index < 0)
+            {
+                resultIngredientDataList.Add(new IngredientData()
+                {
+                    atomEnum = gridData.atomEnum,
+                    level = gridData.atomLevel,
+                    count = 1
+                });
+            }
+            else
+                resultIngredientDataList[index].count++;
+        }
+        return resultIngredientDataList;
+        //return GenerateIngredientList(gameData.levelSessionDataList);
     }
 
     public List<IngredientData> GenerateIngredientList(List<LevelSessionData> levelSessionDataList)

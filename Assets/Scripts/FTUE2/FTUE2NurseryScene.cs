@@ -20,12 +20,6 @@ public class FTUE2NurseryScene : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void PopCrate(FTUE2CrateSData fTUE2CrateSData)
     {
         foreach (var subGrid in subGridList)

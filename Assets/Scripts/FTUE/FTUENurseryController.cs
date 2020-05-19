@@ -35,7 +35,7 @@ public class FTUENurseryController : MonoBehaviour
 
     public void OnAtomCombined(object obj)
     {
-        if (atomController.allAtomList.Where(i => i.atomType == AtomEnum.sapling && i.atomLevel == 2).Count() > 1)
+        if (atomController.allAtomList.Where(i => i.atomType == AtomEnum.apple_sapling && i.atomLevel == 2).Count() > 1)
             return;
 
         if (combineCount++ == 0)

@@ -22,6 +22,8 @@ public class FTUELevelUp : MonoBehaviour
     public Transform startAnchor;
     public Transform endAnchor;
 
+    public FTUE2Header header;
+
     void Start()
     {
         StartCoroutine(BookLoop());
@@ -42,13 +44,15 @@ public class FTUELevelUp : MonoBehaviour
 
     IEnumerator ExpLoop()
     {
-        yield return new WaitForSeconds(expStartDelay);
-        var exp = 0f;
-        while (exp < expTarget)
-        {
-            exp = Mathf.MoveTowards(exp, expTarget, expIncrease);
-            expText.SetText($"{exp:0}");
-            yield return new WaitForSeconds(expDelay);
-        }
+        header.AddXp(100f);
+        yield return null;
+        //yield return new WaitForSeconds(expStartDelay);
+        //var exp = 0f;
+        //while (exp < expTarget)
+        //{
+        //    exp = Mathf.MoveTowards(exp, expTarget, expIncrease);
+        //    expText.SetText($"{exp:0}");
+        //    yield return new WaitForSeconds(expDelay);
+        //}
     }
 }

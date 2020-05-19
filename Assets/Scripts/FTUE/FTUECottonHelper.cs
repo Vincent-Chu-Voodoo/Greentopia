@@ -14,7 +14,6 @@ public class FTUECottonHelper : MonoBehaviour
     {
         var atomList = atomController.allAtomList.Where(i => i.atomType == targetType).ToList();
         var solution = solutionController.FindSolution(atomList);
-        print($"{name} UpdateFinger {solution.Count}");
         if (solution.Count > 0)
         {
             fTUEHandAnimation.anchorFrom = solution.First().atom1.transform;

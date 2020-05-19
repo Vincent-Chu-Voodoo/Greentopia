@@ -84,12 +84,6 @@ public class MainGameHerbariumController : MonoBehaviour
                 });
         }
         UpdateIngredient();
-        if (newAtom.atomType == AtomEnum.fertiliser && newAtom.atomLevel == 4)
-            newAtom.SetCanCraft(true);
-        if (newAtom.atomType == AtomEnum.cotton && newAtom.atomLevel == 2)
-            newAtom.SetCanCraft(true);
-        if (newAtom.atomType == AtomEnum.apple_sapling && newAtom.atomLevel == 2)
-            newAtom.SetCanCraft(true);
         //newAtom.SetCanCraft(GameDataManager.instance.plantSDataList.Exists(i => GameDataManager.instance.GetPrestigeLevel() >= i.prestigeLevelRequirement && i.ingredientList.Exists(j => j.atomEnum == newAtom.atomType && Mathf.Abs(j.level - newAtom.atomLevel) < 0.1f)));
     }
 

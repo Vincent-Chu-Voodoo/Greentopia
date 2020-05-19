@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockCount: 0
   targetScene:
-    m_AssetGUID: 77cffef6fd20cf6468c48a41d3a44ab1
+    m_AssetGUID: 9395dd976e60ae44095af48f950b21a8
     m_SubObjectName: 
   OnLoadStart:
     m_PersistentCalls:

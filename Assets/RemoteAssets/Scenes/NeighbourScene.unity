@@ -225,6 +225,9 @@ MonoBehaviour:
   newGardenSceneAR:
     m_AssetGUID: 9395dd976e60ae44095af48f950b21a8
     m_SubObjectName: 
+  part2SceneAR:
+    m_AssetGUID: 77cffef6fd20cf6468c48a41d3a44ab1
+    m_SubObjectName: 
   OnEnterNoApple:
     m_PersistentCalls:
       m_Calls:
@@ -302,9 +305,9 @@ MonoBehaviour:
   OnClaim:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1154392502}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 607646463}
+        m_MethodName: Part2Start
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -334,6 +337,28 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1324294925}
+        m_MethodName: AddCoin
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 100
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1903141910}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!4 &607646464
 Transform:
@@ -541,7 +566,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 300
+  m_text: 100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 34388366f5c1ad44e8f85d0768861374, type: 2}
   m_sharedMaterial: {fileID: -3480107239788241554, guid: 34388366f5c1ad44e8f85d0768861374,
@@ -1767,6 +1792,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1324294923}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1324294925 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1370499527310616658, guid: 71ab735f9bfd7d749bcda71fd31ad375,
+    type: 3}
+  m_PrefabInstance: {fileID: 1324294923}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b55592b4d2cf33478e56ca4e67792c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1428556605
 GameObject:
   m_ObjectHideFlags: 0

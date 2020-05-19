@@ -734,6 +734,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 124643189}
   m_CullTransparentMesh: 0
+--- !u!1001 &129736253
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1129884055}
+    m_Modifications:
+    - target: {fileID: 3292829826189931392, guid: 030cf57bfd566774799f9e460c00190a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 3292829826189931392, guid: 030cf57bfd566774799f9e460c00190a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3292829826189931392, guid: 030cf57bfd566774799f9e460c00190a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3292829826189931392, guid: 030cf57bfd566774799f9e460c00190a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3292829826189931392, guid: 030cf57bfd566774799f9e460c00190a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3292829826189931392, guid: 030cf57bfd566774799f9e460c00190a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3292829826189931392, guid: 030cf57bfd566774799f9e460c00190a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3292829826189931392, guid: 030cf57bfd566774799f9e460c00190a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3292829826189931392, guid: 030cf57bfd566774799f9e460c00190a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3292829826189931392, guid: 030cf57bfd566774799f9e460c00190a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3292829826189931392, guid: 030cf57bfd566774799f9e460c00190a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3292829826189931393, guid: 030cf57bfd566774799f9e460c00190a,
+        type: 3}
+      propertyPath: m_Name
+      value: WaterSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 3292829826189931396, guid: 030cf57bfd566774799f9e460c00190a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 21a02c2c880f49744a1d292ae53616b8,
+        type: 3}
+    - target: {fileID: 3292829826189931397, guid: 030cf57bfd566774799f9e460c00190a,
+        type: 3}
+      propertyPath: spawnableSubGridList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 030cf57bfd566774799f9e460c00190a, type: 3}
+--- !u!4 &129736254 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3292829826189931392, guid: 030cf57bfd566774799f9e460c00190a,
+    type: 3}
+  m_PrefabInstance: {fileID: 129736253}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &147320384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1452,7 +1538,7 @@ BoxCollider:
   m_GameObject: {fileID: 261571750}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 0.01, z: 1}
   m_Center: {x: 0, y: -0.005, z: 0}
@@ -1848,7 +1934,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &288074542
 Transform:
   m_ObjectHideFlags: 0
@@ -5447,52 +5533,89 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9368a3cd4c5ba084891940125c54f443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainGameParam:
-    levelSData: {fileID: 11400000, guid: dfd9d2416d9e24e43a0f2b93e7816549, type: 2}
   levelSessionData:
     level: 1
     gridDataList:
     - atomEnum: 8
       totalCoolDown: 0
       atomLevel: 1
-      rowIndex: 1
-      columnIndex: 0
-    - atomEnum: 8
-      totalCoolDown: 0
-      atomLevel: 1
-      rowIndex: 1
-      columnIndex: 1
-    - atomEnum: 8
-      totalCoolDown: 0
-      atomLevel: 1
-      rowIndex: 1
-      columnIndex: 2
-    - atomEnum: 8
-      totalCoolDown: 0
-      atomLevel: 1
-      rowIndex: 1
-      columnIndex: 3
-    - atomEnum: 8
-      totalCoolDown: 0
-      atomLevel: 1
       rowIndex: 2
       columnIndex: 0
+      isDusty: 0
     - atomEnum: 8
       totalCoolDown: 0
       atomLevel: 1
       rowIndex: 2
       columnIndex: 1
+      isDusty: 0
     - atomEnum: 8
       totalCoolDown: 0
       atomLevel: 1
       rowIndex: 2
       columnIndex: 2
+      isDusty: 0
     - atomEnum: 8
       totalCoolDown: 0
       atomLevel: 1
       rowIndex: 2
       columnIndex: 3
+      isDusty: 0
+    - atomEnum: 8
+      totalCoolDown: 0
+      atomLevel: 1
+      rowIndex: 3
+      columnIndex: 0
+      isDusty: 0
+    - atomEnum: 8
+      totalCoolDown: 0
+      atomLevel: 1
+      rowIndex: 3
+      columnIndex: 1
+      isDusty: 0
+    - atomEnum: 8
+      totalCoolDown: 0
+      atomLevel: 1
+      rowIndex: 3
+      columnIndex: 2
+      isDusty: 0
+    - atomEnum: 8
+      totalCoolDown: 0
+      atomLevel: 1
+      rowIndex: 3
+      columnIndex: 3
+      isDusty: 0
+    - atomEnum: 4
+      totalCoolDown: 0
+      atomLevel: 3
+      rowIndex: 0
+      columnIndex: 0
+      isDusty: 1
+    - atomEnum: 8
+      totalCoolDown: 0
+      atomLevel: 4
+      rowIndex: 0
+      columnIndex: 1
+      isDusty: 1
+    - atomEnum: 0
+      totalCoolDown: 0
+      atomLevel: 2
+      rowIndex: 0
+      columnIndex: 2
+      isDusty: 1
+    - atomEnum: 0
+      totalCoolDown: 0
+      atomLevel: 2
+      rowIndex: 0
+      columnIndex: 3
+      isDusty: 1
+    - atomEnum: 0
+      totalCoolDown: 0
+      atomLevel: 3
+      rowIndex: 1
+      columnIndex: 1
+      isDusty: 1
   useSavedGameSession: 0
+  boardEnum: 0
   levelText: {fileID: 678508108}
   closeTargetSceneAR:
     m_AssetGUID: 9395dd976e60ae44095af48f950b21a8
@@ -6041,6 +6164,7 @@ Transform:
   m_Children:
   - {fileID: 848669029}
   - {fileID: 1195974245}
+  - {fileID: 129736254}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8831,7 +8955,7 @@ PrefabInstance:
     - target: {fileID: 2244583420170027351, guid: 3daf2eb5536ea3746b344f6af914afaa,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3daf2eb5536ea3746b344f6af914afaa, type: 3}

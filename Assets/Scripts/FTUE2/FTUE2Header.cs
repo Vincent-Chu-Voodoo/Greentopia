@@ -36,4 +36,10 @@ public class FTUE2Header : MonoBehaviour
             OnLevelUp.Invoke(this);
         Refresh();
     }
+
+    public void AddCoin(float newCoin)
+    {
+        GameDataManager.instance.gameData.coin += newCoin;
+        Refresh();
+    }
 }

@@ -22,10 +22,15 @@ public class FTUEToolShedController : MonoBehaviour
 
     public void OnAtomCombined(object obj)
     {
-        if ((obj as Atom).atomLevel == targetAtomLevel)
+        var newAtom = obj as Atom;
+
+        if (newAtom.atomLevel == targetAtomLevel)
         {
             FTUEGardenPlant.haveNutrition = true;
             OnMerged.Invoke(this);
         }
+
+        if (newAtom.atomType == AtomEnum.fertiliser && newAtom.atomLevel == 4)
+            newAtom.SetCanCraft(true);
     }
 }

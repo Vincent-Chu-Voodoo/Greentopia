@@ -35,18 +35,19 @@ public class FTUENurseryController : MonoBehaviour
 
     public void OnAtomCombined(object obj)
     {
-        if (atomController.allAtomList.Where(i => i.atomType == AtomEnum.apple_sapling && i.atomLevel == 2).Count() > 1)
-            return;
+        var newAtom = obj as Atom;
 
-        if (combineCount++ == 0)
+        if (newAtom.atomType == AtomEnum.apple_sapling && newAtom.atomLevel == 2)
+        {
+            newAtom.SetCanCraft(true);
             OnMergeLog.Invoke(this);
+        }
 
-        if (atomController.allAtomList.Where(i => i.atomType == AtomEnum.cotton && i.atomLevel == 2).Count() != 1)
-            return;
-
-        if (combineCount < 10)
+        if (newAtom.atomType == AtomEnum.cotton && newAtom.atomLevel == 3)
+        {
+            newAtom.SetCanCraft(true);
             OnMergeCotton.Invoke(this);
-        combineCount += 10;
+        }
     }
 
     public void ActivateAllAtom()

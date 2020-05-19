@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NewSpawner : MonoBehaviour
 {
+    public GameObject coolDownDisplayGO;
+    public Image fillImage;
+
     public float currentCoolDown;
     public float coolDown;
 
@@ -19,6 +23,8 @@ public class NewSpawner : MonoBehaviour
     private void Update()
     {
         currentCoolDown = Mathf.MoveTowards(currentCoolDown, 0f, Time.deltaTime);
+        coolDownDisplayGO.SetActive(currentCoolDown > 0f);
+        fillImage.fillAmount = (coolDown - currentCoolDown) / coolDown;
     }
 
     public void OnMouseUpAsButton()

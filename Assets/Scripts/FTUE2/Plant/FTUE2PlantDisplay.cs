@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class FTUE2PlantDisplay : MonoBehaviour
 {
+    public SpriteRenderer spriteRenderer;
+
     public void Setup(PlantSData plantSData, int growStage)
     {
-        var currentSprite = ResourceManager.instance.GetPlantSprite(plantSData.name, growStage);
+        ResourceManager.instance.GetPlantSprite(plantSData.name, growStage).Completed += aoh =>
+        {
+            spriteRenderer.sprite = aoh.Result;
+        };
     }
 }

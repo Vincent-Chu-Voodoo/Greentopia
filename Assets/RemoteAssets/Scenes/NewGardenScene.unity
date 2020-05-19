@@ -4562,6 +4562,7 @@ MonoBehaviour:
   expText: {fileID: 2050422252}
   startAnchor: {fileID: 241499107}
   endAnchor: {fileID: 404395489}
+  header: {fileID: 4328250292757419955}
 --- !u!1 &702165207
 GameObject:
   m_ObjectHideFlags: 0
@@ -8028,6 +8029,9 @@ MonoBehaviour:
     m_SubObjectName: 
   neighbourSceneAR:
     m_AssetGUID: e6641af4bac408a46bb673aaf16b1ffb
+    m_SubObjectName: 
+  crateSceneAR:
+    m_AssetGUID: 
     m_SubObjectName: 
   plantRoot: {fileID: 1268769250}
   prestigePointController: {fileID: 1644939917}
@@ -13677,7 +13681,7 @@ PrefabInstance:
     - target: {fileID: 4328250293692038960, guid: 71ab735f9bfd7d749bcda71fd31ad375,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1200.8884
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4328250293692038960, guid: 71ab735f9bfd7d749bcda71fd31ad375,
         type: 3}
@@ -13727,7 +13731,7 @@ PrefabInstance:
     - target: {fileID: 4328250293692038960, guid: 71ab735f9bfd7d749bcda71fd31ad375,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -711.111
+      value: -64
       objectReference: {fileID: 0}
     - target: {fileID: 4328250293692038960, guid: 71ab735f9bfd7d749bcda71fd31ad375,
         type: 3}
@@ -13776,6 +13780,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71ab735f9bfd7d749bcda71fd31ad375, type: 3}
+--- !u!114 &4328250292757419955 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1370499527310616658, guid: 71ab735f9bfd7d749bcda71fd31ad375,
+    type: 3}
+  m_PrefabInstance: {fileID: 4328250292757419954}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b55592b4d2cf33478e56ca4e67792c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8854332805000455147
 PrefabInstance:
   m_ObjectHideFlags: 0

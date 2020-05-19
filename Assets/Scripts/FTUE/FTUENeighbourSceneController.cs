@@ -8,6 +8,7 @@ public class FTUENeighbourSceneController : MonoBehaviour
     public static bool haveApple;
 
     public AssetReference newGardenSceneAR;
+    public AssetReference part2SceneAR;
 
     public GameEvent OnEnterNoApple;
     public GameEvent OnEnterHaveApple;
@@ -33,5 +34,10 @@ public class FTUENeighbourSceneController : MonoBehaviour
     public void Claim()
     {
         OnClaim.Invoke(this);
+    }
+
+    public void Part2Start()
+    {
+        newGardenSceneAR = part2SceneAR;
     }
 }

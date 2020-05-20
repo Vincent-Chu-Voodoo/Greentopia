@@ -17,26 +17,9 @@ public class FTUE2NurseryScene : MonoBehaviour
         {
             var targetCrate = crateList.First();
             GameDataManager.instance.gameData.crateList.Remove(targetCrate);
-            PopCrate(targetCrate);
+            while (!subGridList.Exists(i => i.isEmpty))
+                yield return null;
+            atomSpawner.SpawnCrate(targetCrate, subGridList.Find(i => i.isEmpty));
         }
-    }
-
-    public void PopCrate(FTUE2CrateSData fTUE2CrateSData)
-    {
-        foreach (var subGrid in subGridList)
-            if (subGrid.isEmpty)
-            {
-                print($"PopCrate at: {subGrid.id}");
-                atomSpawner.SpawnCrate(fTUE2CrateSData, subGrid);
-                break;
-            }
-        StartCoroutine(PopCrateRoutine(fTUE2CrateSData));
-    }
-
-    IEnumerator PopCrateRoutine(FTUE2CrateSData fTUE2CrateSData)
-    {
-        while (!subGridList.Exists(i => i.isEmpty))
-            yield return null;
-        atomSpawner.SpawnCrate(fTUE2CrateSData, subGridList.Find(i => i.isEmpty));
     }
 }

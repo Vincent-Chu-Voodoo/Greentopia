@@ -31,6 +31,7 @@ public class FTUE2PlantController : MonoBehaviour
     {
         var newPlant = Instantiate(plantPrefab, transform);
         newPlant.GetComponent<FTUE2Plant>().Setup(plantSData, stage);
+        newPlant.AddComponent<FTUE2PlantOnCardBehaviour>();
         return newPlant.GetComponent<FTUE2Plant>();
     }
 }

@@ -1,4 +1,4 @@
 ﻿public enum TagEnum
 {
-    Atom, Grid, Plant
+    Atom, Grid, Plant, DefaultPlantAnchor
 }

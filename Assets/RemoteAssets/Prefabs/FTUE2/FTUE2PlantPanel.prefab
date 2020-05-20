@@ -54,6 +54,9 @@ MonoBehaviour:
   plantIngredientPanelAR:
     m_AssetGUID: 6a38e394afaef974fb5292b9f5b3e60a
     m_SubObjectName: 
+  OnIngredientSatisfiedUpdate:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &671513553865669129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,6 +295,9 @@ MonoBehaviour:
   pinGO: {fileID: 6997300619140952334}
   plantIngredientPanelController: {fileID: 4227136945343194076}
   OnPin:
+    m_PersistentCalls:
+      m_Calls: []
+  OnSatisfiedUpdate:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &3531807112658708536
@@ -619,7 +625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6997300617471453835
 RectTransform:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class FTUE2PinnedPlantController : MonoBehaviour
     public FTUE2PlantController fTUE2PlantController;
     public PlantSData pinnedPlant;
     public FTUE2PlantPanel fTUE2PlantPanel;
+    public Transform plantSpawnAnchor;
 
     private void Start()
     {
@@ -38,9 +39,11 @@ public class FTUE2PinnedPlantController : MonoBehaviour
 
     public void ActivatePlant()
     {
-        if (fTUE2Plant is null)
+        print($"ActivatePlant");
+        if (fTUE2Plant is null && !(fTUE2PlantController is null))
         {
-
+            fTUE2Plant = fTUE2PlantController.SpawnPlant(pinnedPlant, 1);
+            fTUE2Plant.transform.position = plantSpawnAnchor.position;
         }
     }
 

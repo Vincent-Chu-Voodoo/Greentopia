@@ -13,9 +13,24 @@ MonoBehaviour:
   m_Name: Aloe Vera
   m_EditorClassIdentifier: 
   plantName: Aloe Vera
-  prestigePoint: 0
-  prestigeLevelRequirement: 0
-  growningTimeInSecond: 0
-  speedUpDiamond: 0
+  prestigePoint: 220
+  prestigeLevelRequirement: 2
+  growningTimeInSecond: 18000
+  speedUpDiamond: 30
+  sellableCapacity: 3
   sellable: {fileID: 11400000, guid: 98860ef335af35840897f9b0cc2b767c, type: 2}
-  ingredientList: []
+  sellableSpawnTime: 15
+  nutrientRequiredList:
+  - atomEnum: 8
+    level: 5
+    count: 1
+  ingredientList:
+  - atomEnum: 10
+    level: 5
+    count: 1
+  - atomEnum: 0
+    level: 5
+    count: 1
+  - atomEnum: 4
+    level: 4
+    count: 1

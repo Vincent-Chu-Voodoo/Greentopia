@@ -69,10 +69,12 @@ public class MainGameController : MonoBehaviour
             switch (boardEnum)
             {
                 case FTUE2BoardEnum.NurseryBoard:
-                    levelSessionData = GameDataManager.instance.gameData.nurserySessionData;
+                    if (!(GameDataManager.instance.gameData.nurserySessionData is null))
+                        levelSessionData = GameDataManager.instance.gameData.nurserySessionData;
                     break;
                 case FTUE2BoardEnum.ToolShedBoard:
-                    levelSessionData = GameDataManager.instance.gameData.toolShedSessionData;
+                    if (!(GameDataManager.instance.gameData.toolShedSessionData is null))
+                        levelSessionData = GameDataManager.instance.gameData.toolShedSessionData;
                     break;
                 default:
                     break;
@@ -151,8 +153,8 @@ public class MainGameController : MonoBehaviour
 
     public void QuitProcess()
     {
-        levelSessionData = atomController.GetLevelSessionData(levelSessionData.level);
-        GameDataManager.instance.UpdateSession(levelSessionData);
+        levelSessionData = atomController.GetLevelSessionData(0);
+        GameDataManager.instance.SaveSession(levelSessionData, boardEnum);
         //GameDataManager.instance.SaveSession(levelSessionData);
     }
 }

@@ -7,6 +7,8 @@ public class FTUE2Crate : MonoBehaviour
     public float price;
     public FTUE2CrateSData fTUE2CrateSData;
 
+    public GameEvent OnCliam;
+
     public void Claim()
     {
         if (GameDataManager.instance.gameData.coin < price)
@@ -16,5 +18,6 @@ public class FTUE2Crate : MonoBehaviour
         GetComponent<Animator>().SetTrigger("claim");
         if (price == 0f)
             price = 400f;
+        OnCliam.Invoke(this);
     }
 }

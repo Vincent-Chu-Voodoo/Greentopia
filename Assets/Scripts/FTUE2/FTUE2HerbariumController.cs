@@ -6,6 +6,7 @@ using UnityEngine.AddressableAssets;
 public class FTUE2HerbariumController : MonoBehaviour
 {
     [Header("Display")]
+    public int currentDisplayIndex;
     public List<FTUE2PlantPanel> plantPanelList;
 
     [Header("Config")]
@@ -13,6 +14,8 @@ public class FTUE2HerbariumController : MonoBehaviour
     public Transform mainGamePlantPanelRoot;
     public AssetReference mainGamePlantPanelAR;
     public ScrollTo scrollTo;
+
+    public GameEvent OnPin;
 
     private void Awake()
     {
@@ -26,6 +29,7 @@ public class FTUE2HerbariumController : MonoBehaviour
                 aoh.Result.GetComponent<FTUE2PlantPanel>().Setup(plantSData);
                 aoh.Result.GetComponent<FTUE2PlantPanel>().OnPin.AddListener(Pin);
                 plantPanelList.Add(aoh.Result.GetComponent<FTUE2PlantPanel>());
+                ShowIndex(currentDisplayIndex);
             };
         }
     }
@@ -36,6 +40,7 @@ public class FTUE2HerbariumController : MonoBehaviour
         GameDataManager.instance.gameData.pinnedPlant = fTUE2PlatPanel.plantSData;
         fTUE2PinnedPlantController.PinPlant();
         Hide();
+        OnPin.Invoke(this);
     }
 
     public void Show()
@@ -54,5 +59,28 @@ public class FTUE2HerbariumController : MonoBehaviour
             Hide();
         else
             Show();
+    }
+
+    public void ScrollToTomato()
+    {
+        scrollTo.To(mainGamePlantPanelRoot.GetChild(1).GetComponent<RectTransform>());
+    }
+
+    public void GoLeft()
+    {
+        currentDisplayIndex = Mathf.Clamp(currentDisplayIndex - 1, 0, plantPanelList.Count - 1);
+        ShowIndex(currentDisplayIndex);
+    }
+
+    public void GoRight()
+    {
+        currentDisplayIndex = Mathf.Clamp(currentDisplayIndex + 1, 0, plantPanelList.Count - 1);
+        ShowIndex(currentDisplayIndex);
+    }
+
+    public void ShowIndex(int index)
+    {
+        plantPanelList.ForEach(i => i.gameObject.SetActive(false));
+        plantPanelList[index].gameObject.SetActive(true);
     }
 }

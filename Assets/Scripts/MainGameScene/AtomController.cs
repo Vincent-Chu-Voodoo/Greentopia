@@ -148,9 +148,11 @@ public class AtomController : MonoBehaviour
 
     public LevelSessionData GetLevelSessionData(int level)
     {
-        var levelSessionData = new LevelSessionData();
-        levelSessionData.level = level;
-        levelSessionData.gridDataList = new List<GridData>();
+        var levelSessionData = new LevelSessionData
+        {
+            level = level,
+            gridDataList = new List<GridData>()
+        };
         foreach (var atom in allAtomList)
         {
             var gridData = new GridData();
@@ -158,6 +160,8 @@ public class AtomController : MonoBehaviour
             gridData.rowIndex = (int) atom.subGrid.id.x;
             gridData.columnIndex = (int) atom.subGrid.id.y;
             gridData.atomLevel = atom.atomLevel;
+            gridData.isDusty = atom.isDusty;
+            gridData.isCrate = atom.isCrate;
             gridData.totalCoolDown = atom.GetComponent<Spawner>()?.totalCoolDownTime ?? 0f;
             levelSessionData.gridDataList.Add(gridData);
         }

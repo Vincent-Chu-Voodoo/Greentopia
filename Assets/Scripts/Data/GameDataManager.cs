@@ -51,6 +51,13 @@ public class GameDataManager : Singleton<GameDataManager>
 #endif
     #endregion
 
+    [ContextMenu("ClearAllData")]
+    public void ClearAllData()
+    {
+        gameData = new GameData();
+        DataManager.instance.Save(gameData);
+    }
+
     public PlantSData GetPlantSData(string plantName)
     {
         return plantSDataList.Find(i => string.Equals(i.plantName, plantName));
@@ -119,6 +126,22 @@ public class GameDataManager : Singleton<GameDataManager>
         return prestigePointSData.accumulatedPrestigePointList.FindLast(i => i < accummulatedPrestigePoint);
     }
     #endregion
+
+    public void SaveSession(LevelSessionData levelSessionData, FTUE2BoardEnum fTUE2BoardEnum)
+    {
+        switch (fTUE2BoardEnum)
+        {
+            case FTUE2BoardEnum.NurseryBoard:
+                gameData.nurserySessionData = levelSessionData;
+                break;
+            case FTUE2BoardEnum.ToolShedBoard:
+                gameData.toolShedSessionData = levelSessionData;
+                break;
+            default:
+                break;
+        }
+
+    }
 
     public void UpdateSession(LevelSessionData levelSessionData)
     {

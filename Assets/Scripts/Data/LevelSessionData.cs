@@ -12,13 +12,20 @@ public class GridData
     public int rowIndex;
     public int columnIndex;
     public bool isDusty;
+    public bool isCrate;
 }
 
 [Serializable]
-public struct LevelSessionData
+public class LevelSessionData
 {
     public int level;
     public List<GridData> gridDataList;
+
+    public LevelSessionData()
+    {
+        level = default;
+        gridDataList = default;
+    }
 
     public LevelSessionData(LevelSData levelSData)
     {

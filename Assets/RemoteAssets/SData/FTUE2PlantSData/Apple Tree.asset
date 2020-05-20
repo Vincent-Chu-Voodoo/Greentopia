@@ -13,9 +13,21 @@ MonoBehaviour:
   m_Name: Apple Tree
   m_EditorClassIdentifier: 
   plantName: Apple Tree
-  prestigePoint: 0
+  prestigePoint: 100
   prestigeLevelRequirement: 0
-  growningTimeInSecond: 0
+  growningTimeInSecond: 18000
   speedUpDiamond: 0
+  sellableCapacity: 3
   sellable: {fileID: 11400000, guid: 94aa9f7f8663bd245bbbe0c8149e8ce9, type: 2}
-  ingredientList: []
+  sellableSpawnTime: 5
+  nutrientRequiredList:
+  - atomEnum: 8
+    level: 4
+    count: 1
+  ingredientList:
+  - atomEnum: 7
+    level: 2
+    count: 1
+  - atomEnum: 6
+    level: 3
+    count: 1

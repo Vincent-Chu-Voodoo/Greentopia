@@ -23,24 +23,16 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 2800000, guid: 02f88fb8104f74b49a63cc9b2802dcb3, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 02f88fb8104f74b49a63cc9b2802dcb3, type: 3}
-  - m_GUID: 038afce5a4cd8fb4581e357897ea3a06
-    m_Address: water_2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 2800000, guid: 038afce5a4cd8fb4581e357897ea3a06, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 038afce5a4cd8fb4581e357897ea3a06, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 039689fb4a3bc904ba6e508065c214ba
     m_Address: trowel_spawner_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 2800000, guid: 039689fb4a3bc904ba6e508065c214ba, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 039689fb4a3bc904ba6e508065c214ba, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 0afa990b2646da749a4def1192bcfcaf
     m_Address: trowel_6
     m_ReadOnly: 0
@@ -55,24 +47,24 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 2800000, guid: 0ecc1182e1d9c414f9580ba9e2aa2edd, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 0ecc1182e1d9c414f9580ba9e2aa2edd, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 124dd42ce410dad46b5462c017271ec7
     m_Address: trowel_7
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 2800000, guid: 124dd42ce410dad46b5462c017271ec7, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 124dd42ce410dad46b5462c017271ec7, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 1737abf80920ed64c9f05bc75c233b92
     m_Address: shrub_seed_5
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 2800000, guid: 1737abf80920ed64c9f05bc75c233b92, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 1737abf80920ed64c9f05bc75c233b92, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 1b293673de2642045864027386179a12
     m_Address: soil_4
     m_ReadOnly: 0
@@ -87,16 +79,8 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 2800000, guid: 1f31b107fac80414ca7a880ef6097a88, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 1f31b107fac80414ca7a880ef6097a88, type: 3}
-  - m_GUID: 23fcdc0d0d2167344b8e9262082fd3db
-    m_Address: water_7
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 2800000, guid: 23fcdc0d0d2167344b8e9262082fd3db, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 23fcdc0d0d2167344b8e9262082fd3db, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 25ef140ba34758346911f16f27575cca
     m_Address: compost_spawner_1
     m_ReadOnly: 0
@@ -169,14 +153,6 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: 4a14c8447ebe2b146ab8d898ec88ebf0
-    m_Address: water_1
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
   - m_GUID: 4bb7c2e32e8b01144a70bdca6ed7c6e7
     m_Address: compost_2
     m_ReadOnly: 0
@@ -191,18 +167,10 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 2800000, guid: 4d893c0c69105184cad2ed8bc9a65e5b, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 4d893c0c69105184cad2ed8bc9a65e5b, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 4e271c935b953644ba3b4343d9681e47
     m_Address: soil_7
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 2800000, guid: 4e271c935b953644ba3b4343d9681e47, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 4e271c935b953644ba3b4343d9681e47, type: 3}
-  - m_GUID: 59b1525dacb8b2c45808c8599bebc177
-    m_Address: water_3
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -239,8 +207,8 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 2800000, guid: 7033607ec04a4874a9dd09482c3a26e8, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 7033607ec04a4874a9dd09482c3a26e8, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 760d59969fa39d84a94f1659ad80f43b
     m_Address: shrub_seed_6
     m_ReadOnly: 0
@@ -259,14 +227,6 @@ MonoBehaviour:
     m_TargetAsset: {fileID: 0}
   - m_GUID: 8659062ddb57aa14d92cdffd169da82b
     m_Address: flower_8
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 2800000, guid: 8659062ddb57aa14d92cdffd169da82b, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 8659062ddb57aa14d92cdffd169da82b, type: 3}
-  - m_GUID: 86fb83233887bc44f9444bee37b6b51d
-    m_Address: water_6
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -319,16 +279,16 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 2800000, guid: 9bede6ca3d71c4743b6972a5ff6ad862, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: 9bede6ca3d71c4743b6972a5ff6ad862, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: ad5097efdd9344644b83837877109700
     m_Address: compost_8
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 2800000, guid: ad5097efdd9344644b83837877109700, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: ad5097efdd9344644b83837877109700, type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: b4555d6f94594ad4db0a708ff98b59b5
     m_Address: compost_3
     m_ReadOnly: 0
@@ -345,14 +305,6 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: be89264790199d84f9e9020416e37f46
-    m_Address: water_5
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
   - m_GUID: c0cfc9dbe62aae24d824012bc2140fe9
     m_Address: compost_1
     m_ReadOnly: 0
@@ -363,14 +315,6 @@ MonoBehaviour:
     m_TargetAsset: {fileID: 0}
   - m_GUID: c4d973742228ddc4da5cd4f270bb9def
     m_Address: shrub_seed_7
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 2800000, guid: c4d973742228ddc4da5cd4f270bb9def, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: c4d973742228ddc4da5cd4f270bb9def, type: 3}
-  - m_GUID: c75a86ced9cfc4548ad9ef35a2f66465
-    m_Address: water_4
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -417,14 +361,6 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: e806e34e8811fe04fa42e26183a1682c
-    m_Address: water_8
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 2800000, guid: e806e34e8811fe04fa42e26183a1682c, type: 3}
-    m_TargetAsset: {fileID: 2800000, guid: e806e34e8811fe04fa42e26183a1682c, type: 3}
   - m_GUID: edb51ec06d25fd34c9cbae34a3eaf292
     m_Address: shrub_seed_1
     m_ReadOnly: 0

@@ -5456,50 +5456,58 @@ MonoBehaviour:
       rowIndex: 1
       columnIndex: 0
       isDusty: 0
+      isCrate: 0
     - atomEnum: 8
       totalCoolDown: 0
       atomLevel: 1
       rowIndex: 1
       columnIndex: 1
       isDusty: 0
+      isCrate: 0
     - atomEnum: 8
       totalCoolDown: 0
       atomLevel: 1
       rowIndex: 1
       columnIndex: 2
       isDusty: 0
+      isCrate: 0
     - atomEnum: 8
       totalCoolDown: 0
       atomLevel: 1
       rowIndex: 1
       columnIndex: 3
       isDusty: 0
+      isCrate: 0
     - atomEnum: 8
       totalCoolDown: 0
       atomLevel: 1
       rowIndex: 2
       columnIndex: 0
       isDusty: 0
+      isCrate: 0
     - atomEnum: 8
       totalCoolDown: 0
       atomLevel: 1
       rowIndex: 2
       columnIndex: 1
       isDusty: 0
+      isCrate: 0
     - atomEnum: 8
       totalCoolDown: 0
       atomLevel: 1
       rowIndex: 2
       columnIndex: 2
       isDusty: 0
+      isCrate: 0
     - atomEnum: 8
       totalCoolDown: 0
       atomLevel: 1
       rowIndex: 2
       columnIndex: 3
       isDusty: 0
+      isCrate: 0
   useSavedGameSession: 0
-  boardEnum: 0
+  boardEnum: 1
   levelText: {fileID: 678508108}
   closeTargetSceneAR:
     m_AssetGUID: 9395dd976e60ae44095af48f950b21a8

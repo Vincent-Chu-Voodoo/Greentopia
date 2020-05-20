@@ -39,5 +39,10 @@ public class FTUENeighbourSceneController : MonoBehaviour
     public void Part2Start()
     {
         newGardenSceneAR = part2SceneAR;
+        var nsd = GameDataManager.instance.gameData.nurserySessionData;
+        var tssd = GameDataManager.instance.gameData.toolShedSessionData;
+        nsd.gridDataList.RemoveAll(i => i.atomEnum == AtomEnum.apple_sapling && i.isDusty == false);
+        nsd.gridDataList.RemoveAll(i => i.atomEnum == AtomEnum.cotton && i.isDusty == false);
+        tssd.gridDataList.RemoveAll(i => i.atomEnum == AtomEnum.fertiliser && i.isDusty == false);
     }
 }

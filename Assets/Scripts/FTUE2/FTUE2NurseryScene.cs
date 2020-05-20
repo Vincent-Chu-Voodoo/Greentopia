@@ -8,8 +8,9 @@ public class FTUE2NurseryScene : MonoBehaviour
     public AtomSpawner atomSpawner;
     public List<SubGrid> subGridList;
 
-    void Start()
+    IEnumerator Start()
     {
+        yield return new WaitForSeconds(0.2f);
         var crateList = GameDataManager.instance.gameData.crateList.Where(i => i.targetBoard == FTUE2BoardEnum.NurseryBoard).ToList();
         
         if (crateList != null && crateList.Count > 0)

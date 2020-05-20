@@ -10500,6 +10500,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Footer
       objectReference: {fileID: 0}
+    - target: {fileID: 8854332804870207584, guid: c8ef54999849bb848918230d50fdb04a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8854332804870207591, guid: c8ef54999849bb848918230d50fdb04a,
         type: 3}
       propertyPath: m_LocalPosition.x

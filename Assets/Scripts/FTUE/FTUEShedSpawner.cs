@@ -16,6 +16,11 @@ public class FTUEShedSpawner : NewSpawner
         remainCount = maxCount;
     }
 
+    public void SetTenMinutes()
+    {
+        coolDown = 600f;
+    }
+
     public override void SpawnAtom()
     {
         var emptyGridList = spawnableSubGridList.Where(i => i.isEmpty).ToList();

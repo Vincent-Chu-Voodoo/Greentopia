@@ -15,6 +15,8 @@ public class FTUE2HerbariumController : MonoBehaviour
     public Transform mainGamePlantPanelRoot;
     public AssetReference mainGamePlantPanelAR;
     public ScrollTo scrollTo;
+    public GameObject leftGO;
+    public GameObject rightGO;
 
     public GameEvent OnPin;
 
@@ -91,5 +93,7 @@ public class FTUE2HerbariumController : MonoBehaviour
     {
         plantPanelList.ForEach(i => i.gameObject.SetActive(false));
         plantPanelList[index].gameObject.SetActive(true);
+        leftGO.SetActive(index != 0);
+        rightGO.SetActive(index != plantPanelList.Count - 1);
     }
 }

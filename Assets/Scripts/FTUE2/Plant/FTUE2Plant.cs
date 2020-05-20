@@ -16,7 +16,7 @@ public class FTUE2Plant : MonoBehaviour
         plantDisplay.Setup(_plantSData, plantStage);
     }
 
-    public void Planted()
+    public void Planted(object obj)
     {
         foreach (var ingredient in plantSData.ingredientList)
         {

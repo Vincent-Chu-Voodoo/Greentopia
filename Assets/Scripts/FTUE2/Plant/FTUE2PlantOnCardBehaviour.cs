@@ -12,6 +12,7 @@ public class FTUE2PlantOnCardBehaviour : MonoBehaviour
     {
         targetCamera = Camera.main;
         defaultPlantAnchor = GameObject.FindGameObjectWithTag(TagEnum.DefaultPlantAnchor.ToString()).transform;
+        OnPlanted.AddListener(GetComponent<FTUE2Plant>().Planted);
     }
 
     private void OnMouseDrag()

@@ -42,7 +42,6 @@ public class FTUE2PlantIngredientPanel : MonoBehaviour
     {
         isIngredientSatisfied = have >= need;
         requirementText.SetText($"{have} / {need}");
-        if (isIngredientSatisfied)
-            requirementText.color = Color.green;
+        requirementText.color = isIngredientSatisfied ? Color.green : Color.red;
     }
 }

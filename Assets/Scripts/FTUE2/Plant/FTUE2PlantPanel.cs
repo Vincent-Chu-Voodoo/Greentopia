@@ -39,4 +39,14 @@ public class FTUE2PlantPanel : MonoBehaviour
     {
         OnPin.Invoke(this);
     }
+
+    //public void UpdateIngredient(List<IngredientData> ingredientDataList)
+    //{
+    //    plantIngredientPanelController.UpdateIngredient(ingredientDataList);
+    //}
+
+    public void RefreshIngredient()
+    {
+        plantIngredientPanelController.RefreshSatisfication();
+    }
 }

@@ -12,6 +12,7 @@ public class LevelSDataBootstrap : MonoBehaviour
 
     void Start()
     {
+        GameDataManager.instance.ClearAllData();
         foreach (var levelSDataAR in levelSDataARList)
         {
             bootstrapSceneController.Lock();

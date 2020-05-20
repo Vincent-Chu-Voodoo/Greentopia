@@ -29,4 +29,14 @@ public class FTUE2PinnedPlantController : MonoBehaviour
     {
         fTUE2PlantPanel.Setup(plantSData, count, true);
     }
+
+    public void OnAtomCombined(object atomObj)
+    {
+        RefreshIngredient();
+    }
+
+    public void RefreshIngredient()
+    {
+        fTUE2PlantPanel.RefreshIngredient();
+    }
 }

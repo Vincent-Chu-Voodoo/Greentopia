@@ -167,9 +167,14 @@ public class Atom : MonoBehaviour, IAtom
             if (ingredientSDataList.Count > 0)
             {
                 var ingredient = ingredientSDataList.First();
-                ingredientSDataList.RemoveAt(0);
                 ingredient.Reset();
-                atomSpawner.SpawnAtom(ingredient.atomEnum, ingredient.atomLevel, ingredient.isDusty);
+                if (atomSpawner.SpawnAtom(ingredient.atomEnum, ingredient.atomLevel, ingredient.isDusty))
+                    ingredientSDataList.RemoveAt(0);
+                if (ingredientSDataList.Count == 0)
+                {
+                    FindObjectOfType<AtomController>().RemoveAtom(this);
+                    Destroy(gameObject);
+                }
             }
             else
             {

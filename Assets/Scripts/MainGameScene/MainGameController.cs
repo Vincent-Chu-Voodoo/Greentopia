@@ -19,6 +19,7 @@ public class MainGameController : MonoBehaviour
 
     [Header("Param")]
     public bool useSavedGameSession;
+    public bool saveGameSession;
     public FTUE2BoardEnum boardEnum;
     //public VictoryConditionSData victoryCondition;
 
@@ -41,7 +42,7 @@ public class MainGameController : MonoBehaviour
 
     protected void OnApplicationQuit()
     {
-        QuitProcess();
+        SaveProcess();
     }
 
     public void Init()
@@ -69,11 +70,11 @@ public class MainGameController : MonoBehaviour
             switch (boardEnum)
             {
                 case FTUE2BoardEnum.NurseryBoard:
-                    if (!(GameDataManager.instance.gameData.nurserySessionData is null))
+                    if (!(GameDataManager.instance.gameData.nurserySessionData is null) && (GameDataManager.instance.gameData.nurserySessionData.gridDataList?.Count ?? 0 ) > 0)
                         levelSessionData = GameDataManager.instance.gameData.nurserySessionData;
                     break;
                 case FTUE2BoardEnum.ToolShedBoard:
-                    if (!(GameDataManager.instance.gameData.toolShedSessionData is null))
+                    if (!(GameDataManager.instance.gameData.toolShedSessionData is null) && (GameDataManager.instance.gameData.toolShedSessionData.gridDataList?.Count ?? 0) > 0)
                         levelSessionData = GameDataManager.instance.gameData.toolShedSessionData;
                     break;
                 default:
@@ -112,6 +113,7 @@ public class MainGameController : MonoBehaviour
     public void AtomCombine(Atom atom)
     {
         //CheckVictory();
+        SaveProcess();
     }
 
     [Obsolete("No victory condition")]
@@ -129,7 +131,7 @@ public class MainGameController : MonoBehaviour
 
     public void Close()
     {
-        QuitProcess();
+        SaveProcess();
         //var newCollectedIngredientList = ingredientCollectorController.QuitCollect();
         //GameDataManager.instance.sceneParam = new GardenSceneParam() { newCollectedIngredientList = newCollectedIngredientList };
         sceneTransition.FadeIn(closeTargetSceneAR);
@@ -146,13 +148,15 @@ public class MainGameController : MonoBehaviour
         {
             plantSData = _plantSData
         };
-        QuitProcess();
+        SaveProcess();
         sceneTransition.FadeIn(craftTargetSceneAR);
         //Addressables.LoadSceneAsync(craftTargetSceneAR);
     }
 
-    public void QuitProcess()
+    public void SaveProcess()
     {
+        if (!saveGameSession)
+            return;
         levelSessionData = atomController.GetLevelSessionData(0);
         GameDataManager.instance.SaveSession(levelSessionData, boardEnum);
         //GameDataManager.instance.SaveSession(levelSessionData);

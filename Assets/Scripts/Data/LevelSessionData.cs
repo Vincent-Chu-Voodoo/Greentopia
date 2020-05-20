@@ -24,7 +24,7 @@ public class LevelSessionData
     public LevelSessionData()
     {
         level = default;
-        gridDataList = default;
+        gridDataList = new List<GridData>();
     }
 
     public LevelSessionData(LevelSData levelSData)

@@ -50,8 +50,8 @@ public class GameData
     public float diamond = 100f;
     public float coin;
     public TutorialData tutorialData = new TutorialData();
-    public LevelSessionData nurserySessionData;
-    public LevelSessionData toolShedSessionData;
+    public LevelSessionData nurserySessionData = new LevelSessionData();
+    public LevelSessionData toolShedSessionData = new LevelSessionData();
     public List<LevelSessionData> levelSessionDataList = new List<LevelSessionData>();
     //public List<IngredientData> ingredientList = new List<IngredientData>();
     //public List<PlantData> inventoryPlantList = new List<PlantData>();

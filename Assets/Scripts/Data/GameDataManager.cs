@@ -161,6 +161,8 @@ public class GameDataManager : Singleton<GameDataManager>
         for (var i = 0; i < gameData.nurserySessionData.gridDataList.Count; i++)
         {
             var gridData = gameData.nurserySessionData.gridDataList[i];
+            if (gridData.isDusty || gridData.isCrate)
+                continue;
             var index = resultIngredientDataList.FindIndex(k => k.atomEnum == gridData.atomEnum && Mathf.Abs(k.level - gridData.atomLevel) < 0.1f);
             if (index < 0)
             {
@@ -177,6 +179,8 @@ public class GameDataManager : Singleton<GameDataManager>
         for (var i = 0; i < gameData.toolShedSessionData.gridDataList.Count; i++)
         {
             var gridData = gameData.toolShedSessionData.gridDataList[i];
+            if (gridData.isDusty || gridData.isCrate)
+                continue;
             var index = resultIngredientDataList.FindIndex(k => k.atomEnum == gridData.atomEnum && Mathf.Abs(k.level - gridData.atomLevel) < 0.1f);
             if (index < 0)
             {

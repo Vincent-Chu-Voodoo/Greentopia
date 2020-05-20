@@ -4,17 +4,9 @@ using UnityEngine;
 
 public class FTUE2NurseryTutorial : FTUE2Tutorial
 {
-    //void Start()
-    //{
-    //    if (tutorialIndex == 38)
-    //    {
-    //        transform.GetChild(0).gameObject.SetActive(true);
-    //    }
-    //}
-
     protected new void Start()
     {
-        if (tutorialIndex == 37)
+        if (tutorialIndex == 37 || tutorialIndex == 46)
             base.Start();
         else
             Destroy(gameObject);
@@ -23,10 +15,14 @@ public class FTUE2NurseryTutorial : FTUE2Tutorial
     public void OnAtomCombined(object atomObj)
     {
         var atom = atomObj as Atom;
-        if (atom.atomType == AtomEnum.cotton && atom.atomLevel == 3)
+        if (atom.atomType == AtomEnum.cotton && atom.atomLevel == 4)
         {
             tutorialIndex = 39;
             Proceed();
+        }
+        if (atom.atomType == AtomEnum.tomato_sapling && atom.atomLevel == 4)
+        {
+            tutorialIndex = 47;
         }
     }
 }

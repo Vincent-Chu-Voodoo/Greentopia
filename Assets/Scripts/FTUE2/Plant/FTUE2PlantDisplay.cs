@@ -8,7 +8,7 @@ public class FTUE2PlantDisplay : MonoBehaviour
 
     public void Setup(PlantSData plantSData, int growStage)
     {
-        ResourceManager.instance.GetPlantSprite(plantSData.name, growStage).Completed += aoh =>
+        ResourceManager.instance.GetPlantSpriteAOH(plantSData.name, growStage).Completed += aoh =>
         {
             spriteRenderer.sprite = aoh.Result;
         };

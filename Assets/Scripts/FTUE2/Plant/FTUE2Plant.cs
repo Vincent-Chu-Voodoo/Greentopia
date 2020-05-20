@@ -4,23 +4,14 @@ using UnityEngine;
 
 public class FTUE2Plant : MonoBehaviour
 {
+    public int plantStage;
     public PlantSData plantSData;
     public FTUE2PlantDisplay plantDisplay;
 
-    public void Setup(PlantSData _plantSData)
+    public void Setup(PlantSData _plantSData, int _plantStage)
     {
         plantSData = _plantSData;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        plantStage = _plantStage;
+        plantDisplay.Setup(_plantSData, plantStage);
     }
 }

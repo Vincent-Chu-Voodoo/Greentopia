@@ -9,8 +9,6 @@ public class Dev2 : MonoBehaviour
     [ContextMenu("Check")]
     public void Check()
     {
-        print($"atomEnum: {fTUE2IngredientBaseSData.atomEnum}");
-        print($"level: {fTUE2IngredientBaseSData.atomLevel}");
-        print($"isDusty: {fTUE2IngredientBaseSData.isDusty}");
+        print($"position: {transform.position}");
     }
 }

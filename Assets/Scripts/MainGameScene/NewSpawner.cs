@@ -8,8 +8,31 @@ public class NewSpawner : MonoBehaviour
     public GameObject coolDownDisplayGO;
     public Image fillImage;
 
-    public float currentCoolDown;
+    public float currentCoolDown
+    {
+        get
+        {
+            if (atomType == AtomEnum.cotton)
+                return cottonCurrentCoolDown;
+            else if (atomType == AtomEnum.water)
+                return waterCurrentCoolDown;
+            else
+                throw new System.Exception();
+        }
+        set
+        {
+            if (atomType == AtomEnum.cotton)
+                cottonCurrentCoolDown = value;
+            else if (atomType == AtomEnum.water)
+                waterCurrentCoolDown = value;
+            else
+                throw new System.Exception();
+        }
+    }
     public float coolDown;
+
+    public static float cottonCurrentCoolDown;
+    public static float waterCurrentCoolDown;
 
     public AtomEnum atomType;
     public GameObject atomPrefab;
@@ -20,9 +43,35 @@ public class NewSpawner : MonoBehaviour
     public GameEvent OnClick;
     public GameEvent OnSpawnNewAtom;
 
+    public float previousTime
+    {
+        get
+        {
+            if (atomType == AtomEnum.cotton)
+                return cottonPreviousTime;
+            else if (atomType == AtomEnum.water)
+                return waterPreviousTime;
+            else
+                throw new System.Exception();
+        }
+        set
+        {
+            if (atomType == AtomEnum.cotton)
+                cottonPreviousTime = value;
+            else if (atomType == AtomEnum.water)
+                waterPreviousTime = value;
+            else
+                throw new System.Exception();
+        }
+    }
+    public static float cottonPreviousTime;
+    public static float waterPreviousTime;
+
     private void Update()
     {
-        currentCoolDown = Mathf.MoveTowards(currentCoolDown, 0f, Time.deltaTime);
+        var timeDelta = Time.realtimeSinceStartup - previousTime;
+        previousTime = Time.realtimeSinceStartup;
+        currentCoolDown = Mathf.MoveTowards(currentCoolDown, 0f, timeDelta);
         coolDownDisplayGO.SetActive(currentCoolDown > 0f);
         fillImage.fillAmount = (coolDown - currentCoolDown) / coolDown;
     }

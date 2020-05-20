@@ -35,6 +35,7 @@ public class GardenPlantData
 {
     public int id;
     public PlantData plantData;
+    public int plantStage;
     public Vector3 localPosition;
     public Vector3 localScale;
 }

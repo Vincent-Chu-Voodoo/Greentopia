@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.EventSystems;
 
 public class FTUE2HerbariumController : MonoBehaviour
 {
@@ -46,6 +47,8 @@ public class FTUE2HerbariumController : MonoBehaviour
     public void Show()
     {
         gameObject.SetActive(true);
+        foreach (var plantPanel in plantPanelList)
+            plantPanel.pinGO.SetActive(plantPanel.plantSData.plantName == GameDataManager.instance.gameData.pinnedPlant.plantName);
     }
 
     public void Hide()
@@ -61,9 +64,15 @@ public class FTUE2HerbariumController : MonoBehaviour
             Show();
     }
 
-    public void ScrollToTomato()
+    public void StopPinningAppleTree()
     {
-        scrollTo.To(mainGamePlantPanelRoot.GetChild(1).GetComponent<RectTransform>());
+        StartCoroutine(StopWithDelay());
+    }
+
+    IEnumerator StopWithDelay()
+    {
+        yield return new WaitForSeconds(0.3f);
+        plantPanelList[0].pinGO.GetComponent<EventTrigger>().enabled = false;
     }
 
     public void GoLeft()

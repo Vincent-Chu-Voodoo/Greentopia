@@ -6,20 +6,14 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class ResourceManager : Singleton<ResourceManager>
 {
-    public AsyncOperationHandle<Sprite> GetPlantSpriteAOH(string plantName)
+    public AsyncOperationHandle<Sprite> GetPlantSpriteAOH(string plantName, int grownStage = 1)
     {
-        return Addressables.LoadAssetAsync<Sprite>(plantName);
+        return Addressables.LoadAssetAsync<Sprite>($"{plantName}_{grownStage}");
     }
 
     public AsyncOperationHandle<Sprite> GetAtomSpriteAOH(AtomEnum atomEnum, int atomLevel)
     {
         var target = $"{atomEnum}_{atomLevel}";
-        return Addressables.LoadAssetAsync<Sprite>(target);
-    }
-
-    public AsyncOperationHandle<Sprite> GetPlantSprite(string plantName, int grownStage)
-    {
-        var target = $"{plantName}_{grownStage}";
         return Addressables.LoadAssetAsync<Sprite>(target);
     }
 

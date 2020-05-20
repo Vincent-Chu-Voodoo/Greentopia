@@ -5920,15 +5920,15 @@ MonoBehaviour:
     - atomEnum: 0
       totalCoolDown: 0
       atomLevel: 2
-      rowIndex: 0
+      rowIndex: 2
       columnIndex: 2
       isDusty: 1
       isCrate: 0
     - atomEnum: 0
       totalCoolDown: 0
       atomLevel: 2
-      rowIndex: 0
-      columnIndex: 3
+      rowIndex: 3
+      columnIndex: 0
       isDusty: 1
       isCrate: 0
     - atomEnum: 0

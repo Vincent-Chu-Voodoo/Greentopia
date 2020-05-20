@@ -30,5 +30,13 @@ public class FTUE2NurseryScene : MonoBehaviour
                 atomSpawner.SpawnCrate(fTUE2CrateSData, subGrid);
                 break;
             }
+        StartCoroutine(PopCrateRoutine(fTUE2CrateSData));
+    }
+
+    IEnumerator PopCrateRoutine(FTUE2CrateSData fTUE2CrateSData)
+    {
+        while (!subGridList.Exists(i => i.isEmpty))
+            yield return null;
+        atomSpawner.SpawnCrate(fTUE2CrateSData, subGridList.Find(i => i.isEmpty));
     }
 }

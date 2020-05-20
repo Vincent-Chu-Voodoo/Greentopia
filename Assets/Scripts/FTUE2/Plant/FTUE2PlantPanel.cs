@@ -19,6 +19,7 @@ public class FTUE2PlantPanel : MonoBehaviour
 
     [Header("Event")]
     public GameEvent OnPin;
+    public GameEvent OnSatisfiedUpdate;
 
     public void Setup(PlantSData _plantSData, int count = 0, bool isPinned = false)
     {
@@ -33,6 +34,12 @@ public class FTUE2PlantPanel : MonoBehaviour
         if (isPinned)
             pinGO.SetActive(false);
         plantIngredientPanelController.Setup(plantSData.ingredientList);
+        plantIngredientPanelController.OnIngredientSatisfiedUpdate.AddListener(IngredientSatisfiedUpdate);
+    }
+
+    public void IngredientSatisfiedUpdate(object obj)
+    {
+        OnSatisfiedUpdate.Invoke(this);
     }
 
     public void Pin()

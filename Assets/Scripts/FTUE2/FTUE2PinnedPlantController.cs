@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FTUE2PinnedPlantController : MonoBehaviour
 {
+    public FTUE2Plant fTUE2Plant;
+    public FTUE2PlantController fTUE2PlantController;
     public PlantSData pinnedPlant;
     public FTUE2PlantPanel fTUE2PlantPanel;
 
@@ -23,6 +25,23 @@ public class FTUE2PinnedPlantController : MonoBehaviour
         }
         var count = GameDataManager.instance.gameData.gardentPlantList.Find(i => i.plantData.plantName == pinnedPlant.plantName)?.plantData.count ?? 0;
         PinPlant(pinnedPlant, count);
+        fTUE2PlantPanel.OnSatisfiedUpdate.AddListener(OnSatisfiedUpdate);
+    }
+
+    public void OnSatisfiedUpdate(object obj)
+    {
+        if (fTUE2PlantPanel.plantIngredientPanelController.isAllIngredientSatisfied)
+        {
+            ActivatePlant();
+        }
+    }
+
+    public void ActivatePlant()
+    {
+        if (fTUE2Plant is null)
+        {
+
+        }
     }
 
     public void PinPlant(PlantSData plantSData, int count = 0)

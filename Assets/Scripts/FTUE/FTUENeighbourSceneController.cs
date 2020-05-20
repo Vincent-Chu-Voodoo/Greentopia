@@ -41,6 +41,7 @@ public class FTUENeighbourSceneController : MonoBehaviour
         newGardenSceneAR = part2SceneAR;
         var nsd = GameDataManager.instance.gameData.nurserySessionData;
         var tssd = GameDataManager.instance.gameData.toolShedSessionData;
+        NewSpawner.cottonCurrentCoolDown = 0f;
         //nsd.gridDataList.RemoveAll(i => i.atomEnum == AtomEnum.apple_sapling && i.isDusty == false);
         //nsd.gridDataList.RemoveAll(i => i.atomEnum == AtomEnum.cotton && i.isDusty == false);
         //tssd.gridDataList.RemoveAll(i => i.atomEnum == AtomEnum.fertiliser && i.isDusty == false);

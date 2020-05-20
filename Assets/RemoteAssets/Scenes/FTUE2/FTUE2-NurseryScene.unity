@@ -5406,8 +5406,8 @@ MonoBehaviour:
     - atomEnum: 9
       totalCoolDown: 0
       atomLevel: 1
-      rowIndex: 3
-      columnIndex: 1
+      rowIndex: 0
+      columnIndex: 3
       isDusty: 1
       isCrate: 0
     - atomEnum: 9
@@ -5420,8 +5420,8 @@ MonoBehaviour:
     - atomEnum: 10
       totalCoolDown: 0
       atomLevel: 2
-      rowIndex: 0
-      columnIndex: 0
+      rowIndex: 1
+      columnIndex: 1
       isDusty: 1
       isCrate: 0
   useSavedGameSession: 1
@@ -6189,7 +6189,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 4
+          m_FloatArgument: 8
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -10450,7 +10450,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 4
+          m_FloatArgument: 8
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2

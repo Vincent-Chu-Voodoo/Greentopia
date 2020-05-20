@@ -80,9 +80,9 @@ public class AtomController : MonoBehaviour
             if (!atom.CanCombine(GetAtomCurrentGrid(atom)?.currentAtom))
                 return;
         }
+        DropAtomToSubGrid(atom, GetAtomCurrentGrid(atom));
         if (GetAtomCurrentGrid(atom) == atom.subGrid)
             atom.Tap();
-        DropAtomToSubGrid(atom, GetAtomCurrentGrid(atom));
     }
 
     public SubGrid GetAtomCurrentGrid(Atom atom)

@@ -6,7 +6,7 @@ using UnityEngine.AddressableAssets;
 
 public class FTUE2PlantController : MonoBehaviour
 {
-    public AssetReference plantAR;
+    public GameObject plantPrefab;
     
     void Start()
     {
@@ -19,17 +19,18 @@ public class FTUE2PlantController : MonoBehaviour
             SpawnPlant(gardenPlantData);
     }
 
-    private void SpawnPlant(GardenPlantData gardenPlantData)
+    private FTUE2Plant SpawnPlant(GardenPlantData gardenPlantData)
     {
         var plantSData = GameDataManager.instance.GetPlantSData(gardenPlantData.plantData.plantName);
-        plantAR.InstantiateAsync(transform).Completed += aoh =>
-        {
-            aoh.Result.GetComponent<FTUE2Plant>().Setup(plantSData);
-        };
+        var newPlant = Instantiate(plantPrefab, transform);
+        newPlant.GetComponent<FTUE2Plant>().Setup(plantSData, gardenPlantData.plantStage);
+        return newPlant.GetComponent<FTUE2Plant>();
     }
 
-    void Update()
+    public FTUE2Plant SpawnPlant(PlantSData plantSData, int stage)
     {
-        
+        var newPlant = Instantiate(plantPrefab, transform);
+        newPlant.GetComponent<FTUE2Plant>().Setup(plantSData, stage);
+        return newPlant.GetComponent<FTUE2Plant>();
     }
 }

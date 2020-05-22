@@ -15,4 +15,5 @@ MonoBehaviour:
   sellableSprite:
     m_AssetGUID: 07590bcc990c52e428966ebe8c7cb4c8
     m_SubObjectName: 
+  atomEnum: 7
   sellPrice: 150

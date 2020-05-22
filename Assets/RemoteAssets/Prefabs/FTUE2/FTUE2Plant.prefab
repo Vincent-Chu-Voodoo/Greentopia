@@ -1409,7 +1409,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 72f1a75087e17be4396714b91c22ee81, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1417,7 +1417,7 @@ SpriteRenderer:
   m_Size: {x: 0.9309091, y: 0.9309091}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2036304425
@@ -1582,6 +1582,7 @@ MonoBehaviour:
   plantSData: {fileID: 0}
   plantDisplay: {fileID: 8496429933025388027}
   canvas: {fileID: 804130953}
+  boxCollider: {fileID: 1472263532}
   nutritionGO: {fileID: 453506135}
   progressionGO: {fileID: 2036304425}
   fTUEPlantProgress: {fileID: 2036304428}
@@ -1600,8 +1601,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.1}
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Size: {x: 4.74, y: 4.98, z: 0.2}
+  m_Center: {x: 0, y: 2.44, z: 0}
 --- !u!1 &8671841934942186664
 GameObject:
   m_ObjectHideFlags: 0

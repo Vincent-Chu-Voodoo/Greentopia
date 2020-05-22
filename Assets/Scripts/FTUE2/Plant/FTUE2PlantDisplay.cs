@@ -9,13 +9,14 @@ public class FTUE2PlantDisplay : MonoBehaviour
     public List<Transform> sellableAnchorList;
     public List<GameObject> sellableGOList;
 
-    public void Setup(PlantSData plantSData, int growStage)
+    public void Setup(PlantSData plantSData, int growStage, FTUE2Plant plant)
     {
         ResourceManager.instance.GetPlantSpriteAOH(plantSData.name, growStage).Completed += aoh =>
         {
             var sprite = aoh.Result;
             spriteRenderer.sprite = sprite;
             spriteRenderer.transform.localPosition = Vector3.up * spriteRenderer.sprite.bounds.size.y / 2f;
+            plant.ResetBoxSize();
         };
     }
 

@@ -7,5 +7,6 @@ using UnityEngine.AddressableAssets;
 public class FTUE2SellableSData : ScriptableObject
 {
     public AssetReference sellableSprite;
+    public AtomEnum atomEnum;
     public float sellPrice;
 }

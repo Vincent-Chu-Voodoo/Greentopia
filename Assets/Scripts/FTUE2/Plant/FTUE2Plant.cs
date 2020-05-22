@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public enum PlantStageEnum
 {
@@ -17,6 +18,7 @@ public class FTUE2Plant : MonoBehaviour
     public PlantSData plantSData;
     public FTUE2PlantDisplay plantDisplay;
     public Canvas canvas;
+    public BoxCollider boxCollider;
 
     public GameObject nutritionGO;
     public GameObject progressionGO;
@@ -26,13 +28,19 @@ public class FTUE2Plant : MonoBehaviour
 
     public GameEvent OnPlanted;
 
+    public void ResetBoxSize()
+    {
+        boxCollider.center = plantDisplay.transform.GetChild(0).localPosition;
+        boxCollider.size = plantDisplay.spriteRenderer.bounds.size;
+    }
+
     public void Setup(int _id, PlantSData _plantSData, int _plantStage, PlantStageEnum _plantStageEnum)
     {
         plantID = _id;
         plantSData = _plantSData;
         plantStage = _plantStage;
         plantStageEnum = _plantStageEnum;
-        plantDisplay.Setup(_plantSData, _plantStage);
+        plantDisplay.Setup(_plantSData, _plantStage, this);
         nutrientRequiredList = _plantSData.nutrientRequiredList;
         fTUEPlantProgress.totalTime = plantSData.growningTimeInSecond;
         fTUEPlantProgress.OnGrown.AddListener(Grow);
@@ -54,12 +62,12 @@ public class FTUE2Plant : MonoBehaviour
             case PlantStageEnum.Growing:
                 break;
             case PlantStageEnum.Grown:
-                plantDisplay.Setup(plantSData, 10);
+                plantDisplay.Setup(plantSData, 10, this);
                 for (var i = 0; i < plantSData.sellableCapacity; i++)
                     plantDisplay.SpawnSellable(plantSData);
                 break;
             case PlantStageEnum.Collected:
-                plantDisplay.Setup(plantSData, 10);
+                plantDisplay.Setup(plantSData, 10, this);
                 break;
             default:
                 break;
@@ -68,6 +76,15 @@ public class FTUE2Plant : MonoBehaviour
 
     private void OnMouseUpAsButton()
     {
+        //var pointerEventData = new PointerEventData(eventSystem)
+        //{
+        //    position = Input.mousePosition
+        //};
+        //var results = new List<RaycastResult>();
+        //graphicRaycaster.Raycast(pointerEventData, results);
+        //if (results.Count > 0)
+        //    return;
+
         switch (plantStageEnum)
         {
             case PlantStageEnum.OnCard:

@@ -42,6 +42,7 @@ public class FTUENeighbourSceneController : MonoBehaviour
         var nsd = GameDataManager.instance.gameData.nurserySessionData;
         var tssd = GameDataManager.instance.gameData.toolShedSessionData;
         NewSpawner.cottonCurrentCoolDown = 0f;
+        print($"fiveteenPosition: {FTUEGardenPlant.fiveteenPosition}");
         GameDataManager.instance.gameData.gardentPlantList.Add(
             new GardenPlantData()
             {

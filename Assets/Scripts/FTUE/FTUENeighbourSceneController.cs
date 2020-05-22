@@ -54,7 +54,7 @@ public class FTUENeighbourSceneController : MonoBehaviour
                 },
                 plantStage = 10,
                 plantStageEnum = PlantStageEnum.Collected,
-                localPosition = new Vector3(FTUEGardenPlant.fiveteenPosition.x, FTUEGardenPlant.fiveteenPosition.y, 0f),
+                localPosition = new Vector3(FTUEGardenPlant.fiveteenPosition.x, FTUEGardenPlant.fiveteenPosition.y, 0f) + new Vector3(0.2f, -1.5f, 0f),
                 localScale = Vector3.one
             }
         );

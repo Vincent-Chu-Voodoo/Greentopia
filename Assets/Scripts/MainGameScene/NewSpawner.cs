@@ -31,8 +31,8 @@ public class NewSpawner : MonoBehaviour
     }
     public float coolDown;
 
-    public static float cottonCurrentCoolDown;
-    public static float waterCurrentCoolDown;
+    public static float cottonCurrentCoolDown = 0f;
+    public static float waterCurrentCoolDown = 0f;
 
     public AtomEnum atomType;
     public GameObject atomPrefab;
@@ -42,6 +42,12 @@ public class NewSpawner : MonoBehaviour
 
     public GameEvent OnClick;
     public GameEvent OnSpawnNewAtom;
+
+    [ContextMenu("Print")]
+    public void Print()
+    {
+        print($"currentCoolDown: {currentCoolDown}");
+    }
 
     public float previousTime
     {

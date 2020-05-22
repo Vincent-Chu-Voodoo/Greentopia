@@ -17,6 +17,14 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 13d8799aff5278e4391b971036e559e8
   m_SerializeEntries:
+  - m_GUID: 025ab692a3eb44c44a8e2c6c178c9b31
+    m_Address: aloe_sapling_2_d
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 0286df46c565eef41b3f0c0ec9ce3849
     m_Address: aloe_sapling_2
     m_ReadOnly: 0
@@ -137,12 +145,19 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: 327968fae80454549ab282314ab96750
-    m_Address: Tomato Plant_10
+  - m_GUID: 2908fd0a91779d448b87b6686f51abd5
+    m_Address: fertiliser_4_d
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 297f15972da96b44eaff52e68ef11d92
+    m_Address: Tomato Plant_10
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: 
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 39d6b6d882ffe8d4584d667d840d3d7d
@@ -201,6 +216,14 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: 5de6224efc7f32c489fdff8f0e6040d6
+    m_Address: trowel_3_d
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 65640e490a918644e855ba82f09dbd3f
     m_Address: Aloe Vera_1
     m_ReadOnly: 0
@@ -241,6 +264,14 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: 76db2a63dbb2a284286be576476f0899
+    m_Address: tomato_sapling_2_d
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 77cffef6fd20cf6468c48a41d3a44ab1
     m_Address: FTUE2-GardenScene
     m_ReadOnly: 0
@@ -275,6 +306,14 @@ MonoBehaviour:
     m_TargetAsset: {fileID: 0}
   - m_GUID: 8347d405fa7aa17478105773375712d9
     m_Address: Assets/RemoteAssets/Sprites/FTUE/Cotton_Plant.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 85d49a0c8ec84414aac4e6c475e74790
+    m_Address: water_2_d
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -325,7 +364,8 @@ MonoBehaviour:
     m_Address: aloe_sapling_5
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_mainAssetType: 
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: a221eb3dc44f9ee479f2d905bbdd8ba8
@@ -384,6 +424,14 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: b9925ac3a9c17c54a8580c9b23d804b9
+    m_Address: tomato_sapling_1_d
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: bb20b4bf9774e21488d5283db2c482ac
     m_Address: fertiliser_2
     m_ReadOnly: 0
@@ -394,6 +442,14 @@ MonoBehaviour:
     m_TargetAsset: {fileID: 0}
   - m_GUID: bb329edf55cb450479721e6eec2dcb57
     m_Address: aloe_sapling_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: bea4366b905049e44bfcb2ea13a58c8c
+    m_Address: cotton_3_d
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -418,6 +474,14 @@ MonoBehaviour:
     m_TargetAsset: {fileID: 0}
   - m_GUID: efd51b83f6100034a8c065482a81e758
     m_Address: Aloe Vera_10
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f58aa8f3219d210449009c7e13f8a45e
+    m_Address: water_3_d
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,

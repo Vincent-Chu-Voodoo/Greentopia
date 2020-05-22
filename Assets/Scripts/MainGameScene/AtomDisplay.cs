@@ -57,7 +57,7 @@ public class AtomDisplay : MonoBehaviour
 
     public void UpdateDisplay(Atom atom)
     {
-        var aoh = ResourceManager.instance.GetAtomSpriteAOH(atom.atomType, atom.atomLevel);
+        var aoh = ResourceManager.instance.GetAtomSpriteAOH(atom.atomType, atom.atomLevel, atom.isDusty);
         aoh.Completed += _ =>
         {
             if (spriteRendererBG != null)
@@ -65,10 +65,7 @@ public class AtomDisplay : MonoBehaviour
             if (spriteRendererFG != null)
                 spriteRendererFG.sprite = aoh.Result as Sprite;
             //print($"UpdateDisplay {atom.isDusty} {atom.atomType} {atom.atomLevel}");
-            if (atom.isDusty)
-                spriteRendererFG.color = new Color(0.1f, 0.1f, 0.1f);
-            else
-                spriteRendererFG.color = new Color(1f, 1f, 1f);
+            spriteRendererFG.color = new Color(1f, 1f, 1f);
         };
     }
 

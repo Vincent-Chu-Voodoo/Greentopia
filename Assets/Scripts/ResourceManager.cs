@@ -11,9 +11,13 @@ public class ResourceManager : Singleton<ResourceManager>
         return Addressables.LoadAssetAsync<Sprite>($"{plantName}_{grownStage}");
     }
 
-    public AsyncOperationHandle<Sprite> GetAtomSpriteAOH(AtomEnum atomEnum, int atomLevel)
+    public AsyncOperationHandle<Sprite> GetAtomSpriteAOH(AtomEnum atomEnum, int atomLevel, bool isDusty = false)
     {
-        var target = $"{atomEnum}_{atomLevel}";
+        var target = "";
+        if (isDusty)
+            target = $"{atomEnum}_{atomLevel}_d";
+        else
+            target = $"{atomEnum}_{atomLevel}";
         return Addressables.LoadAssetAsync<Sprite>(target);
     }
 

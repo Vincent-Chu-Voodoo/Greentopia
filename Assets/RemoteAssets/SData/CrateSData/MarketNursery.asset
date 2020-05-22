@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 715aa4a656287284e8f856a45319d14f, type: 3}
   m_Name: MarketNursery
   m_EditorClassIdentifier: 
+  purchasePrice: 200
+  cooldownInSecond: 14400
   randomize: 1
   atomEnum: 11
   targetBoard: 0

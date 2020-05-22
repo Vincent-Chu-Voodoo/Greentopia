@@ -18,7 +18,14 @@ public class FTUEShedSpawner : NewSpawner
 
     public void SetTenMinutes()
     {
+        print($"SetTenMinutes");
         coolDown = 600f;
+    }
+
+    public void SetZeroMinutes()
+    {
+        print($"SetZeroMinutes");
+        coolDown = 0f;
     }
 
     public override void SpawnAtom()

@@ -22,6 +22,7 @@ public class FTUE2Plant : MonoBehaviour
 
     public GameObject nutritionGO;
     public GameObject progressionGO;
+    public GameObject tapGO;
     public FTUEPlantProgress fTUEPlantProgress;
 
     public List<IngredientData> nutrientRequiredList;
@@ -60,8 +61,10 @@ public class FTUE2Plant : MonoBehaviour
                 nutritionGO.SetActive(true);
                 break;
             case PlantStageEnum.Growing:
+                tapGO.SetActive(true);
                 break;
             case PlantStageEnum.Grown:
+                tapGO.SetActive(false);
                 plantDisplay.Setup(plantSData, 10, this);
                 for (var i = 0; i < plantSData.sellableCapacity; i++)
                     plantDisplay.SpawnSellable(plantSData);
@@ -92,6 +95,7 @@ public class FTUE2Plant : MonoBehaviour
             case PlantStageEnum.NeedNutrition:
                 break;
             case PlantStageEnum.Growing:
+                tapGO.SetActive(progressionGO.activeSelf);
                 progressionGO.SetActive(!progressionGO.activeSelf);
                 break;
             case PlantStageEnum.Grown:

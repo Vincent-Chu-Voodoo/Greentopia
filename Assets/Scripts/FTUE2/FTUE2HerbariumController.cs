@@ -35,6 +35,7 @@ public class FTUE2HerbariumController : MonoBehaviour
                 ShowIndex(currentDisplayIndex);
             };
         }
+        GetComponent<Animator>().Play("close", 0, 1f);
     }
 
     public void Pin(object fTUE2PlatPanelObj)
@@ -48,19 +49,24 @@ public class FTUE2HerbariumController : MonoBehaviour
 
     public void Show()
     {
-        gameObject.SetActive(true);
+        //gameObject.SetActive(true);
+        print($"show");
+        fTUE2PinnedPlantController.gameObject.SetActive(false);
+        GetComponent<Animator>().SetBool("isOpen", true);
         foreach (var plantPanel in plantPanelList)
-            plantPanel.pinGO.SetActive(plantPanel.plantSData.plantName == GameDataManager.instance.gameData.pinnedPlant.plantName);
+            plantPanel.pinGO.SetActive(plantPanel.plantSData.plantName != (GameDataManager.instance.gameData.pinnedPlant?.plantName ?? ""));
     }
 
     public void Hide()
     {
-        gameObject.SetActive(false);
+        fTUE2PinnedPlantController.gameObject.SetActive(true);
+        GetComponent<Animator>().SetBool("isOpen", false);
+        //gameObject.SetActive(false);
     }
 
     public void Toggle()
     {
-        if (gameObject.activeSelf)
+        if (GetComponent<Animator>().GetBool("isOpen"))
             Hide();
         else
             Show();

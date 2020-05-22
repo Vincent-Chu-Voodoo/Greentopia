@@ -6,9 +6,12 @@ using UnityEngine.UI;
 
 public class FTUE2Header : MonoBehaviour
 {
+    private float increaseSpeed = 25f;
+
     public TextMeshProUGUI coinCount;
     public TextMeshProUGUI diamondCount;
     public TextMeshProUGUI xpCount;
+    public TextMeshProUGUI lvTMP;
     public Image xpFiller;
 
     public GameEvent OnLevelUp;
@@ -25,21 +28,47 @@ public class FTUE2Header : MonoBehaviour
         xpCount.SetText($"{GameDataManager.instance.GetPrestigeNeededForNextLevel()} more");
         var percent = GameDataManager.instance.GetLevelPercent();
         xpFiller.fillAmount = percent;
+        lvTMP.SetText($"{GameDataManager.instance.GetPrestigeLevel()}");
+    }
+
+    public void Refresh(float xp)
+    {
+        coinCount.SetText($"{GameDataManager.instance.gameData?.coin}");
+        diamondCount.SetText($"{GameDataManager.instance.gameData?.diamond}");
+        xpCount.SetText($"{GameDataManager.instance.GetPrestigeNeededForNextLevel(xp):0} more");
+        var percent = GameDataManager.instance.GetLevelPercentFromXp(xp);
+        xpFiller.fillAmount = percent;
+        lvTMP.SetText($"{GameDataManager.instance.GetPrestigeLevel(xp):0}");
     }
 
     public void AddXp(float newXp)
     {
-        var currentLevel = GameDataManager.instance.GetPrestigeLevel();
-        GameDataManager.instance.gameData.prestigePoint += newXp;
-        var newLevel = GameDataManager.instance.GetPrestigeLevel();
-        if (newLevel > currentLevel)
-            OnLevelUp.Invoke(this);
-        Refresh();
+        StartCoroutine(MoveToNewXp(GameDataManager.instance.gameData.prestigePoint + newXp));
     }
 
     public void AddCoin(float newCoin)
     {
         GameDataManager.instance.gameData.coin += newCoin;
+        Refresh();
+    }
+
+    public IEnumerator MoveToNewXp(float targetXp)
+    {
+        var currentXp = GameDataManager.instance.gameData.prestigePoint;
+        GameDataManager.instance.gameData.prestigePoint = targetXp;
+        while (currentXp < targetXp)
+        {
+            var currentLevel = GameDataManager.instance.GetPrestigeLevel(currentXp);
+            currentXp = Mathf.MoveTowards(currentXp, targetXp, increaseSpeed * Time.deltaTime);
+            Refresh(currentXp);
+            var newLevel = GameDataManager.instance.GetPrestigeLevel(currentXp);
+            if (newLevel > currentLevel)
+            {
+                OnLevelUp.Invoke(this);
+                yield return new WaitForSeconds(1f);
+            }
+            yield return null;
+        }
         Refresh();
     }
 }

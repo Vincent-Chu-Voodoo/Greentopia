@@ -69,6 +69,11 @@ public class GameDataManager : Singleton<GameDataManager>
         return GetLevel(GetLevelF(gameData.prestigePoint));
     }
 
+    public int GetPrestigeLevel(float xp)
+    {
+        return GetLevel(GetLevelF(xp));
+    }
+
     public float GetPrestigeLevelPercent()
     {
         return GetLevel(GetLevelF(gameData.prestigePoint));
@@ -80,10 +85,22 @@ public class GameDataManager : Singleton<GameDataManager>
         return accummulatedPrestigePoint - prestigePointSData.accumulatedPrestigePointList.FindLast(i => i <= accummulatedPrestigePoint);
     }
 
+    public float GetCurrentLevelPrestigeMargin(float xp)
+    {
+        var accummulatedPrestigePoint = xp;
+        return accummulatedPrestigePoint - prestigePointSData.accumulatedPrestigePointList.FindLast(i => i <= accummulatedPrestigePoint);
+    }
+
     public float GetCurrentLevelPrestigeRequirement()
     {
         var accummulatedPrestigePoint = gameData.prestigePoint;
         return prestigePointSData.accumulatedPrestigePointList.Find(i => i > accummulatedPrestigePoint) - prestigePointSData.accumulatedPrestigePointList.FindLast(i => i < accummulatedPrestigePoint); 
+    }
+
+    public float GetCurrentLevelPrestigeRequirement(float xp)
+    {
+        var accummulatedPrestigePoint = xp;
+        return prestigePointSData.accumulatedPrestigePointList.Find(i => i > accummulatedPrestigePoint) - prestigePointSData.accumulatedPrestigePointList.FindLast(i => i < accummulatedPrestigePoint);
     }
 
     public float GetPrestigeNeededForNextLevel()
@@ -93,9 +110,21 @@ public class GameDataManager : Singleton<GameDataManager>
         return clpr - clpm;
     }
 
+    public float GetPrestigeNeededForNextLevel(float prestigePoint)
+    {
+        var clpr = GetCurrentLevelPrestigeRequirement(prestigePoint);
+        var clpm = GetCurrentLevelPrestigeMargin(prestigePoint);
+        return clpr - clpm;
+    }
+
     public float GetLevelPercent()
     {
         return GetLevelPercent(GetLevelF(gameData.prestigePoint));
+    }
+
+    public float GetLevelPercentFromXp(float xp)
+    {
+        return GetLevelPercent(GetLevelF(xp));
     }
 
     public float GetLevelPercent(float levelF)

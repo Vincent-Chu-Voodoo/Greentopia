@@ -10,6 +10,8 @@ public class FTUE2PinnedPlantController : MonoBehaviour
     public FTUE2PlantPanel fTUE2PlantPanel;
     public Transform plantSpawnAnchor;
 
+    public GameEvent OnPlannted;
+
     private void Start()
     {
         PinPlant();
@@ -51,6 +53,7 @@ public class FTUE2PinnedPlantController : MonoBehaviour
     public void Plannted(object obj)
     {
         gameObject.SetActive(false);
+        OnPlannted.Invoke(this);
     }
 
     public void PinPlant(PlantSData plantSData, int count = 0)

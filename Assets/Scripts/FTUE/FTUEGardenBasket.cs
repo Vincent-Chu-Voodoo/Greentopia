@@ -30,10 +30,4 @@ public class FTUEGardenBasket : MonoBehaviour
         }
         OnEndCollection.Invoke(this);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

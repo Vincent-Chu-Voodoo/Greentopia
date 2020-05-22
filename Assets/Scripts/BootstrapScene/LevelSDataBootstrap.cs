@@ -12,15 +12,15 @@ public class LevelSDataBootstrap : MonoBehaviour
 
     void Start()
     {
-        GameDataManager.instance.ClearAllData();
+        //GameDataManager.instance.ClearAllData();
         foreach (var levelSDataAR in levelSDataARList)
         {
-            bootstrapSceneController.Lock();
+            bootstrapSceneController?.Lock();
             levelSDataAR.LoadAssetAsync<LevelSData>().Completed += aoh =>
             {
                 GameDataManager.instance.levelSDataList.Add(aoh.Result);
                 GameDataManager.instance.levelSDataList.Sort((i, j) => i.level.CompareTo(j.level));
-                bootstrapSceneController.UnLock();
+                bootstrapSceneController?.UnLock();
             };
         }
         //GameDataManager.instance.levelSDataList = levelSDataList;

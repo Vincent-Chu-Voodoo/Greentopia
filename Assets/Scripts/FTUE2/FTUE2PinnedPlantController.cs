@@ -44,7 +44,13 @@ public class FTUE2PinnedPlantController : MonoBehaviour
         {
             fTUE2Plant = fTUE2PlantController.SpawnPlant(pinnedPlant, 1);
             fTUE2Plant.transform.position = plantSpawnAnchor.position;
+            fTUE2Plant.OnPlanted.AddListener(Plannted);
         }
+    }
+
+    public void Plannted(object obj)
+    {
+        gameObject.SetActive(false);
     }
 
     public void PinPlant(PlantSData plantSData, int count = 0)

@@ -33,7 +33,7 @@ public class GameDataManager : Singleton<GameDataManager>
         }
         if (gameData == null)
             gameData = new GameData();
-        GenerateIngredientList();
+        //GenerateIngredientList();
     }
 
 #if !UNITY_EDITOR && (UNITY_IOS || UNITY_IPHONE || UNITY_ANDROID)

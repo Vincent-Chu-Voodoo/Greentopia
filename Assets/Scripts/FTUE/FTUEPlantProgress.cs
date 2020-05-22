@@ -14,7 +14,6 @@ public class FTUEPlantProgress : MonoBehaviour
 
     public GameEvent OnGrown;
 
-
     void Update()
     {
         currentTime = Mathf.MoveTowards(currentTime, totalTime, Time.deltaTime);

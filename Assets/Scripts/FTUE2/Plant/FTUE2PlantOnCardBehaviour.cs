@@ -6,7 +6,7 @@ public class FTUE2PlantOnCardBehaviour : MonoBehaviour
 {
     public Camera targetCamera;
     public Transform defaultPlantAnchor;
-    public GameEvent OnPlanted;
+    public GameEvent OnPlanted = new GameEvent();
 
     private void Start()
     {
@@ -24,7 +24,7 @@ public class FTUE2PlantOnCardBehaviour : MonoBehaviour
     private void OnMouseUp()
     {
         var ray = targetCamera.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out var hitInfo, float.PositiveInfinity, LayerMask.GetMask(LayerEnum.Plant.ToString())))
+        if (Physics.Raycast(ray, out var hitInfo, float.PositiveInfinity, LayerMask.GetMask(LayerEnum.PlantBase.ToString())))
         {
             
         }

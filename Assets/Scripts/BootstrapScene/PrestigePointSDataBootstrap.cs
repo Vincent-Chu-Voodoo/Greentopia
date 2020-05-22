@@ -12,11 +12,11 @@ public class PrestigePointSDataBootstrap : MonoBehaviour
 
     void Start()
     {
-        bootstrapSceneController.Lock();
+        bootstrapSceneController?.Lock();
         prestigePointSDataAR.LoadAssetAsync<PrestigePointSData>().Completed += aoh =>
         {
             GameDataManager.instance.prestigePointSData = aoh.Result;
-            bootstrapSceneController.UnLock();
+            bootstrapSceneController?.UnLock();
         };
     }
 }

@@ -17,7 +17,7 @@ public class BootstrapSceneController : MonoBehaviour
 
     IEnumerator Start()
     {
-        
+        GameDataManager.instance.ClearAllData();
         yield return null;
     }
 

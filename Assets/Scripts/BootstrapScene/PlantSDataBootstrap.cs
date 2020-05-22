@@ -14,12 +14,12 @@ public class PlantSDataBootstrap : MonoBehaviour
     {
         foreach (var plantSDataListAR in plantSDataListARList)
         {
-            bootstrapSceneController.Lock();
+            bootstrapSceneController?.Lock();
             plantSDataListAR.LoadAssetAsync<PlantSData>().Completed += aoh =>
             {
                 GameDataManager.instance.plantSDataList.Add(aoh.Result);
                 GameDataManager.instance.plantSDataList.Sort((i, j) => i.prestigeLevelRequirement.CompareTo(j.prestigeLevelRequirement));
-                bootstrapSceneController.UnLock();
+                bootstrapSceneController?.UnLock();
             };
         }
         //GameDataManager.instance.plantSDataList = plantSDataList;

@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e998a21877d996742868e920a2b6ceb0, type: 3}
   m_Name: TomatoRecipe
   m_EditorClassIdentifier: 
+  sellableSprite:
+    m_AssetGUID: a3302836d9efc12499ba404f6b2073c9
+    m_SubObjectName: 
   sellPrice: 200

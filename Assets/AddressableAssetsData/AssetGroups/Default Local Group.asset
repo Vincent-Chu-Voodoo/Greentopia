@@ -201,6 +201,14 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: 65640e490a918644e855ba82f09dbd3f
+    m_Address: Aloe Vera_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 6a38e394afaef974fb5292b9f5b3e60a
     m_Address: FTUE2PlantIngredientPanel
     m_ReadOnly: 0
@@ -415,6 +423,13 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f04891c8bd95dbf41914af7de3bb1cec
+    m_Address: Aloe Vera_10
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: 
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: fa17734babfdcb9439ce035153fc720d

@@ -13,6 +13,7 @@ public class GridData
     public int columnIndex;
     public bool isDusty;
     public bool isCrate;
+    public List<FTUE2IngredientBaseSData> ingredientSDataList;
 }
 
 [Serializable]

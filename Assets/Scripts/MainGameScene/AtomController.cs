@@ -163,6 +163,7 @@ public class AtomController : MonoBehaviour
             gridData.isDusty = atom.isDusty;
             gridData.isCrate = atom.isCrate;
             gridData.totalCoolDown = atom.GetComponent<Spawner>()?.totalCoolDownTime ?? 0f;
+            gridData.ingredientSDataList = atom.ingredientSDataList;
             levelSessionData.gridDataList.Add(gridData);
         }
         return levelSessionData;

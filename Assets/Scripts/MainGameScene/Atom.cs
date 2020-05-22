@@ -64,6 +64,15 @@ public class Atom : MonoBehaviour, IAtom
         GetComponent<Spawner>()?.Setup(mainGrid, coolDown);
     }
 
+    public void SetupAsCrate(AtomEnum _atomType, List<FTUE2IngredientBaseSData> data, AtomSpawner _atomSpawner)
+    {
+        atomSpawner = _atomSpawner;
+        isCrate = true;
+        atomType = _atomType;
+        ingredientSDataList = data;
+        Destroy(GetComponent<Spawner>());
+    }
+
     public void SetupAsCrate(FTUE2CrateSData fTUE2CrateSData, AtomSpawner _atomSpawner)
     {
         atomSpawner = _atomSpawner;

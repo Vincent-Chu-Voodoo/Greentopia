@@ -8,11 +8,11 @@ public class FTUE2SmallCrates : MonoBehaviour
 
     void Start()
     {
-        if (GameDataManager.instance.gameData.crateList.Exists(i => i.targetBoard == boardEnum))
-        {
+        Refresh();
+    }
 
-        }
-        else
-            Destroy(gameObject);
+    public void Refresh()
+    {
+        gameObject.SetActive(GameDataManager.instance.gameData.crateList.Exists(i => i.targetBoard == boardEnum));
     }
 }

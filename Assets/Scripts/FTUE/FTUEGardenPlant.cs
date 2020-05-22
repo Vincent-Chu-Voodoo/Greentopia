@@ -12,6 +12,7 @@ public class FTUEGardenPlant : MonoBehaviour
     public static FTUEGardenPlantStatus fTUEGardenPlantStatus;
     public static bool haveNutrition;
     public static Vector3 currentPosition;
+    public static Vector3 fiveteenPosition;
     public bool useMI;
     public float anchorSpeed;
     public Camera refCam;
@@ -88,6 +89,9 @@ public class FTUEGardenPlant : MonoBehaviour
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (!Physics.Raycast(ray, out _, float.PositiveInfinity, LayerMask.GetMask(LayerEnum.PlantBase.ToString())))
                 transform.position = targetAnchor.position;
+            var cam = Camera.main;
+            var sp = cam.WorldToScreenPoint(transform.position);
+            fiveteenPosition = cam.ScreenToWorldPoint(new Vector3(sp.x, sp.y, 15f));
             OnMoved.Invoke(this);
         }
         if (fTUEGardenPlantStatus == FTUEGardenPlantStatus.CanCollectApple)

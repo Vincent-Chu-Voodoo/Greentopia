@@ -42,6 +42,21 @@ public class FTUENeighbourSceneController : MonoBehaviour
         var nsd = GameDataManager.instance.gameData.nurserySessionData;
         var tssd = GameDataManager.instance.gameData.toolShedSessionData;
         NewSpawner.cottonCurrentCoolDown = 0f;
+        GameDataManager.instance.gameData.gardentPlantList.Add(
+            new GardenPlantData()
+            {
+                id = 0,
+                plantData = new PlantData()
+                {
+                    plantName = "Apple Tree",
+                    count = 1
+                },
+                plantStage = 10,
+                plantStageEnum = PlantStageEnum.Collected,
+                localPosition = new Vector3(FTUEGardenPlant.fiveteenPosition.x, FTUEGardenPlant.fiveteenPosition.y, 0f),
+                localScale = Vector3.one
+            }
+        );
         //nsd.gridDataList.RemoveAll(i => i.atomEnum == AtomEnum.apple_sapling && i.isDusty == false);
         //nsd.gridDataList.RemoveAll(i => i.atomEnum == AtomEnum.cotton && i.isDusty == false);
         //tssd.gridDataList.RemoveAll(i => i.atomEnum == AtomEnum.fertiliser && i.isDusty == false);

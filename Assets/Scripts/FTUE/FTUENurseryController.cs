@@ -57,4 +57,9 @@ public class FTUENurseryController : MonoBehaviour
             atom.GetComponent<BoxCollider>().enabled = true;
         }
     }
+
+    public void StopAllAtom()
+    {
+        atomController.allAtomList.ForEach(i => i.GetComponent<BoxCollider>().enabled = false);
+    }
 }

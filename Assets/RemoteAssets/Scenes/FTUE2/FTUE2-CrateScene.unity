@@ -339,7 +339,7 @@ PrefabInstance:
     - target: {fileID: 8854332804870207584, guid: c8ef54999849bb848918230d50fdb04a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8854332804870207591, guid: c8ef54999849bb848918230d50fdb04a,
         type: 3}
@@ -465,12 +465,18 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 677706385}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 677706388}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c98c924a2e33914192c2d823d0cc973, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &677706388 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8854332804870207584, guid: c8ef54999849bb848918230d50fdb04a,
+    type: 3}
+  m_PrefabInstance: {fileID: 677706385}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &809912350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,17 +1230,16 @@ MonoBehaviour:
   OnActivate:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 677706387}
-        m_MethodName: ShowText
-        m_Mode: 5
+      - m_Target: {fileID: 677706388}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Periodic supplies!;You'll receive free crates of supplies
-            throughout the day. Yours just came in, let's claim them!
-          m_BoolArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1903141910}
         m_MethodName: SetActive
@@ -1245,6 +1250,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 677706387}
+        m_MethodName: ShowText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Periodic supplies!;You'll receive free crates of supplies
+            throughout the day. Yours just came in, let's claim them!
           m_BoolArgument: 0
         m_CallState: 2
   OnDeActivate:
@@ -2937,6 +2954,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 68700133598002841bb3fffbe263a507,
         type: 2}
+    - target: {fileID: 1679666591083885137, guid: 0daa26762b4ce2943b9a1cb9332b1983,
+        type: 3}
+      propertyPath: otherCrate
+      value: 
+      objectReference: {fileID: 1679666592807165756}
     - target: {fileID: 1679666591083885138, guid: 0daa26762b4ce2943b9a1cb9332b1983,
         type: 3}
       propertyPath: m_Name
@@ -3116,6 +3138,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1828599224 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1679666591083885137, guid: 0daa26762b4ce2943b9a1cb9332b1983,
+    type: 3}
+  m_PrefabInstance: {fileID: 1828599221}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7639fd55529a8414986ca80a73574f3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1903141910
@@ -3647,6 +3681,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 5cdd489a9757fad43b374787e57d7e9d,
         type: 2}
+    - target: {fileID: 1679666591083885137, guid: 0daa26762b4ce2943b9a1cb9332b1983,
+        type: 3}
+      propertyPath: otherCrate
+      value: 
+      objectReference: {fileID: 1828599224}
     - target: {fileID: 1679666591083885138, guid: 0daa26762b4ce2943b9a1cb9332b1983,
         type: 3}
       propertyPath: m_Name
@@ -3769,5 +3808,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1679666592807165756 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1679666591083885137, guid: 0daa26762b4ce2943b9a1cb9332b1983,
+    type: 3}
+  m_PrefabInstance: {fileID: 1679666592807165754}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7639fd55529a8414986ca80a73574f3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

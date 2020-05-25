@@ -20,6 +20,9 @@ public class FTUE2NeightbourScene : MonoBehaviour
 
     public AssetReference backAR;
 
+    public GameEvent tomatoOrder;
+    public GameEvent aloeOrder;
+
     public static bool hasSoldTomato;
 
     void Start()
@@ -28,20 +31,26 @@ public class FTUE2NeightbourScene : MonoBehaviour
         tomato.SetActive(false);
         aloe.SetActive(false);
 
+        print($"akaCK1 {hasSoldTomato}");
+        if (hasSoldTomato)
+        {
+            canvasAnimator.Play("2nd_transition", 0, 1f);
+            aloeOrder.Invoke(this);
+        }
+        else
+            tomatoOrder.Invoke(this);
+
         if (GameDataManager.instance.gameData.sellableList.Count == 0)
         {
             claimButton.SetActive(false);
-            tomato.SetActive(true);
+            //tomato.SetActive(true);
             return;
         }
 
         claimButton.SetActive(true);
         targetSellable = GameDataManager.instance.gameData.sellableList.First();
+
         
-        if (hasSoldTomato)
-        {
-            canvasAnimator.Play("2nd_transition", 0, 1f);
-        }
         //switch (targetSellable.atomEnum)
         //{
         //    case AtomEnum.apple_sapling:

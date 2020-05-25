@@ -1150,6 +1150,34 @@ MonoBehaviour:
   backAR:
     m_AssetGUID: 77cffef6fd20cf6468c48a41d3a44ab1
     m_SubObjectName: 
+  tomatoOrder:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 677706387}
+        m_MethodName: ShowText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Free Market;Let's try to fulfill this request.
+          m_BoolArgument: 0
+        m_CallState: 2
+  aloeOrder:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 677706387}
+        m_MethodName: ShowText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Free Market;Let's try to fulfill this request.
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &526993443
 Transform:
   m_ObjectHideFlags: 0
@@ -1309,6 +1337,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 677706385}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &677706387 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8854332804870207590, guid: c8ef54999849bb848918230d50fdb04a,
+    type: 3}
+  m_PrefabInstance: {fileID: 677706385}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c98c924a2e33914192c2d823d0cc973, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &714831182
 GameObject:
   m_ObjectHideFlags: 0
@@ -3598,7 +3638,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Those aloe look tasty! Can I have some? I'll pay ya for it
+  m_text: My gran gran got a real bad sunburn. You don't happen to have any Aloe Vera,
+    do you?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5e44df17e1be24542815705920744f5e, type: 2}
   m_sharedMaterial: {fileID: -3480107239788241554, guid: 5e44df17e1be24542815705920744f5e,

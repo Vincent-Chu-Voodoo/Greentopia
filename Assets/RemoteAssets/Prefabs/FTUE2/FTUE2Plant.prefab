@@ -1818,6 +1818,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 8127689146099906235, guid: e321b3a8e175e534488b1e582c7044e7,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8127689146099906237, guid: e321b3a8e175e534488b1e582c7044e7,
         type: 3}
       propertyPath: m_Layer
@@ -1827,6 +1832,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127689146504033735, guid: e321b3a8e175e534488b1e582c7044e7,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8127689146708451864, guid: e321b3a8e175e534488b1e582c7044e7,
         type: 3}

@@ -16,7 +16,7 @@ MonoBehaviour:
   prestigePoint: 220
   prestigeLevelRequirement: 2
   growningTimeInSecond: 18000
-  speedUpDiamond: 30
+  speedUpDiamond: 20
   sellableCapacity: 3
   sellable: {fileID: 11400000, guid: 98860ef335af35840897f9b0cc2b767c, type: 2}
   sellableSpawnTime: 15

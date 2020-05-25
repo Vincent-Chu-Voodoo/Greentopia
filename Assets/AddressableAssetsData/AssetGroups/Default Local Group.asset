@@ -157,7 +157,8 @@ MonoBehaviour:
     m_Address: Tomato Plant_10
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_mainAssetType: 
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 39d6b6d882ffe8d4584d667d840d3d7d
@@ -218,14 +219,6 @@ MonoBehaviour:
     m_TargetAsset: {fileID: 0}
   - m_GUID: 5de6224efc7f32c489fdff8f0e6040d6
     m_Address: trowel_3_d
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: 65640e490a918644e855ba82f09dbd3f
-    m_Address: Aloe Vera_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -462,6 +455,13 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: d6d98c0afdcba0941b762ccfb5fd36ba
+    m_Address: Aloe Vera_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: 
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: e99b737e0e2550240877f7b719d55c7d

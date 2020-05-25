@@ -1853,7 +1853,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1352477935
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2026,7 +2026,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 64}
+  m_AnchoredPosition: {x: 0, y: 90}
   m_SizeDelta: {x: 1535, y: 2048}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1428556607
@@ -2099,7 +2099,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -64}
+  m_AnchoredPosition: {x: 0, y: -90}
   m_SizeDelta: {x: 800, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1455206144
@@ -2926,6 +2926,11 @@ PrefabInstance:
       propertyPath: header
       value: 
       objectReference: {fileID: 1324294925}
+    - target: {fileID: 1679666591083885137, guid: 0daa26762b4ce2943b9a1cb9332b1983,
+        type: 3}
+      propertyPath: otherButton
+      value: 
+      objectReference: {fileID: 1679666592807165755}
     - target: {fileID: 1679666591083885138, guid: 0daa26762b4ce2943b9a1cb9332b1983,
         type: 3}
       propertyPath: m_Name
@@ -3095,6 +3100,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1828599221}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1828599223 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1679666592487245831, guid: 0daa26762b4ce2943b9a1cb9332b1983,
+    type: 3}
+  m_PrefabInstance: {fileID: 1828599221}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1903141910
 GameObject:
   m_ObjectHideFlags: 0
@@ -3131,7 +3148,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 350, y: -168}
+  m_AnchoredPosition: {x: 350, y: -228}
   m_SizeDelta: {x: 168, y: 168}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1903141912
@@ -3613,6 +3630,11 @@ PrefabInstance:
       propertyPath: header
       value: 
       objectReference: {fileID: 1324294925}
+    - target: {fileID: 1679666591083885137, guid: 0daa26762b4ce2943b9a1cb9332b1983,
+        type: 3}
+      propertyPath: otherButton
+      value: 
+      objectReference: {fileID: 1828599223}
     - target: {fileID: 1679666591083885138, guid: 0daa26762b4ce2943b9a1cb9332b1983,
         type: 3}
       propertyPath: m_Name
@@ -3725,3 +3747,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0daa26762b4ce2943b9a1cb9332b1983, type: 3}
+--- !u!114 &1679666592807165755 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1679666592487245831, guid: 0daa26762b4ce2943b9a1cb9332b1983,
+    type: 3}
+  m_PrefabInstance: {fileID: 1679666592807165754}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

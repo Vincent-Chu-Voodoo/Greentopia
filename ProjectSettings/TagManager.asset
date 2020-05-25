@@ -7,6 +7,13 @@ TagManager:
   - Atom
   - Grid
   - Plant
+  - DefaultPlantAnchor
+  - Basket
+  - Header
+  - NutritionAnimation
+  - LevelUpAnimation
+  - PlantTomatoHand
+  - FTUE2AnchorController
   layers:
   - Default
   - TransparentFX

@@ -16,6 +16,7 @@ public class FTUELevelUp : MonoBehaviour
     public int expTarget;
     public float expStartDelay;
     public float expDelay;
+    public bool dontAddXp;
 
     public TextMeshProUGUI expText;
 
@@ -44,7 +45,8 @@ public class FTUELevelUp : MonoBehaviour
 
     IEnumerator ExpLoop()
     {
-        header.AddXp(100f);
+        if (!dontAddXp)
+            header.AddXp(100f);
         yield return null;
         //yield return new WaitForSeconds(expStartDelay);
         //var exp = 0f;

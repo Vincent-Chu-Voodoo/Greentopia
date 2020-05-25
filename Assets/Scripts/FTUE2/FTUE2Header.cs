@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class FTUE2Header : MonoBehaviour
 {
-    private float increaseSpeed = 25f;
+    private float increaseSpeed = 65f;
+
+    public float addXpDelay;
 
     public TextMeshProUGUI coinCount;
     public TextMeshProUGUI diamondCount;
@@ -47,7 +49,6 @@ public class FTUE2Header : MonoBehaviour
         var currentXp = GameDataManager.instance.gameData.prestigePoint;
         var currentLevel = GameDataManager.instance.GetPrestigeLevel(currentXp);
         var newLevel = GameDataManager.instance.GetPrestigeLevel(currentXp + newXp);
-        print($"AddXp: {newXp} {currentLevel} {newLevel}");
         if (newLevel > currentLevel)
         {
             OnLevelUpHidden.Invoke(this);
@@ -61,8 +62,16 @@ public class FTUE2Header : MonoBehaviour
         Refresh();
     }
 
+    public void AddDiamond(float newDiamond)
+    {
+        GameDataManager.instance.gameData.diamond += newDiamond;
+        Refresh();
+    }
+
     public IEnumerator MoveToNewXp(float targetXp)
     {
+        yield return new WaitForSeconds(addXpDelay);
+        GetComponent<Animator>().SetBool("adding_xp", true);
         var currentXp = GameDataManager.instance.gameData.prestigePoint;
         GameDataManager.instance.gameData.prestigePoint = targetXp;
         while (currentXp < targetXp)
@@ -78,6 +87,7 @@ public class FTUE2Header : MonoBehaviour
             }
             yield return null;
         }
+        GetComponent<Animator>().SetBool("adding_xp", false);
         Refresh();
     }
 }

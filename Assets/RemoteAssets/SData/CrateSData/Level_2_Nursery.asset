@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 715aa4a656287284e8f856a45319d14f, type: 3}
   m_Name: Level_2_Nursery
   m_EditorClassIdentifier: 
+  purchasePrice: 0
+  cooldownInSecond: 0
   randomize: 1
   atomEnum: 11
   targetBoard: 0
@@ -22,7 +24,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 68fda12a312ac1c4f93426e0640d706e, type: 2}
   - {fileID: 11400000, guid: 68fda12a312ac1c4f93426e0640d706e, type: 2}
   - {fileID: 11400000, guid: 68fda12a312ac1c4f93426e0640d706e, type: 2}
-  - {fileID: 11400000, guid: 68fda12a312ac1c4f93426e0640d706e, type: 2}
-  - {fileID: 11400000, guid: 68fda12a312ac1c4f93426e0640d706e, type: 2}
-  - {fileID: 11400000, guid: 68fda12a312ac1c4f93426e0640d706e, type: 2}
-  - {fileID: 11400000, guid: 68fda12a312ac1c4f93426e0640d706e, type: 2}
+  - {fileID: 11400000, guid: 6ec95616e82cd924bbdb5752e50e5155, type: 2}
+  - {fileID: 11400000, guid: 6ec95616e82cd924bbdb5752e50e5155, type: 2}
+  - {fileID: 11400000, guid: 6ec95616e82cd924bbdb5752e50e5155, type: 2}

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 715aa4a656287284e8f856a45319d14f, type: 3}
   m_Name: Level_2_ToolShed
   m_EditorClassIdentifier: 
+  purchasePrice: 0
+  cooldownInSecond: 0
   randomize: 1
   atomEnum: 12
   targetBoard: 1
@@ -20,16 +22,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 48c0a393943827a48b2a41301da73a26, type: 2}
   - {fileID: 11400000, guid: 48c0a393943827a48b2a41301da73a26, type: 2}
   - {fileID: 11400000, guid: 48c0a393943827a48b2a41301da73a26, type: 2}
-  - {fileID: 11400000, guid: 48c0a393943827a48b2a41301da73a26, type: 2}
-  - {fileID: 11400000, guid: 48c0a393943827a48b2a41301da73a26, type: 2}
-  - {fileID: 11400000, guid: 48c0a393943827a48b2a41301da73a26, type: 2}
-  - {fileID: 11400000, guid: 48c0a393943827a48b2a41301da73a26, type: 2}
   - {fileID: 11400000, guid: 72b4ae2b04cac5e428ed92e9d4e42692, type: 2}
   - {fileID: 11400000, guid: 72b4ae2b04cac5e428ed92e9d4e42692, type: 2}
   - {fileID: 11400000, guid: 72b4ae2b04cac5e428ed92e9d4e42692, type: 2}
   - {fileID: 11400000, guid: 72b4ae2b04cac5e428ed92e9d4e42692, type: 2}
-  - {fileID: 11400000, guid: 72b4ae2b04cac5e428ed92e9d4e42692, type: 2}
-  - {fileID: 11400000, guid: 72b4ae2b04cac5e428ed92e9d4e42692, type: 2}
-  - {fileID: 11400000, guid: 72b4ae2b04cac5e428ed92e9d4e42692, type: 2}
-  - {fileID: 11400000, guid: 72b4ae2b04cac5e428ed92e9d4e42692, type: 2}
-  - {fileID: 11400000, guid: 72b4ae2b04cac5e428ed92e9d4e42692, type: 2}
+  - {fileID: 11400000, guid: 1884089ebd3e77944bbeda0200b8cb74, type: 2}

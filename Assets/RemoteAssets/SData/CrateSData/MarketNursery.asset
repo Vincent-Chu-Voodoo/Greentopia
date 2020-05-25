@@ -18,13 +18,11 @@ MonoBehaviour:
   atomEnum: 11
   targetBoard: 0
   fTUE2IngredientBaseSDataList:
+  - {fileID: 11400000, guid: 553ceaaae0935724cb38ef4a62c787fc, type: 2}
+  - {fileID: 11400000, guid: 553ceaaae0935724cb38ef4a62c787fc, type: 2}
+  - {fileID: 11400000, guid: a318a66e68a5904419be62716863497e, type: 2}
+  - {fileID: 11400000, guid: a318a66e68a5904419be62716863497e, type: 2}
   - {fileID: 11400000, guid: a1975d3c84b9561448165d4cc3ba6545, type: 2}
   - {fileID: 11400000, guid: a1975d3c84b9561448165d4cc3ba6545, type: 2}
   - {fileID: 11400000, guid: a1975d3c84b9561448165d4cc3ba6545, type: 2}
   - {fileID: 11400000, guid: a1975d3c84b9561448165d4cc3ba6545, type: 2}
-  - {fileID: 11400000, guid: a1975d3c84b9561448165d4cc3ba6545, type: 2}
-  - {fileID: 11400000, guid: a1975d3c84b9561448165d4cc3ba6545, type: 2}
-  - {fileID: 11400000, guid: 68fda12a312ac1c4f93426e0640d706e, type: 2}
-  - {fileID: 11400000, guid: 68fda12a312ac1c4f93426e0640d706e, type: 2}
-  - {fileID: 11400000, guid: 68fda12a312ac1c4f93426e0640d706e, type: 2}
-  - {fileID: 11400000, guid: 68fda12a312ac1c4f93426e0640d706e, type: 2}

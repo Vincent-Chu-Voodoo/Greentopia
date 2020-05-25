@@ -4258,8 +4258,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644975532}
   m_LocalRotation: {x: -0.0038732735, y: 0.008678599, z: -0.051514518, w: 0.998627}
-  m_LocalPosition: {x: -0.43, y: 0.88, z: -0.19}
-  m_LocalScale: {x: 0.1, y: 0.10000003, z: 1}
+  m_LocalPosition: {x: -0.16, y: 0.71, z: -0.19}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 2104901248}
   m_RootOrder: 4
@@ -4559,6 +4559,7 @@ MonoBehaviour:
   expTarget: 100
   expStartDelay: 0.8
   expDelay: 0
+  dontAddXp: 0
   expText: {fileID: 2050422252}
   startAnchor: {fileID: 241499107}
   endAnchor: {fileID: 404395489}
@@ -6525,7 +6526,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910685079}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.35, y: -1.83, z: 0}
+  m_LocalPosition: {x: -0.74, y: -1.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1491844874}
@@ -7514,7 +7515,7 @@ BoxCollider:
   m_GameObject: {fileID: 1092003561}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -10201,6 +10202,9 @@ MonoBehaviour:
   totalTime: 18000
   timeText: {fileID: 617358411}
   growingBarImage: {fileID: 1122178540}
+  OnSpeedUp:
+    m_PersistentCalls:
+      m_Calls: []
   OnGrown:
     m_PersistentCalls:
       m_Calls:
@@ -10615,8 +10619,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1476025724}
   m_LocalRotation: {x: -0.0038732735, y: 0.008678599, z: -0.051514518, w: 0.998627}
-  m_LocalPosition: {x: 0.69, y: 1.29, z: -0.21}
-  m_LocalScale: {x: 0.1, y: 0.10000003, z: 1}
+  m_LocalPosition: {x: 0.44, y: 0.95, z: -0.2}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 2104901248}
   m_RootOrder: 5
@@ -13520,8 +13524,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125114757}
   m_LocalRotation: {x: -0.0038732735, y: 0.008678599, z: -0.051514518, w: 0.998627}
-  m_LocalPosition: {x: 0.48, y: 0.4, z: -0.2}
-  m_LocalScale: {x: 0.1, y: 0.10000003, z: 1}
+  m_LocalPosition: {x: 0.21, y: 0.6, z: -0.19}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 2104901248}
   m_RootOrder: 6
@@ -13766,6 +13770,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 804955709}
     m_Modifications:
+    - target: {fileID: 1370499527310616658, guid: 71ab735f9bfd7d749bcda71fd31ad375,
+        type: 3}
+      propertyPath: addXpDelay
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 4328250293692038960, guid: 71ab735f9bfd7d749bcda71fd31ad375,
         type: 3}
       propertyPath: m_LocalPosition.x

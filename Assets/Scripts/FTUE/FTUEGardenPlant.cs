@@ -105,6 +105,7 @@ public class FTUEGardenPlant : MonoBehaviour
     public void Grown()
     {
         fTUEGardenPlantStatus = FTUEGardenPlantStatus.Grown;
+        transform.position -= transform.up * 0.5f;
         GetComponent<BoxCollider>().center = grownBoxPos;
         GetComponent<BoxCollider>().size = grownBoxScale;
         OnGrown.Invoke(this);

@@ -38,7 +38,7 @@ public class LevelPanel : MonoBehaviour
                 var aoh2 = ResourceManager.instance.GetAtomSpriteAOH(atomSpawnerEnum, 1);
                 aoh2.Completed += _2 =>
                 {
-                    atomDisplay.GetComponent<Image>().sprite = aoh2.Result as Sprite;
+                    atomDisplay.GetComponent<Image>().sprite = aoh2.Result;
                 };
                 // _atomDisplaySDataList.Where(i => i.type == atomSpawnerEnum).FirstOrDefault().spriteList.FirstOrDefault();
             };

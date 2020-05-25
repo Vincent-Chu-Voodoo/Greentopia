@@ -20,6 +20,9 @@ public class FTUE2Plant : MonoBehaviour
     public Canvas canvas;
     public BoxCollider boxCollider;
 
+    public GameObject freeGO;
+    public GameObject twentyDiamondGO;
+
     public GameObject nutritionGO;
     public GameObject progressionGO;
     public GameObject tapGO;
@@ -47,6 +50,17 @@ public class FTUE2Plant : MonoBehaviour
         fTUEPlantProgress.OnGrown.AddListener(Grow);
         canvas.worldCamera = Camera.main;
         ConfigurePlant(_plantStageEnum);
+
+        if (plantSData.sellable.atomEnum == AtomEnum.aloe_sapling)
+        {
+            freeGO.SetActive(false);
+            twentyDiamondGO.SetActive(true);
+        }
+        else
+        {
+            freeGO.SetActive(true);
+            twentyDiamondGO.SetActive(false);
+        }
     }
 
     public void ConfigurePlant(PlantStageEnum _plantStageEnum)
@@ -118,6 +132,7 @@ public class FTUE2Plant : MonoBehaviour
         progressionGO.SetActive(false);
         ConfigurePlant(PlantStageEnum.Grown);
         GameObject.FindGameObjectWithTag(TagEnum.Header.ToString()).GetComponent<FTUE2Header>().AddXp(plantSData.prestigePoint);
+        GameObject.FindGameObjectWithTag(TagEnum.LevelUpAnimation.ToString()).GetComponent<FTUE2LevelUpProxy>().Play(transform);
 
         foreach (var ingredient in plantSData.nutrientRequiredList)
         {
@@ -144,10 +159,19 @@ public class FTUE2Plant : MonoBehaviour
         }
     }
 
+    public void SpeedUp()
+    {
+        GameObject.FindGameObjectWithTag(TagEnum.Header.ToString()).GetComponent<FTUE2Header>().AddDiamond(-plantSData.speedUpDiamond);
+    }
+
     public void FedNutritionClicked()
     {
         nutritionGO.SetActive(false);
         ConfigurePlant(PlantStageEnum.Growing);
+        var mi = GameObject.FindGameObjectWithTag(TagEnum.NutritionAnimation.ToString());
+        mi.GetComponent<FTUE2NutritionAnimationProxy>().Play(transform);
+        //mi.SetActive(true);
+        //mi.GetComponent<FTUEGardenNutritionAnimation>().targetAnchor = transform;
     }
 
     public void Planted(object obj)

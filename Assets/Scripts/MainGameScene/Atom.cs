@@ -119,6 +119,7 @@ public class Atom : MonoBehaviour, IAtom
     public bool CanCombine(Atom atom)
     {
         return !(atom is null) &&
+            !(atom.atomType == AtomEnum.trowel && atom.atomLevel == 4) &&
             !(atom.atomType == AtomEnum.cotton && atom.atomLevel == 4) &&
             !ReferenceEquals(atom, this) && (!atom.isDusty || !isDusty) && atom.atomLevel < 6 && atom == this && !isCrate;
     }

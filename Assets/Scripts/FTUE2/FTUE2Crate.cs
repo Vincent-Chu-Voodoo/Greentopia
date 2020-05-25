@@ -20,6 +20,7 @@ public class FTUE2Crate : MonoBehaviour
     public TextMeshProUGUI priceText;
     public TextMeshProUGUI coolDownText;
     public FTUE2Header header;
+    public Button otherButton;
 
     public float currentCoolDown
     {
@@ -87,6 +88,7 @@ public class FTUE2Crate : MonoBehaviour
         previousTime = Time.realtimeSinceStartup;
         currentCoolDown = Mathf.MoveTowards(currentCoolDown, 0f, timeDelta);
         coolDownText.SetText($"{(int)currentCoolDown / 3600:0}h {((int)currentCoolDown / 60) % 60:0}m");
+        freeClaimGrayGO.SetActive(purchaseGO.GetComponent<Button>().interactable);
         if (currentCoolDown > 0f)
         {
             freeClaimGreenGO.SetActive(false);
@@ -112,6 +114,7 @@ public class FTUE2Crate : MonoBehaviour
         freeClaimGreenGO.SetActive(false);
         GetComponent<Animator>().SetTrigger("claim");
         purchaseGO.GetComponent<Button>().interactable = GameDataManager.instance.gameData.coin >= price;
+        otherButton.interactable = GameDataManager.instance.gameData.coin >= price;
         OnCliam.Invoke(this);
     }
 

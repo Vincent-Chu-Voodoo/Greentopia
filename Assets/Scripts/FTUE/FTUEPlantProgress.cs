@@ -12,6 +12,7 @@ public class FTUEPlantProgress : MonoBehaviour
     public TextMeshProUGUI timeText;
     public Image growingBarImage;
 
+    public GameEvent OnSpeedUp;
     public GameEvent OnGrown;
 
     void Update()
@@ -26,6 +27,7 @@ public class FTUEPlantProgress : MonoBehaviour
 
     public void UseDiamond()
     {
+        OnSpeedUp.Invoke(this);
         OnGrown.Invoke(this);
     }
 }

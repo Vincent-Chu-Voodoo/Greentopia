@@ -1145,6 +1145,8 @@ MonoBehaviour:
   aloe: {fileID: 1663063428}
   claimButton: {fileID: 2109997601}
   header: {fileID: 1324294925}
+  gameOverGO: {fileID: 1154392502}
+  canvasAnimator: {fileID: 1699456318}
   backAR:
     m_AssetGUID: 77cffef6fd20cf6468c48a41d3a44ab1
     m_SubObjectName: 
@@ -1556,6 +1558,7 @@ RectTransform:
   - {fileID: 677706386}
   - {fileID: 1324294924}
   - {fileID: 1903141911}
+  - {fileID: 1154392503}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2015,7 +2018,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0fd65dde4b0425a45ab54eea88875777, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4b1c38af20f786644919f098d51e044a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2386,10 +2389,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1024993527}
-    characterCount: 60
+    characterCount: 56
     spriteCount: 0
-    spaceCount: 12
-    wordCount: 13
+    spaceCount: 11
+    wordCount: 12
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -2671,18 +2674,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154392502}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2687501, y: 1.2687501, z: 1.2687501}
   m_Children:
   - {fileID: 830022645}
-  m_Father: {fileID: 1699456317}
-  m_RootOrder: 5
+  m_Father: {fileID: 721822288}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -238.30048, y: -515.9999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1154392504
 MonoBehaviour:
@@ -3824,6 +3827,7 @@ GameObject:
   - component: {fileID: 1699456316}
   - component: {fileID: 1699456315}
   - component: {fileID: 1699456314}
+  - component: {fileID: 1699456318}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3907,7 +3911,6 @@ RectTransform:
   - {fileID: 320884687}
   - {fileID: 1663063429}
   - {fileID: 2109997602}
-  - {fileID: 1154392503}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3916,6 +3919,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!95 &1699456318
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699456313}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ef6d645f0790a4b4ea9858417c74f587, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1711110768
 GameObject:
   m_ObjectHideFlags: 0
@@ -4018,7 +4040,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9b38afbdd09d8dc499a9639c83d3fdb7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4152,7 +4174,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 444.0625, y: -213.14995}
+  m_AnchoredPosition: {x: 444.0625, y: -213.14996}
   m_SizeDelta: {x: 168, y: 168}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1903141912

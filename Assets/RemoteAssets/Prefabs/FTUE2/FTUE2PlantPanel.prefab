@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 671513553865669134}
   - component: {fileID: 4227136945343194076}
-  - component: {fileID: 671513553865669129}
+  - component: {fileID: 3611646587100505149}
   m_Layer: 5
   m_Name: PlantIngredientPanelController
   m_TagString: Untagged
@@ -57,7 +57,7 @@ MonoBehaviour:
   OnIngredientSatisfiedUpdate:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &671513553865669129
+--- !u!114 &3611646587100505149
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66,18 +66,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 671513553865669135}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 10
     m_Bottom: 0
   m_ChildAlignment: 0
   m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
@@ -116,7 +116,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 121.7, y: -66.2}
+  m_AnchoredPosition: {x: 86, y: -53}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3531807112242514580
@@ -147,8 +147,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Foxgloves
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ec894771bb8c8a14cb4750deeaf8cd41, type: 2}
-  m_sharedMaterial: {fileID: 5774304348052465233, guid: ec894771bb8c8a14cb4750deeaf8cd41,
+  m_fontAsset: {fileID: 11400000, guid: 34388366f5c1ad44e8f85d0768861374, type: 2}
+  m_sharedMaterial: {fileID: -3480107239788241554, guid: 34388366f5c1ad44e8f85d0768861374,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -365,8 +365,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 50 XP
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ec894771bb8c8a14cb4750deeaf8cd41, type: 2}
-  m_sharedMaterial: {fileID: 5774304348052465233, guid: ec894771bb8c8a14cb4750deeaf8cd41,
+  m_fontAsset: {fileID: 11400000, guid: 34388366f5c1ad44e8f85d0768861374, type: 2}
+  m_sharedMaterial: {fileID: -3480107239788241554, guid: 34388366f5c1ad44e8f85d0768861374,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -525,7 +525,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 69ac0a6a1a22820498117617184c0a05, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 511031d915efdc947b59df8fba3f6489, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

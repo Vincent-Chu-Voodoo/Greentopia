@@ -76,9 +76,14 @@ public class FTUE2Crate : MonoBehaviour
 
     public GameEvent OnCliam;
 
+    public static bool specialOffer;
+
     private void Start()
     {
-        price = fTUE2CrateSData.purchasePrice;
+        if (specialOffer && targetBoard == FTUE2BoardEnum.ToolShedBoard)
+            price = 100f;
+        else
+            price = fTUE2CrateSData.purchasePrice;
         cooldown = fTUE2CrateSData.cooldownInSecond;
         purchaseGO.GetComponent<Button>().interactable = GameDataManager.instance.gameData.coin >= price;
         priceText.SetText($"{price}");
@@ -107,7 +112,10 @@ public class FTUE2Crate : MonoBehaviour
     {
         var targetCrate = canClaimFree ? fTUE2CrateSData : fTUE2CrateSDataPaid;
 
-        var pp = targetBoard == FTUE2BoardEnum.NurseryBoard && !canClaimFree && GameDataManager.instance.gameData.coin == 300;
+        if (!specialOffer)
+            specialOffer = targetBoard == FTUE2BoardEnum.NurseryBoard && !canClaimFree && GameDataManager.instance.gameData.coin == 300;
+        else
+            specialOffer = false;
 
         if (!canClaimFree)
         {
@@ -122,7 +130,7 @@ public class FTUE2Crate : MonoBehaviour
         purchaseGO.GetComponent<Button>().interactable = GameDataManager.instance.gameData.coin >= price;
         otherButton.interactable = GameDataManager.instance.gameData.coin >= price;
 
-        if (pp)
+        if (specialOffer)
         {
             otherCrate.price = 100f;
             otherButton.interactable = true;

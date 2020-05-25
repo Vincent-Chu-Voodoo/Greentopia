@@ -36,6 +36,7 @@ public class FTUE2NeightbourScene : MonoBehaviour
         {
             canvasAnimator.Play("2nd_transition", 0, 1f);
             aloeOrder.Invoke(this);
+            GameDataManager.instance.gameData.sellableList.RemoveAll(i => i.atomEnum == AtomEnum.tomato_sapling);
         }
         else
             tomatoOrder.Invoke(this);

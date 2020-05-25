@@ -121,6 +121,7 @@ public class Atom : MonoBehaviour, IAtom
         return !(atom is null) &&
             !(atom.atomType == AtomEnum.trowel && atom.atomLevel == 4) &&
             !(atom.atomType == AtomEnum.cotton && atom.atomLevel == 4) &&
+            !(atom.atomType == AtomEnum.fertiliser && atom.atomLevel == 5) &&
             !ReferenceEquals(atom, this) && (!atom.isDusty || !isDusty) && atom.atomLevel < 6 && atom == this && !isCrate;
     }
 

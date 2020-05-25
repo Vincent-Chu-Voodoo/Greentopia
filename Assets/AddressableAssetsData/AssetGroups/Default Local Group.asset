@@ -33,14 +33,6 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: 0454304473a1ceb4387f8be29d6b4571
-    m_Address: FTUE2-NurseryScene
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
   - m_GUID: 065ad2ad0609ab947ae6f2313dd0ebf4
     m_Address: cotton_1
     m_ReadOnly: 0
@@ -55,22 +47,6 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: 08874089485f9ad45b3cf9e3d3175a3e
-    m_Address: FTUE2-ToolShedScene
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: 0d9e5ff50ea34cd4bbb41f13d441fc63
-    m_Address: FTUE2-NeighbourScene
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 0e4d9d5f689dd0541a02d4270263fceb
@@ -279,14 +255,6 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: 77cffef6fd20cf6468c48a41d3a44ab1
-    m_Address: FTUE2-GardenScene
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEditor.SceneAsset, UnityEditor, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: 7d8907a48b6bda14e95e9e0c3e98ab52

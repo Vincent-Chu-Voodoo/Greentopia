@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -20,6 +19,7 @@ public class FTUE2Plant : MonoBehaviour
     public Canvas canvas;
     public BoxCollider boxCollider;
 
+    public GameObject hourGlassGO;
     public GameObject freeGO;
     public GameObject twentyDiamondGO;
 
@@ -76,6 +76,7 @@ public class FTUE2Plant : MonoBehaviour
                 break;
             case PlantStageEnum.Growing:
                 tapGO.SetActive(true);
+                hourGlassGO.SetActive(true);
                 break;
             case PlantStageEnum.Grown:
                 tapGO.SetActive(false);
@@ -110,6 +111,7 @@ public class FTUE2Plant : MonoBehaviour
                 break;
             case PlantStageEnum.Growing:
                 tapGO.SetActive(progressionGO.activeSelf);
+                hourGlassGO.SetActive(progressionGO.activeSelf);
                 progressionGO.SetActive(!progressionGO.activeSelf);
                 break;
             case PlantStageEnum.Grown:

@@ -52,6 +52,7 @@ public class FTUE2PinnedPlantController : MonoBehaviour
 
     public void Plannted(object obj)
     {
+        fTUE2Plant = null;
         GameDataManager.instance.gameData.pinnedPlant = null;
         gameObject.SetActive(false);
         OnPlannted.Invoke(this);
@@ -70,5 +71,15 @@ public class FTUE2PinnedPlantController : MonoBehaviour
     public void RefreshIngredient()
     {
         fTUE2PlantPanel.RefreshIngredient();
+    }
+
+    private void OnEnable()
+    {
+        fTUE2Plant?.gameObject?.SetActive(true);
+    }
+
+    private void OnDisable()
+    {
+        fTUE2Plant?.gameObject?.SetActive(false);
     }
 }

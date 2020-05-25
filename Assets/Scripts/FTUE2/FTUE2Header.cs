@@ -15,6 +15,7 @@ public class FTUE2Header : MonoBehaviour
     public Image xpFiller;
 
     public GameEvent OnLevelUp;
+    public GameEvent OnLevelUpHidden;
 
     void Start()
     {
@@ -43,6 +44,14 @@ public class FTUE2Header : MonoBehaviour
 
     public void AddXp(float newXp)
     {
+        var currentXp = GameDataManager.instance.gameData.prestigePoint;
+        var currentLevel = GameDataManager.instance.GetPrestigeLevel(currentXp);
+        var newLevel = GameDataManager.instance.GetPrestigeLevel(currentXp + newXp);
+        print($"AddXp: {newXp} {currentLevel} {newLevel}");
+        if (newLevel > currentLevel)
+        {
+            OnLevelUpHidden.Invoke(this);
+        }
         StartCoroutine(MoveToNewXp(GameDataManager.instance.gameData.prestigePoint + newXp));
     }
 

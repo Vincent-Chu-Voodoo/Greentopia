@@ -19,6 +19,7 @@ public class FTUE2Crate : MonoBehaviour
     public GameObject freeClaimGrayGO;
     public TextMeshProUGUI priceText;
     public TextMeshProUGUI coolDownText;
+    public FTUE2Header header;
 
     public float currentCoolDown
     {
@@ -100,14 +101,17 @@ public class FTUE2Crate : MonoBehaviour
 
     public void Claim()
     {
-        if (!canClaimFree && GameDataManager.instance.gameData.coin < price)
-            return;
+        if (!canClaimFree)
+        {
+            if (GameDataManager.instance.gameData.coin < price)
+                return;
+            header.AddCoin(-price);
+        }   
         currentCoolDown = cooldown;
-        //if (!canClaimFree)
-            //GameDataManager.instance.gameData.coin -= price;
         GameDataManager.instance.gameData.crateList.Add(fTUE2CrateSData);
         freeClaimGreenGO.SetActive(false);
         GetComponent<Animator>().SetTrigger("claim");
+        purchaseGO.GetComponent<Button>().interactable = GameDataManager.instance.gameData.coin >= price;
         OnCliam.Invoke(this);
     }
 

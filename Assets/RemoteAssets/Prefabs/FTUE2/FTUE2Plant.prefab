@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 109999818}
   - component: {fileID: 109999820}
   - component: {fileID: 109999819}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Diamond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 364271855}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: a3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 378793023}
   - component: {fileID: 378793025}
   - component: {fileID: 378793024}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 453506137}
   - component: {fileID: 453506140}
   - component: {fileID: 453506139}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Nutrition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -418,7 +418,7 @@ GameObject:
   - component: {fileID: 595423183}
   - component: {fileID: 595423185}
   - component: {fileID: 595423184}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 705132595}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: a1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -522,7 +522,7 @@ GameObject:
   - component: {fileID: 804130953}
   - component: {fileID: 804130952}
   - component: {fileID: 804130951}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -620,7 +620,7 @@ GameObject:
   - component: {fileID: 1028862345}
   - component: {fileID: 1028862347}
   - component: {fileID: 1028862346}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Image (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -691,7 +691,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1203850110}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: SellableAnchors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -726,7 +726,7 @@ GameObject:
   - component: {fileID: 1312881075}
   - component: {fileID: 1312881077}
   - component: {fileID: 1312881076}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: noTMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -881,7 +881,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1533247641}
   - component: {fileID: 1533247642}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -931,7 +931,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1636150218}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: a2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -963,7 +963,7 @@ GameObject:
   - component: {fileID: 1693483081}
   - component: {fileID: 1693483083}
   - component: {fileID: 1693483082}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Image (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1037,7 +1037,7 @@ GameObject:
   - component: {fileID: 1750088187}
   - component: {fileID: 1750088186}
   - component: {fileID: 1750088185}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1162,7 +1162,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1788606294}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: UIAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1194,7 +1194,7 @@ GameObject:
   - component: {fileID: 1809306292}
   - component: {fileID: 1809306294}
   - component: {fileID: 1809306293}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: hasTMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1349,7 +1349,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1919856730}
   - component: {fileID: 1919856731}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: PlantImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1432,7 +1432,7 @@ GameObject:
   - component: {fileID: 2036304431}
   - component: {fileID: 2036304430}
   - component: {fileID: 2036304428}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: PlantProgress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1540,7 +1540,7 @@ GameObject:
   - component: {fileID: 313385928593496734}
   - component: {fileID: 313385928593496735}
   - component: {fileID: 1472263532}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: FTUE2Plant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1615,7 +1615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6170159151908354976}
   - component: {fileID: 8496429933025388027}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: FTUE2PlantDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1663,6 +1663,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 313385928593496734}
     m_Modifications:
+    - target: {fileID: 7955000973322085997, guid: e321b3a8e175e534488b1e582c7044e7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127689145148771988, guid: e321b3a8e175e534488b1e582c7044e7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127689146099906237, guid: e321b3a8e175e534488b1e582c7044e7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127689146504033721, guid: e321b3a8e175e534488b1e582c7044e7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 8127689146708451864, guid: e321b3a8e175e534488b1e582c7044e7,
         type: 3}
       propertyPath: showDelay
@@ -1732,6 +1752,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127689146708451866, guid: e321b3a8e175e534488b1e582c7044e7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e321b3a8e175e534488b1e582c7044e7, type: 3}

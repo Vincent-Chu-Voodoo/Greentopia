@@ -23,10 +23,11 @@ public class FTUE2PlantOnCardBehaviour : MonoBehaviour
 
     private void OnMouseUp()
     {
+        print($"Plant OnMouseUp");
         var ray = targetCamera.ScreenPointToRay(Input.mousePosition);
         if (Physics.Raycast(ray, out var hitInfo, float.PositiveInfinity, LayerMask.GetMask(LayerEnum.PlantBase.ToString())))
         {
-            
+            print($"Hit {hitInfo.collider.name}");
         }
         else
         {

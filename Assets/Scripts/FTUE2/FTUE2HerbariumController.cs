@@ -20,8 +20,21 @@ public class FTUE2HerbariumController : MonoBehaviour
 
     public GameEvent OnPin;
 
+    public bool originalActive;
+
     private void Awake()
     {
+        Refresh();
+    }
+
+    public void Refresh()
+    {
+        foreach (var g in plantPanelList)
+        {
+            Destroy(g);
+        }
+        plantPanelList.Clear();
+
         foreach (var plantSData in GameDataManager.instance.plantSDataList)
         {
             if (GameDataManager.instance.GetPrestigeLevel() < plantSData.prestigeLevelRequirement)
@@ -51,6 +64,7 @@ public class FTUE2HerbariumController : MonoBehaviour
     {
         //gameObject.SetActive(true);
         print($"show");
+        originalActive = fTUE2PinnedPlantController.gameObject.activeSelf;
         fTUE2PinnedPlantController.gameObject.SetActive(false);
         GetComponent<Animator>().SetBool("isOpen", true);
         foreach (var plantPanel in plantPanelList)
@@ -59,7 +73,8 @@ public class FTUE2HerbariumController : MonoBehaviour
 
     public void Hide()
     {
-        fTUE2PinnedPlantController.gameObject.SetActive(true);
+        if (originalActive)
+            fTUE2PinnedPlantController.gameObject.SetActive(true);
         GetComponent<Animator>().SetBool("isOpen", false);
         //gameObject.SetActive(false);
     }

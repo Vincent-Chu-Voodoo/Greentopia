@@ -65,14 +65,6 @@ MonoBehaviour:
       PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: 09398f78038b3a340875c84dff25b0be
-    m_Address: nursery_crate_0
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
   - m_GUID: 0d9e5ff50ea34cd4bbb41f13d441fc63
     m_Address: FTUE2-NeighbourScene
     m_ReadOnly: 0
@@ -161,6 +153,14 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: 3853e88fe37aba84c8ecc047d0836711
+    m_Address: Aloe Vera_10
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 39d6b6d882ffe8d4584d667d840d3d7d
     m_Address: plant:Aloe Vera
     m_ReadOnly: 0
@@ -179,6 +179,14 @@ MonoBehaviour:
     m_TargetAsset: {fileID: 0}
   - m_GUID: 40349a3e42c25144aa9907cbfe2aafca
     m_Address: aloe_sapling_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 417dd6defb79d5b4cbae46fdb5a9f7ff
+    m_Address: terracotta_2
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -241,6 +249,14 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: 6e58ac8f13761584b80079034a44a8a3
+    m_Address: terracotta_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 72f1a75087e17be4396714b91c22ee81
     m_Address: Apple Tree_10
     m_ReadOnly: 0
@@ -275,14 +291,6 @@ MonoBehaviour:
     m_TargetAsset: {fileID: 0}
   - m_GUID: 7d8907a48b6bda14e95e9e0c3e98ab52
     m_Address: trowel_1
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: 7de9cd1eab409514a9b56751c35149a2
-    m_Address: toolshed_crate_0
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -457,11 +465,20 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: d6d98c0afdcba0941b762ccfb5fd36ba
-    m_Address: Aloe Vera_1
+  - m_GUID: dd582ccef5ed8804785deb01958b8c82
+    m_Address: nursery_crate_0
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_mainAssetType: 
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e0766071b9ab3534d94d82f78e3d1354
+    m_Address: toolshed_crate_0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: e99b737e0e2550240877f7b719d55c7d
@@ -473,7 +490,15 @@ MonoBehaviour:
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: efd51b83f6100034a8c065482a81e758
-    m_Address: Aloe Vera_10
+    m_Address: Aloe Vera_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f542adcef26f714408871208be242475
+    m_Address: terracotta_1
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,

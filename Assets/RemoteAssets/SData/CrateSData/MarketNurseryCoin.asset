@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 715aa4a656287284e8f856a45319d14f, type: 3}
-  m_Name: MarketNursery
+  m_Name: MarketNurseryCoin
   m_EditorClassIdentifier: 
   purchasePrice: 200
   cooldownInSecond: 14400
@@ -18,13 +18,11 @@ MonoBehaviour:
   atomEnum: 11
   targetBoard: 0
   fTUE2IngredientBaseSDataList:
+  - {fileID: 11400000, guid: 553ceaaae0935724cb38ef4a62c787fc, type: 2}
+  - {fileID: 11400000, guid: 553ceaaae0935724cb38ef4a62c787fc, type: 2}
+  - {fileID: 11400000, guid: a318a66e68a5904419be62716863497e, type: 2}
+  - {fileID: 11400000, guid: a318a66e68a5904419be62716863497e, type: 2}
   - {fileID: 11400000, guid: a1975d3c84b9561448165d4cc3ba6545, type: 2}
   - {fileID: 11400000, guid: a1975d3c84b9561448165d4cc3ba6545, type: 2}
   - {fileID: 11400000, guid: a1975d3c84b9561448165d4cc3ba6545, type: 2}
   - {fileID: 11400000, guid: a1975d3c84b9561448165d4cc3ba6545, type: 2}
-  - {fileID: 11400000, guid: a1975d3c84b9561448165d4cc3ba6545, type: 2}
-  - {fileID: 11400000, guid: a1975d3c84b9561448165d4cc3ba6545, type: 2}
-  - {fileID: 11400000, guid: 8671c42299c315a4499f4f6509d95e76, type: 2}
-  - {fileID: 11400000, guid: 8671c42299c315a4499f4f6509d95e76, type: 2}
-  - {fileID: 11400000, guid: 8671c42299c315a4499f4f6509d95e76, type: 2}
-  - {fileID: 11400000, guid: 8671c42299c315a4499f4f6509d95e76, type: 2}

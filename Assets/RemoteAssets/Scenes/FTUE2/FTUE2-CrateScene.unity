@@ -2931,6 +2931,12 @@ PrefabInstance:
       propertyPath: otherButton
       value: 
       objectReference: {fileID: 1679666592807165755}
+    - target: {fileID: 1679666591083885137, guid: 0daa26762b4ce2943b9a1cb9332b1983,
+        type: 3}
+      propertyPath: fTUE2CrateSDataPaid
+      value: 
+      objectReference: {fileID: 11400000, guid: 68700133598002841bb3fffbe263a507,
+        type: 2}
     - target: {fileID: 1679666591083885138, guid: 0daa26762b4ce2943b9a1cb9332b1983,
         type: 3}
       propertyPath: m_Name
@@ -3635,6 +3641,12 @@ PrefabInstance:
       propertyPath: otherButton
       value: 
       objectReference: {fileID: 1828599223}
+    - target: {fileID: 1679666591083885137, guid: 0daa26762b4ce2943b9a1cb9332b1983,
+        type: 3}
+      propertyPath: fTUE2CrateSDataPaid
+      value: 
+      objectReference: {fileID: 11400000, guid: 5cdd489a9757fad43b374787e57d7e9d,
+        type: 2}
     - target: {fileID: 1679666591083885138, guid: 0daa26762b4ce2943b9a1cb9332b1983,
         type: 3}
       propertyPath: m_Name

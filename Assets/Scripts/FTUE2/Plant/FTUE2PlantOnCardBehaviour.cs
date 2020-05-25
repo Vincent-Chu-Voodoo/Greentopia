@@ -9,15 +9,13 @@ public class FTUE2PlantOnCardBehaviour : MonoBehaviour
     public Transform defaultPlantAnchor;
     public GameEvent OnPlanted = new GameEvent();
 
-    public GameObject plantGO;
 
     private void Start()
     {
         targetCamera = Camera.main;
         defaultPlantAnchor = GameObject.FindGameObjectWithTag(TagEnum.DefaultPlantAnchor.ToString()).transform;
         OnPlanted.AddListener(GetComponent<FTUE2Plant>().Planted);
-        plantGO = GameObject.FindGameObjectWithTag(TagEnum.PlantTomatoHand.ToString());
-        plantGO?.SetActive(true);
+        GameObject.FindGameObjectWithTag(TagEnum.PlantTomatoHand.ToString()).GetComponent<FTUE2PlantTomatoHandProxy>().Play();
     }
 
     private void OnMouseDrag()
@@ -39,7 +37,7 @@ public class FTUE2PlantOnCardBehaviour : MonoBehaviour
         //    transform.position = defaultPlantAnchor.position;
         //}
         transform.position = GameObject.FindGameObjectWithTag(TagEnum.FTUE2AnchorController.ToString()).GetComponent<FTUE2AnchorController>().GetAnchor().position;
-        plantGO?.SetActive(false);
+        GameObject.FindGameObjectWithTag(TagEnum.PlantTomatoHand.ToString()).GetComponent<FTUE2PlantTomatoHandProxy>().Stop();
         OnPlanted.Invoke(this);
     }
 }

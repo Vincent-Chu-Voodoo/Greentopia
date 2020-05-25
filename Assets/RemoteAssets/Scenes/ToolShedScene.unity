@@ -985,6 +985,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 69899523}
     m_Modifications:
+    - target: {fileID: 3620836444098612046, guid: 3e5da79d8b581f843ba5425ce0ed5ba2,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3620836444295569388, guid: 3e5da79d8b581f843ba5425ce0ed5ba2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1069,6 +1074,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620836444504311858, guid: 3e5da79d8b581f843ba5425ce0ed5ba2,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e5da79d8b581f843ba5425ce0ed5ba2, type: 3}
@@ -9942,6 +9952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetAtomLevel: 4
+  atomController: {fileID: 1522636311}
   OnEnterToolShed:
     m_PersistentCalls:
       m_Calls:
@@ -10000,6 +10011,17 @@ MonoBehaviour:
       - m_Target: {fileID: 297032437}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1950745287}
+        m_MethodName: StopAllAtom
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11145,7 +11167,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 444.06247, y: -213.14998}
+  m_AnchoredPosition: {x: 444.06247, y: -213.14996}
   m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2132859772

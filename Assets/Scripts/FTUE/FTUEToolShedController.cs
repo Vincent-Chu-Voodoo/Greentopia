@@ -6,6 +6,8 @@ public class FTUEToolShedController : MonoBehaviour
 {
     public int targetAtomLevel;
 
+    public AtomController atomController;
+
     public GameEvent OnEnterToolShed;
     public GameEvent OnTapSpawner;
     public GameEvent OnMerged;
@@ -32,5 +34,10 @@ public class FTUEToolShedController : MonoBehaviour
 
         if (newAtom.atomType == AtomEnum.fertiliser && newAtom.atomLevel == 4)
             newAtom.SetCanCraft(true);
+    }
+
+    public void StopAllAtom()
+    {
+        atomController.allAtomList.ForEach(i => i.GetComponent<BoxCollider>().enabled = false);
     }
 }

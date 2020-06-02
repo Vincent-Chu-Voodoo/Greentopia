@@ -120,7 +120,7 @@ public class GameDataManager : Singleton<GameDataManager>
         var index = gameData.levelSessionDataList.FindIndex(i => i.level == levelSessionData.level);
         if (index < 0)
         {
-            Debug.LogWarning($"level session data not found for lv: {levelSessionData.level}");
+            //Debug.LogWarning($"level session data not found for lv: {levelSessionData.level}");
             gameData.levelSessionDataList.Add(levelSessionData);
         }
         else

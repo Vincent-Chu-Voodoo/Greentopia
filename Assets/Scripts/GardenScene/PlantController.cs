@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -34,37 +35,43 @@ public class PlantController : MonoBehaviour
         graphicRaycaster.Raycast(pointerEventData, results);
         if (results.Count > 0)
             return;
-        var ray = referenceCamera.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hitInfo = default;
+        try
+        {
+            var ray = referenceCamera.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hitInfo = default;
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (Physics.Raycast(ray, out hitInfo, float.PositiveInfinity, LayerMask.GetMask(LayerEnum.Plant.ToString())))
+            if (Input.GetMouseButtonDown(0))
             {
-                activeObject = hitInfo.collider.gameObject;
-                activeObject.GetComponent<Plant>().PointerDown();
+                if (Physics.Raycast(ray, out hitInfo, float.PositiveInfinity, LayerMask.GetMask(LayerEnum.Plant.ToString())))
+                {
+                    activeObject = hitInfo.collider.gameObject;
+                    activeObject.GetComponent<Plant>().PointerDown();
+                }
+                else
+                    activeObject = null;
+                controlPanelGO.SetActive(activeObject);
             }
-            else
-                activeObject = null;
-            controlPanelGO.SetActive(activeObject);
-        }
-        if (Input.GetMouseButton(0))
-        {
-            if (activeObject)
+            if (Input.GetMouseButton(0))
             {
-                if (Physics.Raycast(ray, out hitInfo, float.PositiveInfinity, LayerMask.GetMask(LayerEnum.PlantBase.ToString())))
-                    activeObject.transform.position = hitInfo.point;
+                if (activeObject)
+                {
+                    if (Physics.Raycast(ray, out hitInfo, float.PositiveInfinity, LayerMask.GetMask(LayerEnum.PlantBase.ToString())))
+                        activeObject.transform.position = hitInfo.point;
+                }
             }
-        }
-        if (Input.GetMouseButtonUp(0))
-        {
-            if (activeObject)
+            if (Input.GetMouseButtonUp(0))
             {
-                activeObject.GetComponent<Plant>().PointerUp();
-                GameDataManager.instance.gameData.gardentPlantList.Find(i => i.id == activeObject.GetComponent<Plant>().plantId).localPosition = activeObject.transform.localPosition;
+                if (activeObject)
+                {
+                    activeObject.GetComponent<Plant>().PointerUp();
+                    GameDataManager.instance.gameData.gardentPlantList.Find(i => i.id == activeObject.GetComponent<Plant>().plantId).localPosition = activeObject.transform.localPosition;
+                }
             }
+        } catch (Exception e)
+        {
+            Debug.LogWarning($"Screen position out of view: {Input.mousePosition} {e}");
         }
-    }
+     }
 
     public void ScaleUp()
     {
